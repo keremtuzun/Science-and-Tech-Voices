@@ -1,0 +1,288 @@
+/* ========== GLOBAL ========== */
+:root {
+  --primary: #007acc;
+  --primary-light: #00b4d8;
+  --bg: #f9fafc;
+  --text: #1e1e1e;
+  --gray: #555;
+  --border: rgba(0,0,0,0.08);
+  --radius: 12px;
+  --shadow: 0 4px 14px rgba(0,0,0,0.08);
+  --transition: all 0.25s ease;
+  --font: "Inter", "Poppins", "Segoe UI", sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  scroll-behavior: smooth;
+}
+
+img { max-width: 100%; border-radius: var(--radius); }
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Container */
+.container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.3rem;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: center;
+}
+.btn:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+}
+.btn.secondary {
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
+}
+.btn.secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ========== NAVBAR ========== */
+
+.site-logo {
+  height: 64px;       /* reduce from 36px or more */
+  width: auto;
+  margin-right: 8px;
+  border-radius: 6px;
+  object-fit: contain;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.site-logo:hover {
+  transform: scale(1.05);
+}
+
+.site-header {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+.navlinks {
+  display: flex;
+  gap: 1.5rem;
+}
+.navlinks a {
+  color: var(--gray);
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+.navlinks a.active,
+.navlinks a:hover {
+  color: var(--primary);
+}
+.mobile-toggle {
+  display: none;
+}
+
+/* Responsive Navbar */
+@media (max-width: 720px) {
+  .navlinks {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px; right: 20px;
+    padding: 1rem 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+  .navlinks.open {
+    display: flex;
+  }
+  .mobile-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+  }
+}
+
+/* ========== HERO ========== */
+.hero {
+  background: linear-gradient(180deg, #e8f5ff 0%, #ffffff 100%);
+  padding: 80px 0 50px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  color: var(--gray);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ========== GRID (Posts, Courses, Labs) ========== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.4rem;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+.card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+.card p {
+  color: var(--gray);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* ========== LABS PAGE ========== */
+.labs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0 3rem;
+}
+
+.lab-card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  position: relative;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.lab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.lab-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.lab-card .lab-info {
+  padding: 1rem 1.3rem 1.5rem;
+}
+.lab-card h3 {
+  margin: 0.4rem 0;
+}
+.lab-card p {
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+
+/* ========== MODAL ========== */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.modal.active {
+  display: flex;
+}
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--radius);
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  animation: fadeUp 0.4s ease both;
+}
+.modal-content h3 {
+  margin-top: 0;
+}
+.modal-content p {
+  margin: 1rem 0;
+  color: var(--gray);
+}
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+.modal-close:hover {
+  color: var(--primary);
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background: #fff;
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  text-align: center;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+.footer .links {
+  margin-top: 0.5rem;
+}
+.footer .links a {
+  color: var(--gray);
+  margin: 0 8px;
+  transition: 0.2s;
+}
+.footer .links a:hover {
+  color: var(--primary);
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
