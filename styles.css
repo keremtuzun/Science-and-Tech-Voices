@@ -307,6 +307,21 @@ a:hover { text-decoration: underline; }
   color: #222;
 }
 
+#langButton {
+  margin-left: 1rem;
+  background-color: #eee;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+#langButton:hover {
+  background-color: #ddd;
+}
+
+
 /* ========== ANIMATIONS ========== */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(25px); }
