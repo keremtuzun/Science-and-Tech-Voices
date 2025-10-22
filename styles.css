@@ -309,7 +309,7 @@ a:hover { text-decoration: underline; }
 
 #langButton {
   margin-left: 1rem;
-  background-color: #eee;
+  background-color: #0b75e7;
   border: none;
   padding: 6px 12px;
   border-radius: 6px;
@@ -318,7 +318,7 @@ a:hover { text-decoration: underline; }
 }
 
 #langButton:hover {
-  background-color: #ddd;
+  background-color: #4a8dc7;
 }
 
 
