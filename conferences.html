@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kurslar - Science & Tech Voices</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kurslar • Science & Tech Voices</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Firebase SDKs -->
+
+
   <script src="script.js" defer></script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-11TRNPH4W8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-11TRNPH4W8');
-</script>
 <body>
-  <header class="site-header">
-    <div class="container navbar">
-      <a class="brand" href="index.html">
-        <img src="logo.png" alt="Science & Tech Voices logo" class="site-logo">
-        <span>Science & Tech Voices</span>
-      </a>
 
-      
-      <nav class="navlinks">
-        <a href="index.html">Ana Sayfa</a>
-        <a href="conferences.html">Konferanslar</a>
-        <a href="posts.html">Yayınlar</a>
-        <a href="courses.html">Kurslar</a>
-        <a href="team.html">Ekibimiz</a>
-
-      </nav>
-      <button class="mobile-toggle btn">☰</button>
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="home">
+      <div class="logo" aria-hidden="true"></div>
+      <span>Science & Tech Voices</span>
+    </a>
+    <nav class="navlinks">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="conferences.html">Konferanslar</a>
+      <a href="posts.html">Yayınlar</a>
+      <a href="team.html">Ekibimiz</a>
+      <a href="courses.html">Kurslar</a>
+              <button id="langButton" class="btn">English 🌐</button>
+    </nav>
+    <div class="cta">
+      <button class="mobile-toggle btn" aria-label="menu">☰</button>
     </div>
-  </header>
+  </div>
+</header>
 
 <main class="container page">
   <h1>Konferanslar</h1>
@@ -48,7 +43,10 @@
 <footer class="footer">
   <div class="container">
     <div>© 2025 Science & Tech Voices • Inspired by modern blog layouts.</div>
-
+    <div class="links">
+      <a href="#">Topluluk Kuralları</a>
+      <a href="team.html">Takımımızın bir parçası olun!</a>
+    </div>
   </div>
 </footer>
 

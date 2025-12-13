@@ -21,17 +21,9 @@ html, body {
   scroll-behavior: smooth;
 }
 
-img { 
-  max-width: 100%; 
-  border-radius: var(--radius); 
-}
-a { 
-  color: var(--primary); 
-  text-decoration: none; 
-}
-a:hover { 
-  text-decoration: underline; 
-}
+img { max-width: 100%; border-radius: var(--radius); }
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
 
 /* Container */
 .container {
@@ -67,7 +59,7 @@ a:hover {
 /* ========== NAVBAR ========== */
 
 .site-logo {
-  height: 64px;
+  height: 64px;       /* reduce from 36px or more */
   width: auto;
   margin-right: 8px;
   border-radius: 6px;
@@ -115,22 +107,31 @@ a:hover {
 .navlinks a:hover {
   color: var(--primary);
 }
-
-/* Hamburger – always blue */
 .mobile-toggle {
-  display: none;              /* only shown on mobile with media query */
-  background: #0b75e7;
-  color: #ffffff;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 8px;
-  font-size: 1.4rem;
-  cursor: pointer;
+  display: none;
 }
 
-.mobile-toggle:hover {
-  background: #0b75e7;        /* stays the same blue on hover */
-  color: #ffffff;
+/* Responsive Navbar */
+@media (max-width: 720px) {
+  .navlinks {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px; right: 20px;
+    padding: 1rem 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+  .navlinks.open {
+    display: flex;
+  }
+  .mobile-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+  }
 }
 
 /* ========== HERO ========== */
@@ -325,28 +326,4 @@ a:hover {
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(25px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-/* ========== RESPONSIVE NAVBAR ========== */
-@media (max-width: 720px) {
-  .navlinks {
-    display: none;
-    flex-direction: column;
-    background: #fff;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    padding: 1rem 2rem;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    z-index: 100;
-  }
-
-  .navlinks.open {
-    display: flex;
-  }
-
-  .mobile-toggle {
-    display: block;  /* show the blue hamburger on mobile */
-  }
 }
