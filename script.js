@@ -43,11 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".mobile-toggle");
   const nav = document.querySelector(".navlinks");
 
-  if (toggle && nav) {
+  if(toggle){
     toggle.addEventListener("click", () => {
       nav.classList.toggle("open");
     });
   }
 });
+
 
 
