@@ -12,18 +12,44 @@
   --font: "Inter", "Poppins", "Segoe UI", sans-serif;
 }
 
+/* 🔒 Prevent navbar shift caused by scrollbar */
+html {
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
+/* Fallback for older browsers */
+@supports not (scrollbar-gutter: stable) {
+  body {
+    overflow-y: scroll;
+  }
+}
+
+/* 🔒 Prevent anchor jump under sticky navbar */
+html {
+  scroll-padding-top: 90px; /* adjust if navbar height changes */
+}
+
 html, body {
   margin: 0;
   padding: 0;
   font-family: var(--font);
   color: var(--text);
   background: var(--bg);
-  scroll-behavior: smooth;
 }
 
-img { max-width: 100%; border-radius: var(--radius); }
-a { color: var(--primary); text-decoration: none; }
-a:hover { text-decoration: underline; }
+img {
+  max-width: 100%;
+  border-radius: var(--radius);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 /* ========== CONTAINER ========== */
 .container {
@@ -81,12 +107,14 @@ a:hover { text-decoration: underline; }
   border-radius: 6px;
   transition: transform 0.2s ease;
 }
-.site-logo:hover { transform: scale(1.05); }
+.site-logo:hover {
+  transform: scale(1.05);
+}
 
 /* Nav links */
 .navlinks {
   display: flex;
-  align-items: center;              /* 🔥 alignment fix */
+  align-items: center;
   gap: 1.5rem;
 }
 
@@ -99,7 +127,7 @@ a:hover { text-decoration: underline; }
   color: var(--primary);
 }
 
-/* Language button aligned with links */
+/* Language button */
 #langButton {
   background: #0b75e7;
   color: #fff;
@@ -115,7 +143,7 @@ a:hover { text-decoration: underline; }
   background: #4a8dc7;
 }
 
-/* Hamburger – always blue */
+/* Hamburger */
 .mobile-toggle {
   display: none;
   background: #0b75e7;
@@ -126,7 +154,7 @@ a:hover { text-decoration: underline; }
   font-size: 1.4rem;
   cursor: pointer;
   position: relative;
-  z-index: 200;                     /* 🔥 click fix */
+  z-index: 200;
 }
 .mobile-toggle:hover {
   background: #0b75e7;
@@ -138,7 +166,9 @@ a:hover { text-decoration: underline; }
   padding: 80px 0 50px;
   text-align: center;
 }
-.hero h1 { font-size: 2.4rem; }
+.hero h1 {
+  font-size: 2.4rem;
+}
 .hero p {
   color: var(--gray);
   max-width: 600px;
@@ -175,7 +205,9 @@ a:hover { text-decoration: underline; }
   justify-content: center;
   z-index: 300;
 }
-.modal.active { display: flex; }
+.modal.active {
+  display: flex;
+}
 
 .modal-content {
   background: #fff;
@@ -197,8 +229,14 @@ a:hover { text-decoration: underline; }
 
 /* ========== ANIMATIONS ========== */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(25px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ========== RESPONSIVE NAVBAR ========== */
