@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brain-Computer Interfaces - Science &amp; Tech Voices</title>
+  <title>Brain-Computer Interfaces &bull; Science &amp; Tech Voices</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -20,7 +20,7 @@
         <a href="courses-en.html">Courses</a>
         <a href="videos-en.html">Videos</a>
         <a href="team-en.html">Team</a>
-        <button id="langButton" class="btn">T&#252;rk&#231;e &#127760;</button>
+        <button id="langButton" class="btn" data-target="post-bci.html">T&#252;rk&#231;e &#127760;</button>
       </nav>
       <button class="mobile-toggle btn">&#9776;</button>
     </div>
@@ -28,30 +28,35 @@
 
   <main class="container page">
     <h1>Brain-Computer Interfaces: When Humans and Machines Think Together</h1>
-    <p class="meta">Written by Kerem T&#252;z&#252;n &#8226; May 2026</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Eeg_hirnstrommessung_mit_16_elektroden.jpg/640px-Eeg_hirnstrommessung_mit_16_elektroden.jpg" alt="Brain-Computer Interface" class="post-cover">
+    <p class="meta">Written by Kerem T&#252;z&#252;n &bull; May 2026</p>
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Eeg_hirnstrommessung_mit_16_elektroden.jpg?width=800" alt="EEG brain signal recording" class="post-cover">
 
     <article class="prose">
-      <p>The human brain contains roughly 86 billion neurons, constantly firing in patterns we have spent centuries trying to understand. Now, a new generation of technology is building a direct communication channel between that biological network and the digital world. The results so far are genuinely remarkable.</p>
+      <p>In 2021, a man named Philip O&#8217;Keefe sent a tweet. That might not sound remarkable on its own, but Philip had ALS, a degenerative disease that had paralyzed him completely. He composed the tweet using only his thoughts, by imagining cursor movement and selecting letters, while a chip implanted in his motor cortex recorded his neural activity and translated it into commands. That moment marked something genuinely new in the relationship between the human brain and digital systems. Brain-computer interfaces have moved from theoretical curiosity to clinical reality in the span of a few years, and the ambitions behind them have grown to match.</p>
 
-      <h3>What Is a BCI?</h3>
-      <p>A brain-computer interface, or BCI, is a system that reads electrical signals from the brain and translates them into commands a computer can understand. At its most basic, it is a bridge between thought and action, letting someone control a device just by thinking about it.</p>
-      <p>The concept has been in development for decades, starting in the 1990s with medical applications. Researchers implanted electrodes in paralyzed patients and showed they could control a cursor on a screen using only their neural activity. The technology was slow and limited, but the core principle was demonstrated.</p>
+      <h3>How a Brain-Computer Interface Works</h3>
+      <p>The brain communicates through electrical signals. Neurons fire in patterns that correspond to thoughts, intentions, and perceptions. A BCI captures some of those signals, processes them, and converts them into digital instructions. The simplest interfaces are non-invasive: electrodes placed on the scalp can detect broad electrical patterns well enough to let someone control a cursor on a screen. More precise systems require placing electrodes directly on or inside the brain.</p>
+      <p>The current clinical standard for high-resolution recording is an implant called the Utah Array, a grid of 96 thin electrodes inserted into the motor cortex. It can record the firing of individual neurons with enough fidelity to translate intended hand movements into digital commands in real time. This is how O&#8217;Keefe sent his tweet. Researchers at BrainGate, a consortium of academic institutions, have used similar systems to help paralyzed patients type at speeds approaching normal handwriting.</p>
 
-      <h3>How Current BCIs Work</h3>
-      <p>BCIs come in two main forms. Non-invasive systems like EEG headsets sit on the outside of the skull and pick up broad electrical signals. They are safe and widely accessible but low resolution. Invasive systems require surgically implanting electrodes on or in the brain tissue. They deliver much richer signals but carry the risks of any brain surgery.</p>
-      <p>Neuralink, founded by Elon Musk, is developing a coin-sized device implanted in the skull. It uses hundreds of thin electrode threads to read signals from thousands of neurons simultaneously. In 2024, their first human patient was able to control a computer mouse and play video games using only his thoughts.</p>
+      <h3>Medical Applications: Restoring What Was Lost</h3>
+      <p>The most immediate and least controversial application of BCIs is in medicine. Patients with ALS, spinal cord injuries, stroke-related paralysis, and locked-in syndrome have the most to gain. In clinical trials, BCI systems have restored the ability to communicate for people who had lost it entirely. High-density electrode arrays have allowed patients to type at 40 to 90 characters per minute using imagined handwriting.</p>
+      <p>A 2023 study from Stanford published in Nature used a non-invasive BCI combined with a speech neuroprosthesis to give a woman who had been unable to speak for 18 years a synthesized voice that expressed her words in near-real time, matching her intended speech with 78 percent accuracy without any decoder retraining. Beyond communication, experimental systems at Case Western Reserve University have allowed patients with cervical spinal injuries to regrasp objects using their own muscles, stimulated by decoded neural commands.</p>
 
-      <h3>Medical Applications</h3>
-      <p>The most immediate use case for BCIs is medicine. People with ALS, spinal cord injuries, or severe stroke damage often lose the ability to communicate or move entirely. BCIs can restore a degree of autonomy that no other technology can offer, and that alone makes the research worthwhile.</p>
-      <p>Researchers are also exploring BCIs for treating epilepsy, Parkinson&#39;s disease, and treatment-resistant depression. A closed-loop system can detect the electrical patterns preceding a seizure and deliver a counter-signal before it happens. Early results in select patients have been striking.</p>
+      <h3>Neuralink and the Commercial Race</h3>
+      <p>In 2024, Neuralink received FDA approval and implanted its device in the first human patient. The company&#8217;s implant is a coin-sized chip housing 1,024 flexible electrodes, significantly more than previous clinical systems, with a wireless transmitter that eliminates the need for a physical cable through the skull. The first patient, Noland Arbaugh, demonstrated the ability to control a computer cursor and play video games using only his thoughts within weeks of the procedure.</p>
+      <p>Other companies are working on less invasive approaches. Synchron has developed a device called the Stentrode that is threaded into the brain through blood vessels rather than open surgery, eliminating the need to cut through the skull. Precision Neuroscience places a flexible electrode array on the brain&#8217;s surface without penetrating it. Each approach makes different tradeoffs between signal quality and surgical risk.</p>
 
-      <h3>Privacy and Ethics</h3>
-      <p>A device that reads your brain raises obvious concerns. Who owns the neural data it collects? Can it be hacked or manipulated? Could it be used to read thoughts without consent? What happens when the company that made the implant is acquired or goes bankrupt?</p>
-      <p>These questions need answers before BCIs become widespread. Several countries are already working on neurorights legislation specifically designed to protect mental privacy. The ethical and legal framework needs to move at the same speed as the technology, or faster.</p>
+      <h3>The Ethics of Writing to the Brain</h3>
+      <p>Most BCIs today read from the brain. They decode neural signals but do not alter them. The next generation of devices, already in development, will write to the brain as well, delivering precisely targeted stimulation to alter perception, mood, memory consolidation, or attention. Deep brain stimulation already does this for Parkinson&#8217;s disease. Researchers have shown that stimulating the hippocampus at specific moments can improve memory consolidation in patients with memory disorders.</p>
+      <p>The ethical questions this raises are serious. If a device can modulate mood or focus, who controls the settings? If an employer could offer workers a productivity implant, would the pressure to accept it be coercive? If neural data reveals intentions before you act on them, who owns that information and what are they allowed to do with it? These questions need answers before the technology scales, and the frameworks for addressing them barely exist yet.</p>
 
-      <h3>Looking Ahead</h3>
-      <p>BCIs are still early-stage technology. Surgery is risky, battery life is limited, and reading the brain&#39;s language is extraordinarily complex. But the pace of progress is real. A technology that once lived only in science fiction is now restoring communication to locked-in patients. Where it goes from here depends as much on the ethical choices we make as on the engineering breakthroughs yet to come.</p>
+      <h3>Privacy and Neural Data</h3>
+      <p>Neural data is unlike any other kind of personal data. Your brain activity contains not just thoughts you have expressed but thoughts you have not, emotional reactions you may not be consciously aware of, and the raw substrate of your inner life. No current legal framework adequately protects this data. A company that builds a BCI and processes the data it generates could theoretically infer far more about the user than the user intended to share.</p>
+      <p>Colorado became the first US state to explicitly extend privacy protections to neural data in 2024. The Neurorights Foundation, founded by neuroscientist Rafael Yuste at Columbia University, has been working with several countries to add neurorights to existing human rights frameworks. Chile added neurorights to its constitution in 2021, the first country to do so. The international conversation is only beginning.</p>
+
+      <h3>Looking Forward</h3>
+      <p>The near-term future of BCIs is in medicine. More patients with paralysis, locked-in syndrome, epilepsy, and treatment-resistant depression will benefit from improving systems. Signal quality, miniaturization, and the biocompatibility of electrode materials are all advancing rapidly. Wireless systems with battery charging through the skin are eliminating the last physical connections between brain and device.</p>
+      <p>What comes after that depends partly on technology and partly on the societal decisions we make about what these tools should be allowed to become. The brain is where we draw the line between the self and the world. Brain-computer interfaces are moving that line. Where it ends up depends on choices being made right now, in engineering labs, regulatory agencies, and ethical debates, by people who are only beginning to understand what they are building.</p>
     </article>
 
     <a href="posts-en.html" class="btn secondary" style="margin-top:2rem;">&#8592; Back to All Posts</a>

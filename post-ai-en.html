@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Ethics &#8226; Science &amp; Tech Voices</title>
+  <title>AI Ethics &bull; Science &amp; Tech Voices</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -11,7 +11,7 @@
   <header class="site-header">
     <div class="container navbar">
       <a class="brand" href="index-en.html">
-        <img src="logo.png" alt="Science & Tech Voices logo" class="site-logo">
+        <img src="logo.png" alt="Science &amp; Tech Voices logo" class="site-logo">
         <span>Science &amp; Tech Voices</span>
       </a>
       <nav class="navlinks">
@@ -20,7 +20,7 @@
         <a href="courses-en.html">Courses</a>
         <a href="videos-en.html">Videos</a>
         <a href="team-en.html">Team</a>
-        <button id="langButton" class="btn">T&#252;rk&#231;e &#127760;</button>
+        <button id="langButton" class="btn" data-target="post-ai.html">T&#252;rk&#231;e &#127760;</button>
       </nav>
       <button class="mobile-toggle btn">&#9776;</button>
     </div>
@@ -28,33 +28,40 @@
 
   <main class="container page">
     <h1>AI Ethics: Can Code Have a Conscience?</h1>
-    <p class="meta">Written by Kerem T&#252;z&#252;n &#8226; May 2026</p>
+    <p class="meta">Written by Kerem T&#252;z&#252;n &bull; May 2026</p>
     <img src="News_Image_-_2024-01-22T102627.569.png" alt="AI Ethics" class="post-cover">
 
     <article class="prose">
-      <p>Artificial intelligence is no longer confined to science fiction. It is woven into everyday life. From our phones and search engines to hospitals and court systems, we constantly encounter AI-driven decisions. But how fair are those decisions? And more importantly: can a machine have a conscience?</p>
+      <p>Artificial intelligence is no longer confined to research labs and science fiction. It is embedded in the systems that decide whether you get a job interview, whether your loan application is approved, whether a healthcare algorithm flags you as high risk. Hundreds of millions of people interact with AI-driven decisions every day without knowing it. The question of whether those decisions are fair is urgent, and the technical community is only beginning to take it seriously.</p>
 
-      <h3>Decisions Written in Code</h3>
-      <p>At its core, an AI system is a collection of algorithms. Its decision-making process depends on code written by humans and the data it is trained on. But data is far from perfect. Since it is created by us, our biases, misperceptions, and mistakes inevitably find their way in.</p>
-      <p>The result? A hiring algorithm that sidelines female candidates, a facial recognition system that is less accurate for darker skin tones, or a news recommendation engine that amplifies only certain viewpoints. These are not hypothetical examples. They have already happened.</p>
+      <h3>Decisions Written in Numbers</h3>
+      <p>Every AI system is a function. It takes input data and produces an output: a recommendation, a classification, a prediction. The function is derived from training data, historical records of past decisions and outcomes that the model learns to replicate. The problem is that the past is not neutral. Historical data reflects the biases, inequalities, and mistakes of the people who generated it. A hiring algorithm trained on a decade of successful hire records will learn to prefer candidates who resemble those past hires, which typically means it reflects the demographic biases of whoever was doing the hiring at the time. The algorithm did not create the bias, but it crystallizes and automates it at scale.</p>
+      <p>In 2018, Amazon shut down an AI recruiting tool after discovering it consistently downgraded resumes that contained the word &ldquo;women&#8217;s,&rdquo; as in &ldquo;women&#8217;s chess club.&rdquo; The model had been trained on resumes submitted to Amazon over ten years, during which most software engineers hired were men. The system learned from the past and faithfully reproduced its problems.</p>
 
-      <h3>Can a Machine Have a Conscience?</h3>
-      <p>The word conscience implies moral awareness and empathy, qualities that are deeply human. AI systems today do not feel emotions. They act purely based on probabilities and data patterns.</p>
-      <p>Still, researchers are working on ethical algorithms and value alignment. If a self-driving car faces an unavoidable accident, whom should it prioritize? This has become a real-world ethical dilemma that engineers and philosophers are working through together.</p>
+      <h3>The Trolley Problem Gets Real</h3>
+      <p>Academic ethics has debated hypothetical dilemmas like the trolley problem for decades. AI systems are now creating real versions of them. Self-driving cars need pre-programmed responses to unavoidable accident scenarios. Should a vehicle prioritize its passengers or minimize total harm? A facial recognition system used in criminal investigation has measurably different error rates across demographic groups. A medical AI might recommend more aggressive treatment for patients who are statistically similar to a group where that treatment worked well historically, even when individual circumstances suggest otherwise.</p>
+      <p>These are not distant hypotheticals. They are engineering decisions being made right now, usually without explicit acknowledgment that a value judgment is embedded in them.</p>
 
-      <h3>Power, Responsibility, and Transparency</h3>
-      <p>AI systems now make decisions that affect billions of people. With such powerful tools, ethical oversight is as critical as technical safety.</p>
-      <ul>
-        <li><strong>Transparency:</strong> We need to understand how algorithms make decisions in order to question them.</li>
-        <li><strong>Accountability:</strong> Who is responsible when an AI makes a harmful mistake?</li>
-        <li><strong>Fairness:</strong> How can we reduce the biases embedded in training data?</li>
-      </ul>
+      <h3>Transparency and Explainability</h3>
+      <p>When an algorithm denies a credit application or flags a medical image, the affected person has a legitimate interest in understanding why. In the European Union, the General Data Protection Regulation already gives individuals the right to an explanation of automated decisions that significantly affect them.</p>
+      <p>But most modern deep learning systems are not inherently explainable. A neural network with hundreds of millions of parameters processes inputs through many layers of mathematical transformations in ways that are difficult even for the engineers who built it to interpret clearly. The field of explainable AI is working on tools to address this, from attention visualization to counterfactual explanations, but it remains an active and unsolved technical challenge.</p>
+
+      <h3>Accountability: Who Is Responsible?</h3>
+      <p>When an AI system causes harm, assigning responsibility is harder than it might seem. Is it the company that deployed the system? The data providers whose records trained it? The developers who wrote the objective function? The regulators who approved it? Current legal frameworks were not designed with algorithmic harm in mind, and there is genuine disagreement about how liability should be distributed.</p>
+      <p>Several governments have moved to address this gap. The EU&#8217;s AI Act, passed in 2024, is the first comprehensive AI regulation in the world. It classifies AI systems by risk level, requires transparency and human oversight for high-risk applications in hiring, credit, healthcare, and law enforcement, and bans certain uses outright, including social scoring by governments and most real-time biometric surveillance in public spaces.</p>
+
+      <h3>Fairness Cannot Be Defined Once</h3>
+      <p>One technical complication in AI fairness is that there is no single definition of fairness that satisfies all intuitions simultaneously. A system can be equally accurate on average across groups while still producing different error rates for different groups. A system can have equal false positive rates while having unequal predictive accuracy. Researchers have shown mathematically that in most real situations, you cannot satisfy all common definitions of fairness at once.</p>
+      <p>This means that every AI system making consequential decisions embeds a value judgment about which kind of fairness matters most. That judgment should be made explicitly and defensibly, with input from the people affected, not left implicit in an optimization formula written by engineers who may not share the circumstances of those being classified.</p>
+
+      <h3>The Role of Diversity in AI Development</h3>
+      <p>The demographics of the AI research community are heavily skewed. A 2021 Stanford survey found that women represent about 16 percent of tenured faculty in AI research. Representation of Black and Hispanic researchers is lower still. This matters because the people building AI systems bring their own blind spots to the work, and diverse teams are more likely to notice problems that affect groups the team itself does not include.</p>
+      <p>Several major AI labs have expanded their ethics and fairness research teams significantly over the past five years. Researchers like Joy Buolamwini at MIT and Timnit Gebru, who co-founded the DAIR Institute, have been influential in documenting bias in commercial AI systems and pushing for better standards.</p>
 
       <h3>A Human-Centered Future</h3>
-      <p>Perhaps the real issue is not giving AI a conscience, but ensuring that those who design it use theirs. We cannot write empathy into code directly, but the ethical principles of the people building these systems will ultimately shape what they become.</p>
-
-      <h3>Final Thoughts</h3>
-      <p>Code may not have a conscience, but the coder does. The AI of the future should not just be smarter. It should be fairer. True progress is measured not only by intelligence but by responsibility.</p>
+      <p>The technical tools for building fairer AI systems are improving: better auditing methods, more diverse datasets, interpretability research, formal fairness constraints that can be included in training objectives. These are engineering problems, and they are tractable given sufficient effort.</p>
+      <p>But technical solutions alone are not enough. The systems that matter most are deployed in contexts of significant power imbalance, between an employer and a job applicant, between a bank and a borrower, between a government and a citizen. Accountability in those contexts requires not just better algorithms but better oversight institutions, clearer legal standards, and genuine input from the people most affected by automated decisions.</p>
+      <p>Code may not have a conscience. But the people writing and deploying code do. The challenge of AI ethics is not a technical puzzle to be solved once and forgotten. It is an ongoing responsibility that accompanies every decision to automate something that matters.</p>
     </article>
 
     <a href="posts-en.html" class="btn secondary" style="margin-top:2rem;">&#8592; Back to All Posts</a>

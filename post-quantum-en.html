@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quantum Computers &#8226; Science &amp; Tech Voices</title>
+  <title>Quantum Computers &bull; Science &amp; Tech Voices</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -11,7 +11,7 @@
   <header class="site-header">
     <div class="container navbar">
       <a class="brand" href="index-en.html">
-        <img src="logo.png" alt="Science & Tech Voices logo" class="site-logo">
+        <img src="logo.png" alt="Science &amp; Tech Voices logo" class="site-logo">
         <span>Science &amp; Tech Voices</span>
       </a>
       <nav class="navlinks">
@@ -20,7 +20,7 @@
         <a href="courses-en.html">Courses</a>
         <a href="videos-en.html">Videos</a>
         <a href="team-en.html">Team</a>
-        <button id="langButton" class="btn">T&#252;rk&#231;e &#127760;</button>
+        <button id="langButton" class="btn" data-target="post-quantum.html">T&#252;rk&#231;e &#127760;</button>
       </nav>
       <button class="mobile-toggle btn">&#9776;</button>
     </div>
@@ -28,33 +28,39 @@
 
   <main class="container page">
     <h1>Quantum Computers: The Gateway to the Future</h1>
-    <p class="meta">Written by Kerem T&#252;z&#252;n &#8226; May 2026</p>
+    <p class="meta">Written by Kerem T&#252;z&#252;n &bull; May 2026</p>
     <img src="Google-Large-Quantum-Computer.webp" alt="Quantum Computing" class="post-cover">
 
     <article class="prose">
-      <p>The scientific world has spent centuries improving the way we process information, from the abacus to transistors, from massive supercomputers to smartphones that fit in our pockets. Now we stand at the edge of a new era: the age of quantum computers. But why is this technology seen as a gateway to the future?</p>
+      <p>The scientific world has been pushing at the limits of classical computation for decades, and it is beginning to hit a wall. Transistors have shrunk to the point where individual atoms matter. Heat dissipation from denser chips is becoming a serious engineering constraint. And certain categories of problems, the simulation of molecules, the breaking of encryption, the optimization of impossibly large systems, simply cannot be solved in any reasonable time no matter how fast the hardware gets. Quantum computers take a different approach entirely. Instead of encoding information as bits that are either 0 or 1, they use quantum bits, or qubits, that can exist in multiple states at once. This is not an incremental improvement. It is a fundamentally different relationship with information.</p>
 
-      <h3>The Limits of Classical Computers</h3>
-      <p>Classical computers process information using bits that represent either 0 or 1. Every operation depends on combinations of these two states. This system has brought us the internet, artificial intelligence, and space simulations. Yet for tasks such as modeling complex chemical reactions, predicting the weather with high accuracy, or analyzing massive datasets instantly, classical computing power is beginning to fall short.</p>
+      <h3>The Classical Limit</h3>
+      <p>A standard bit is a switch. It is either on or off, representing 1 or 0. Every calculation your phone, laptop, or data center performs is ultimately a sequence of operations on these two-state switches. This works beautifully for most tasks. The problem arises when the number of possible states in a problem becomes astronomically large. Factoring a 2048-bit number of the kind used in RSA encryption would require a classical computer to run for longer than the age of the universe. Simulating the quantum behavior of even a medium-sized protein molecule requires tracking more interacting quantum states than any classical computer could store. These are the problems quantum computers are designed for.</p>
 
-      <h3>The Logic of the Quantum World</h3>
-      <p>Quantum computers are based on the strangest and most powerful branch of physics: quantum mechanics. Here, the unit of information is the <strong>qubit</strong> (quantum bit). A qubit can represent both 0 and 1 simultaneously, a property called <strong>superposition</strong>.</p>
-      <p>Moreover, through <strong>entanglement</strong>, qubits can become linked so that the state of one instantly affects the other. This enables massive parallel computation, allowing quantum computers to solve problems in seconds that would take classical systems thousands of years.</p>
+      <h3>What a Qubit Actually Does</h3>
+      <p>A qubit can be in a superposition of 0 and 1 simultaneously. The physical implementations vary: superconducting circuits cooled to fractions of a degree above absolute zero, individual ions suspended in electromagnetic traps, photons whose polarization encodes information. Each approach has tradeoffs in stability, error rates, and qubit connectivity.</p>
+      <p>The key insight is that a system of n qubits can represent all 2^n possible combinations simultaneously. Ten qubits represent 1,024 states at once. Fifty qubits represent more than a quadrillion. Three hundred qubits can represent more combinations than there are atoms in the observable universe, all encoded in a single physical system. Quantum algorithms process this superposition, amplifying correct answers while suppressing incorrect ones through a process called quantum interference.</p>
 
-      <h3>Real-World Applications</h3>
-      <p>The impact of quantum computers will extend far beyond research labs:</p>
-      <ul>
-        <li><strong>Drug discovery:</strong> Molecular interactions can be simulated at the quantum level, drastically speeding up the development of new medicines.</li>
-        <li><strong>Cryptography and cybersecurity:</strong> Quantum computing could break traditional encryption but also create more secure quantum communication systems.</li>
-        <li><strong>Finance and logistics:</strong> Complex prediction models, risk analyses, and route optimizations could become far more efficient with quantum algorithms.</li>
-      </ul>
+      <h3>Entanglement: The Spooky Connection</h3>
+      <p>Entanglement is the second phenomenon that quantum computers exploit. When two qubits become entangled, their states are correlated regardless of the distance between them. Measuring one instantly determines something about the other. Einstein called this &ldquo;spooky action at a distance&rdquo; and spent years trying to explain it away. Experiments by Clauser, Aspect, and Zeilinger, who shared the 2022 Nobel Prize in Physics for this work, showed definitively that it is real and that there is no hidden mechanism behind it.</p>
+      <p>In a quantum computer, entanglement allows computations to spread across qubits in ways that dramatically increase the power of the system. Most practically useful quantum algorithms, from Shor&#8217;s factoring algorithm to Grover&#8217;s search algorithm, depend on entanglement to work.</p>
 
-      <h3>Challenges and Realities</h3>
-      <p>Of course, this technology is still in its early stages. Qubits are extremely sensitive. Temperature, vibration, or electromagnetic noise can disrupt their states. Programming quantum algorithms is also far more complex than coding for classical machines.</p>
-      <p>Still, tech giants like Google, IBM, and Intel, along with many universities, are investing heavily to overcome these hurdles. Since Google's 2020 experiment demonstrating quantum supremacy, progress has accelerated rapidly.</p>
+      <h3>Where Quantum Computers Are Today</h3>
+      <p>Google claimed quantum supremacy in 2019 when its 53-qubit Sycamore chip completed a specific benchmark task in 200 seconds that would have taken the world&#8217;s fastest supercomputer an estimated 10,000 years. IBM disputed the classical estimate but acknowledged the significance of the demonstration.</p>
+      <p>IBM has published the most detailed public quantum roadmap of any company. Their chip series went from 27 qubits in 2019 to 127 with Eagle in 2021, 433 with Osprey in 2022, and over 1,000 with Condor in 2023. IBM Quantum Experience lets researchers run programs on real quantum hardware through a cloud interface. IonQ uses trapped ion technology, which offers lower error rates. Microsoft is pursuing topological qubits, a fundamentally different physical approach theorized to be inherently more stable.</p>
 
-      <h3>Looking Ahead</h3>
-      <p>Quantum computers are not just faster machines. They represent a shift in how we understand and interact with the universe. We are still at the beginning, but the direction is clear: the future is being shaped in quantum hands.</p>
+      <h3>The Main Challenge: Errors</h3>
+      <p>Real quantum hardware is noisy. Qubits lose their quantum state due to interactions with the environment, a process called decoherence. Current systems can maintain coherence for microseconds to milliseconds before information is lost. Any calculation that takes longer accumulates errors that corrupt the result.</p>
+      <p>Quantum error correction addresses this by encoding one logical qubit across many physical qubits and using redundancy to detect and fix errors continuously. The overhead is significant: a fully error-corrected logical qubit might require hundreds to thousands of physical qubits depending on the hardware&#8217;s error rate. This is why the race is not just about total qubit count but about error rates and the ability to implement error correction at scale.</p>
+
+      <h3>Applications That Matter</h3>
+      <p>Drug discovery is the most compelling near-term application. Designing a new drug molecule requires understanding how it will interact with a specific protein target at the quantum mechanical level. Pfizer, Roche, Merck, and Moderna all have active quantum chemistry research programs. The goal is to use quantum simulation to identify promising drug candidates much faster than classical methods allow.</p>
+      <p>Cryptography is the most urgent concern. A large-scale quantum computer running Shor&#8217;s algorithm could break RSA and elliptic curve encryption, the basis of most internet security. The National Institute of Standards and Technology finalized its first post-quantum cryptographic standards in 2024. Organizations are being urged to begin migrating to quantum-resistant encryption now, even before quantum computers capable of the attack exist, because encrypted data captured today could be decrypted later.</p>
+      <p>Materials science is another area of interest, particularly for designing better batteries, catalysts, and superconductors. Financial optimization problems and logistics routing may also benefit, though the evidence for quantum advantage in these areas is still early.</p>
+
+      <h3>The Road Ahead</h3>
+      <p>The honest answer is that we do not know exactly when quantum computers will achieve practical advantage at scale on problems that matter. The engineering challenges are real. But looking at the trajectory from 2019 to today, the progress in qubit counts, error rates, and the sophistication of quantum algorithms has been faster than most researchers predicted a decade ago.</p>
+      <p>The quantum era is a real destination that serious engineers at dozens of organizations worldwide are building toward. When it arrives, the implications for cryptography, chemistry, and optimization will be fundamental. The machines being built today are prototypes. The machines that follow them will not be.</p>
     </article>
 
     <a href="posts-en.html" class="btn secondary" style="margin-top:2rem;">&#8592; Back to All Posts</a>
