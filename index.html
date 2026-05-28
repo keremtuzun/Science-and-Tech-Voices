@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kurslar - Science & Tech Voices</title>
+  <title>Science & Tech Voices</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
 </head>
@@ -14,56 +14,86 @@
         <img src="logo.png" alt="Science & Tech Voices logo" class="site-logo">
         <span>Science & Tech Voices</span>
       </a>
-
-      
       <nav class="navlinks">
-        <a href="index.html">Ana Sayfa</a>
-       <!-- <a href="conferences.html">Konferanslar</a>-->
+        <a href="index.html" class="active">Ana Sayfa</a>
         <a href="posts.html">Yayınlar</a>
         <a href="courses.html">Kurslar</a>
+        <a href="videos.html">Videolar</a>
         <a href="team.html">Ekibimiz</a>
-        <button id="langButton" class="btn">English 🌐</button>
-
+        <button id="langButton" class="btn">English &#127760;</button>
       </nav>
-      <button class="mobile-toggle btn">☰</button>
+      <button class="mobile-toggle btn">&#9776;</button>
     </div>
   </header>
 
-
-
-
   <section class="hero">
     <div class="container">
-      <h1>Bilim ve Teknolojiyi Konuşuyoruz</h1>
-      <p>Science & Tech Voices, bilim meraklılarını bir araya getiren bir topluluk. Haftalık yazılar, tartışmalar ve yuvarlak masa etkinlikleriyle bilimi birlikte keşfediyoruz.</p>
+      <h1>Bilim ve Teknolojiyi Birlikte Konuşuyoruz</h1>
+      <p>Science &amp; Tech Voices, meraklı zihinleri bir araya getiren bir topluluk. Haftalık yazılar, videolar ve tartışmalarla bilimdeki en yeni gelişmeleri birlikte keşfediyoruz.</p>
     </div>
   </section>
 
-  <section class="container" style="margin-top: 40px;">
-    <h2>Bu Haftanın Yazıları</h2>
-    <div class="grid">
-      <article class="card">
-        <h3><a href="post-quantum.html">Kuantum Bilgisayarlar: Geleceğe Açılan Kapı</a></h3>
+  <section class="container" style="margin-top:50px;">
+    <h2 class="section-title">Son Yazılar</h2>
+    <p class="section-sub">Kerem Tüzün tarafından derlenen bilim ve teknoloji yazıları.</p>
+    <div class="featured-grid">
+      <article class="featured-card">
+        <img src="Google-Large-Quantum-Computer.webp" alt="Kuantum Bilgisayarlar">
+        <div class="featured-card-body">
+          <h3><a href="post-quantum.html">Kuantum Bilgisayarlar: Geleceğe Açılan Kapı</a></h3>
+          <p>Qubit'ler, süperpozisyon ve bilişimin geleceği üzerine bir bakış.</p>
+        </div>
       </article>
-      <article class="card">
-        <h3><a href="post-ai.html">Yapay Zekâ Etiği: Kodun Vicdanı Olur mu?</a></h3>
+      <article class="featured-card">
+        <img src="News_Image_-_2024-01-22T102627.569.png" alt="Yapay Zeka Etiği">
+        <div class="featured-card-body">
+          <h3><a href="post-ai.html">Yapay Zeka Etiği: Kodun Vicdanı Olur mu?</a></h3>
+          <p>Algoritmaların karar süreçlerinde etik değerlerin yeri ve önemi.</p>
+        </div>
       </article>
-      <article class="card">
-        <h3><a href="post-bio.html">Biyomühendisliğin Yükselişi: Hücreden Çipe</a></h3>
+      <article class="featured-card">
+        <img src="gilbert-in-lab.jpg" alt="Biyomühendislik">
+        <div class="featured-card-body">
+          <h3><a href="post-bio.html">Biyomühendisliğin Yükselişi: Hücreden Çipe</a></h3>
+          <p>Canlı sistemlerin mühendislikle buluştuğu noktada neler oluyor?</p>
+        </div>
+      </article>
+      <article class="featured-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/640px-OSIRIS_Mars_true_color.jpg" alt="Mars">
+        <div class="featured-card-body">
+          <h3><a href="post-mars.html">Mars Kolonizasyonu: İnsanlığın Büyük Adımı</a></h3>
+          <p>Kızıl gezegene yerleşmek artık hayal değil. Peki gerçekten hazır mıyız?</p>
+        </div>
+      </article>
+      <article class="featured-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Webb%27s_First_Deep_Field.jpg/640px-Webb%27s_First_Deep_Field.jpg" alt="James Webb Teleskobu">
+        <div class="featured-card-body">
+          <h3><a href="post-jwst.html">James Webb Teleskobu: Zamanın Şafağına Pencere</a></h3>
+          <p>İnsanlık tarihinin en güçlü teleskobu evrenin ilk anlarını görüntülüyor.</p>
+        </div>
+      </article>
+      <article class="featured-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/ITER_site_2013.jpg/640px-ITER_site_2013.jpg" alt="Füzyon Enerjisi">
+        <div class="featured-card-body">
+          <h3><a href="post-fusion.html">Füzyon Enerjisi: Sınırsız Temiz Gücün Vaadi</a></h3>
+          <p>Güneşin gücünü Dünya'da üretmek mümkün mü? Bilim buna yaklaşıyor.</p>
+        </div>
       </article>
     </div>
   </section>
 
-  <!--<section class="container" style="margin: 60px 0;">
-    <h2>Katılmak İster misiniz?</h2>
-    <p>Haftalık yuvarlak masa etkinliklerimize ve kurslarımıza katılmak için aşağıdaki formu doldurun.</p>
-    <a href="https://forms.gle/placeholder" target="_blank" class="btn primary">Katılım Formu</a>
-  </section>-->
+  <section class="container" style="margin-bottom:60px;">
+    <h2 class="section-title">Öne Çıkan Videolar</h2>
+    <p class="section-sub">Bilim ve teknoloji dünyasından seçme videolar.</p>
+    <a href="videos.html" class="btn">Tüm Videoları Gör</a>
+  </section>
 
   <footer class="footer">
     <div class="container">
-      <div>© 2025 Science & Tech Voices</div>
+      <div>&#169; 2025 Science &amp; Tech Voices</div>
       <div class="links">
+        <a href="posts.html">Yayınlar</a>
+        <a href="videos.html">Videolar</a>
         <a href="team.html">Ekibimiz</a>
       </div>
     </div>

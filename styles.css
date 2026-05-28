@@ -12,22 +12,14 @@
   --font: "Inter", "Poppins", "Segoe UI", sans-serif;
 }
 
-/* 🔒 Prevent navbar shift caused by scrollbar */
 html {
   scrollbar-gutter: stable;
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
-/* Fallback for older browsers */
 @supports not (scrollbar-gutter: stable) {
-  body {
-    overflow-y: scroll;
-  }
-}
-
-/* 🔒 Prevent anchor jump under sticky navbar */
-html {
-  scroll-padding-top: 90px; /* adjust if navbar height changes */
+  body { overflow-y: scroll; }
 }
 
 html, body {
@@ -70,10 +62,21 @@ a:hover {
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
+  text-decoration: none;
 }
 .btn:hover {
   background: var(--primary-light);
   transform: translateY(-2px);
+  text-decoration: none;
+}
+.btn.secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+.btn.secondary:hover {
+  background: var(--primary);
+  color: #fff;
 }
 
 /* ========== NAVBAR ========== */
@@ -89,7 +92,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 0.85rem 0;
 }
 
 .brand {
@@ -97,12 +100,14 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--text);
+  text-decoration: none;
 }
+.brand:hover { text-decoration: none; }
 
 .site-logo {
-  height: 64px;
+  height: 48px;
   object-fit: contain;
   border-radius: 6px;
   transition: transform 0.2s ease;
@@ -111,39 +116,40 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Nav links */
 .navlinks {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.3rem;
 }
 
 .navlinks a {
   color: var(--gray);
   font-weight: 500;
-  transition: 0.3s;
+  font-size: 0.95rem;
+  transition: 0.25s;
 }
-.navlinks a:hover {
+.navlinks a:hover,
+.navlinks a.active {
   color: var(--primary);
+  text-decoration: none;
 }
 
-/* Language button */
 #langButton {
   background: #0b75e7;
   color: #fff;
   border: none;
   padding: 6px 14px;
   border-radius: 6px;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   font-weight: 500;
-  line-height: 1;
   cursor: pointer;
+  white-space: nowrap;
 }
 #langButton:hover {
-  background: #4a8dc7;
+  background: #1a85f0;
+  transform: none;
 }
 
-/* Hamburger */
 .mobile-toggle {
   display: none;
   background: #0b75e7;
@@ -151,38 +157,242 @@ a:hover {
   border: none;
   padding: 8px 14px;
   border-radius: 8px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   cursor: pointer;
   position: relative;
   z-index: 200;
 }
-.mobile-toggle:hover {
-  background: #0b75e7;
-}
 
 /* ========== HERO ========== */
 .hero {
-  background: linear-gradient(180deg, #e8f5ff 0%, #ffffff 100%);
-  padding: 80px 0 50px;
+  background: linear-gradient(160deg, #e0f2ff 0%, #f9fafc 65%);
+  padding: 80px 0 60px;
   text-align: center;
 }
 .hero h1 {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
 }
 .hero p {
   color: var(--gray);
-  max-width: 600px;
+  max-width: 620px;
   margin: 0 auto;
+  font-size: 1.08rem;
+  line-height: 1.7;
 }
 
-/* ========== GRID / CARDS ========== */
+/* ========== SECTION HEADINGS ========== */
+.section-title {
+  font-size: 1.55rem;
+  margin: 0 0 0.4rem;
+}
+.section-sub {
+  color: var(--gray);
+  margin: 0 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* ========== FEATURED ARTICLE GRID (homepage) ========== */
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.6rem;
+  margin: 1.5rem 0 3rem;
+}
+
+.featured-card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: var(--transition);
+}
+.featured-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+.featured-card img {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+  border-radius: var(--radius) var(--radius) 0 0;
+  display: block;
+}
+.featured-card-body {
+  padding: 1.1rem 1.3rem 1.3rem;
+}
+.featured-card-body h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.featured-card-body p {
+  color: var(--gray);
+  font-size: 0.87rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ========== POSTS LISTING PAGE ========== */
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin: 2rem 0;
+}
+
+.post-card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  transition: var(--transition);
+}
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.post-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+.post-card-body {
+  padding: 1.5rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.post-card-body h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+.post-card-body p {
+  color: var(--gray);
+  margin: 0;
+  font-size: 0.93rem;
+  line-height: 1.55;
+}
+.post-card-body .post-meta {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.2rem;
+}
+
+/* ========== SINGLE POST PAGE ========== */
+.page {
+  padding: 2.5rem 0 4rem;
+}
+
+.post-cover {
+  width: 100%;
+  max-height: 440px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.meta {
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.prose {
+  max-width: 740px;
+  line-height: 1.85;
+  font-size: 1.02rem;
+}
+.prose h3 {
+  margin-top: 2.2rem;
+  font-size: 1.15rem;
+  color: var(--text);
+}
+.prose p {
+  margin: 0 0 1.2rem;
+}
+.prose ul {
+  margin: 0 0 1.2rem;
+  padding-left: 1.5rem;
+}
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+/* ========== VIDEOS PAGE ========== */
+.video-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+
+.video-card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.video-card iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  display: block;
+}
+.video-card-body {
+  padding: 1.2rem 1.5rem 1.5rem;
+}
+.video-card-body h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+.video-card-body p {
+  color: var(--gray);
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ========== TEAM PAGE ========== */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.person {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 1.8rem 2.5rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  min-width: 160px;
+}
+.person h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.1rem;
+}
+.person p {
+  color: var(--gray);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* ========== LEGACY GRID / CARDS ========== */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   margin: 2rem 0;
 }
-
 .card {
   background: #fff;
   border-radius: var(--radius);
@@ -205,10 +415,7 @@ a:hover {
   justify-content: center;
   z-index: 300;
 }
-.modal.active {
-  display: flex;
-}
-
+.modal.active { display: flex; }
 .modal-content {
   background: #fff;
   padding: 2rem;
@@ -226,20 +433,14 @@ a:hover {
   color: var(--gray);
   font-size: 0.9rem;
 }
-
-/* ========== ANIMATIONS ========== */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.footer .links {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 0.5rem;
 }
 
-/* ========== RESPONSIVE NAVBAR ========== */
+/* ========== RESPONSIVE ========== */
 @media (max-width: 720px) {
   .navlinks {
     display: none;
@@ -253,12 +454,10 @@ a:hover {
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     z-index: 150;
   }
-
-  .navlinks.open {
-    display: flex;
-  }
-
-  .mobile-toggle {
-    display: block;
-  }
+  .navlinks.open { display: flex; }
+  .mobile-toggle { display: block; }
+  .hero h1 { font-size: 1.9rem; }
+  .featured-grid { grid-template-columns: 1fr; }
+  .post-card { grid-template-columns: 1fr; }
+  .post-card img { height: 200px; }
 }
