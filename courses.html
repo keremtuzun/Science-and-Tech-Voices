@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kurslar - Science & Tech Voices</title>
+  <title>Kurslar - Science &amp; Tech Voices</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
 </head>
@@ -11,61 +11,50 @@
   <header class="site-header">
     <div class="container navbar">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="Science & Tech Voices logo" class="site-logo">
-        <span>Science & Tech Voices</span>
+        <img src="logo.png" alt="Science &amp; Tech Voices logo" class="site-logo">
+        <span>Science &amp; Tech Voices</span>
       </a>
-
-      
       <nav class="navlinks">
         <a href="index.html">Ana Sayfa</a>
-       <!-- <a href="conferences.html">Konferanslar</a>-->
-        <a href="posts.html">Yayınlar</a>
-        <a href="courses.html">Kurslar</a>
+        <a href="posts.html">Yay&#305;nlar</a>
+        <a href="courses.html" class="active">Kurslar</a>
+        <a href="videos.html">Videolar</a>
         <a href="team.html">Ekibimiz</a>
-                <button id="langButton" class="btn">English 🌐</button>
-
+        <button id="langButton" class="btn" data-target="courses-en.html">English &#127760;</button>
       </nav>
-      <button class="mobile-toggle btn">☰</button>
+      <button class="mobile-toggle btn">&#9776;</button>
     </div>
   </header>
 
-<main class="container page">
-  <h1>Kurslar</h1>
-
-
-    <!--<article class="card"><img class="thumb" src="assets/img/thumb1.png"><div class="content"><div class="badge"><span class="dot"></span><span>Veri</span></div><h3><a href="post.html">Python ile Veri</a></h3></div></article>
-    <article class="card"><img class="thumb" src="assets/img/thumb2.png"><div class="content"><div class="badge"><span class="dot"></span><span>Robotik</span></div><h3><a href="post.html">ROS 2</a></h3></div></article>
-    <article class="card"><img class="thumb" src="assets/img/thumb4.png"><div class="content"><div class="badge"><span class="dot"></span><span>Enerji</span></div><h3><a href="post.html">Güneş 101</a></h3></div></article>-->
-
-    <div class="video-card">
-      <a href="https://youtu.be/5VQ5uOHih7k" target="_blank">
-        <img 
-        src="https://img.youtube.com/vi/5VQ5uOHih7k/maxresdefault.jpg" 
-          alt="Arduino Mesafe Sensörü Projesi - Video" 
-          class="video-thumb">
-        <h3>Arduino Mesafe Sensörü Projesi</h3>
-      </a>
+  <main class="container page">
+    <h1>Kurslar</h1>
+    <div class="video-grid">
+      <div class="video-card">
+        <a href="https://youtu.be/5VQ5uOHih7k" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/5VQ5uOHih7k/maxresdefault.jpg" alt="Arduino Mesafe Sens&#246;r&#252; Projesi" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px 12px 0 0;">
+        </a>
+        <div class="video-card-body">
+          <h3>Arduino Mesafe Sens&#246;r&#252; Projesi</h3>
+          <p>Temel Arduino programlama ve HC-SR04 ultrasonik sens&#246;r kullan&#305;larak mesafe &#246;l&#231;en bir devre yap&#305;m&#305;.</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-card-body">
+          <h3>1. Dereceden Denklemler</h3>
+          <p>Lise matematik m&#252;fredat&#305;ndan birinci dereceden denklemlerin &#231;&#246;z&#252;m&#252; ve ger&#231;ek hayat uygulamalar&#305;.</p>
+        </div>
+      </div>
     </div>
-    <div class="video-card">
-      <a href="https://youtu.be/5VQ5uOHih7k" target="_blank">
-        <img 
-        src="mqdefault.jpg" 
-          alt="1. dereceden denklemler - Video" 
-          class="video-thumb">
-        <h3>1. dereceden denklemler</h3>
-      </a>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>&#169; 2025 Science &amp; Tech Voices</div>
+      <div class="links">
+        <a href="posts.html">Yay&#305;nlar</a>
+        <a href="team.html">Ekibimiz</a>
+      </div>
     </div>
-
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div>© 2025 Science & Tech Voices • Inspired by modern blog layouts.</div>
-    <div class="links">
-      <a href="#">Topluluk Kuralları</a>
-      <a href="team.html">Takımımızın bir parçası olun!</a>
-    </div>
-  </div>
-</footer>
-
-</body></html>
+  </footer>
+</body>
+</html>

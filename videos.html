@@ -20,7 +20,7 @@
         <a href="courses.html">Kurslar</a>
         <a href="videos.html" class="active">Videolar</a>
         <a href="team.html">Ekibimiz</a>
-        <button id="langButton" class="btn">English &#127760;</button>
+        <button id="langButton" class="btn" data-target="videos-en.html">English &#127760;</button>
       </nav>
       <button class="mobile-toggle btn">&#9776;</button>
     </div>
@@ -28,94 +28,56 @@
 
   <main class="container page">
     <h1>Bilim ve Teknoloji Videolar&#305;</h1>
-    <p style="color:var(--gray);margin-bottom:2rem;">Yaz&#305;lar&#305;m&#305;zdaki konular&#305; daha derinlemesine ele alan se&#231;me videolar. Her video en az 3 dakika ve g&#252;venilir e&#287;itim kanallar&#305;ndan derlendi.</p>
+    <p style="color:var(--gray);margin-bottom:2rem;">Yaz&#305;lar&#305;m&#305;zla ilgili konular&#305; i&#231;eren se&#231;ilmi&#351; bilim ve teknoloji videolar&#305;. Her video en az &#252;&#231; dakika uzunlu&#287;undad&#305;r.</p>
 
     <div class="video-grid">
-
       <div class="video-card">
-        <iframe
-          src="https://www.youtube.com/embed/mZsaaturR6E"
-          title="F&#252;zyon G&#252;c&#252; A&#231;&#305;kland&#305;"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
-        <div class="video-card-body">
-          <h3>F&#252;zyon G&#252;c&#252; A&#231;&#305;kland&#305;: Gelecek mi, Ba&#351;ar&#305;s&#305;zl&#305;k m&#305;?</h3>
-          <p>N&#252;kleer f&#252;zyonun nas&#305;l &#231;al&#305;&#351;t&#305;&#287;&#305;n&#305;, neden bu kadar zor oldu&#287;unu ve f&#252;zyon enerjisiyle &#231;al&#305;&#351;an bir gelece&#287;in nas&#305;l g&#246;r&#252;nebilece&#287;ini a&#231;&#305;k ve ilgi &#231;ekici bir &#351;ekilde ele al&#305;yor. Plazma tutulmas&#305;n&#305;n fizi&#287;ini ve h&#252;k&#252;met projeleri ile &#246;zel giri&#351;imler aras&#305;ndaki yar&#305;&#351;&#305; kaps&#305;yor.</p>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <iframe
-          src="https://www.youtube.com/embed/G-WO-z-QuWI"
-          title="Mars&#39;&#305; Terraformlayabilir miyiz?"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
-        <div class="video-card-body">
-          <h3>Mars&#39;&#305; Terraformlayabilir miyiz?</h3>
-          <p>Mars&#39;&#305; insan ya&#351;am&#305;n&#305; destekleyebilecek bir gezegene d&#246;n&#252;&#351;t&#252;rmenin ger&#231;ekte ne gerektirdi&#287;ine dair derinlemesine bir bak&#305;&#351;. Zaman &#231;izelgesini, bilim insanlar&#305;n&#305;n &#246;nerdi&#287;i y&#246;ntemleri ve m&#252;hendislik zorlu&#287;unun devasa boyutunu ele al&#305;yor.</p>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <iframe
-          src="https://www.youtube.com/embed/JhHMJCUmq28"
-          title="Kuantum Bilgisayarlar A&#231;&#305;kland&#305;"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
+        <iframe src="https://www.youtube.com/embed/JhHMJCUmq28" title="Kuantum Bilgisayarlar A&#231;&#305;kland&#305;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         <div class="video-card-body">
           <h3>Kuantum Bilgisayarlar A&#231;&#305;kland&#305;</h3>
-          <p>Kuantum bilgisayarlar&#305;n ne oldu&#287;una, qubit&#39;lerin klasik bitlerden nas&#305;l farkl&#305; oldu&#287;una ve s&#252;perpozisyon ile dolan&#305;kl&#305;&#287;&#305;n pratikte ne anlam ifade etti&#287;ine dair g&#246;rsel ve anla&#351;&#305;l&#305;r bir k&#305;lavuz.</p>
+          <p>Qubit&#8217;lerin klasik bitlerden nas&#305;l farkl&#305; oldu&#287;u, s&#252;perpozisyon ve dolanıkl&#305;&#287;&#305;n pratikte ne anlama geldi&#287;i ve kuantum bilgisayarlar&#305;n hangi problemleri &#231;&#246;zebilece&#287;i anlat&#305;l&#305;yor.</p>
         </div>
       </div>
 
       <div class="video-card">
-        <iframe
-          src="https://www.youtube.com/embed/jAhjPd4uNFY"
-          title="Genetik M&#252;hendislik Her &#350;eyi De&#287;i&#351;tirecek"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
+        <iframe src="https://www.youtube.com/embed/jAhjPd4uNFY" title="Gen Teknolojisi Her&#351;eyi De&#287;i&#351;tirecek" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         <div class="video-card-body">
-          <h3>Genetik M&#252;hendislik Her &#350;eyi Sonsuza Dek De&#287;i&#351;tirecek</h3>
-          <p>CRISPR ve di&#287;er gen d&#252;zenleme teknolojilerinin t&#305;p, tar&#305;m ve ya&#351;am anlay&#305;&#351;&#305;m&#305;z&#305; d&#246;n&#252;&#351;t&#252;rmeye nas&#305;l haz&#305;rland&#305;&#287;&#305;n&#305; ele al&#305;yor. Genetik hastal&#305;klar&#305; iyile&#351;tirme ve yeni organizmalar olu&#351;turma potansiyelini ve bunlar&#305;n do&#287;urdu&#287;u ciddi etik soruları inciliyor.</p>
+          <h3>Gen Teknolojisi Her&#351;eyi De&#287;i&#351;tirecek</h3>
+          <p>CRISPR ve di&#287;er gen d&#252;zenleme teknolojilerinin t&#305;p, tar&#305;m ve ya&#351;am&#305;n kendisini d&#246;n&#252;&#351;t&#252;rme potansiyeli. Genetik hastal&#305;klar&#305; tedavi etmekten yeni organizmalar yaratmaya kadar bu teknolojinin etik boyutlar&#305;.</p>
         </div>
       </div>
 
       <div class="video-card">
-        <iframe
-          src="https://www.youtube.com/embed/R9OHn5ZF4Uo"
-          title="Yapay Zeka ve Gelecek"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
+        <iframe src="https://www.youtube.com/embed/mZsaaturR6E" title="F&#252;zyon Enerjisi A&#231;&#305;kland&#305;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         <div class="video-card-body">
-          <h3>Makinelerin Y&#252;kseli&#351;i: Yapay Zeka</h3>
-          <p>Yapay zekan&#305;n nihai akademik bir konudan t&#252;m sekt&#246;rleri &#351;ekillendiren bir teknolojiye nas&#305;l d&#246;n&#252;&#351;t&#252;&#287;&#252;n&#252; anlat&#305;yor. Makine &#246;&#287;renmesinin tarihini, mevcut yapay zeka sistemlerinin neler yapabildi&#287;ini ve yapamad&#305;&#287;&#305;n&#305; kaps&#305;yor.</p>
+          <h3>F&#252;zyon Enerjisi A&#231;&#305;kland&#305;</h3>
+          <p>N&#252;kleer f&#252;zyonun nas&#305;l &#231;al&#305;&#351;t&#305;&#287;&#305;, neden bu kadar zor oldu&#287;u ve f&#252;zyon enerjisiyle &#231;al&#305;&#351;an bir gelecekte d&#252;nyan&#305;n nas&#305;l g&#246;r&#252;nece&#287;i.</p>
         </div>
       </div>
 
       <div class="video-card">
-        <iframe
-          src="https://www.youtube.com/embed/4XctAgxS7E0"
-          title="James Webb Uzay Teleskobu"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
+        <iframe src="https://www.youtube.com/embed/G-WO-z-QuWI" title="Mars Terraformlama Yapabilir miyiz?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         <div class="video-card-body">
-          <h3>James Webb Uzay Teleskobu: Ne G&#246;rece&#287;iz?</h3>
-          <p>James Webb Uzay Teleskobu&#39;nun nas&#305;l &#231;al&#305;&#351;t&#305;&#287;&#305;na, k&#305;z&#305;l&#246;tesi g&#246;zlemin erken evren &#231;al&#305;&#351;malar&#305; i&#231;in neden &#246;nem ta&#351;&#305;d&#305;&#287;&#305;na ve bilim insanlar&#305;n&#305;n en uzak galaksilerden ve d&#305;&#351;gezegen atmosferlerinden &#246;&#287;renmeyi umduklar&#305;na genel bir bak&#305;&#351;.</p>
+          <h3>Mars&#8217;&#305; Terraformlayabilir miyiz?</h3>
+          <p>Mars&#8217;&#305; insan ya&#351;am&#305;n&#305; destekleyebilir hale getirmenin ne gerektirece&#287;ine derin bir bak&#305;&#351;. Zaman &#231;izelgesi, &#246;nerilen y&#246;ntemler ve m&#252;hend&#305;slik zorlu&#287;unun boyutlar&#305;.</p>
         </div>
       </div>
 
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/R9OHn5ZF4Uo" title="Yapay Zeka ve Gelecek" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        <div class="video-card-body">
+          <h3>Yapay Zeka: Makinelerin Y&#252;kseli&#351;i</h3>
+          <p>Yapay zekan&#305;n akademik bir meraktan endüstrileri yeniden &#351;ekillendiren bir teknolojiye d&#246;n&#252;&#351;&#252;m&#252;. Makine &#246;&#287;renmesinin tarihi, mevcut sistemlerin s&#305;n&#305;rlar&#305; ve otomasyon etraf&#305;ndaki sorular.</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/4XctAgxS7E0" title="James Webb Uzay Teleskobu" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        <div class="video-card-body">
+          <h3>James Webb Uzay Teleskobu</h3>
+          <p>James Webb Uzay Teleskobu&#8217;nun nas&#305;l &#231;al&#305;&#351;t&#305;&#287;&#305;, k&#305;z&#305;l&#246;tesi g&#246;zlemi neden &#246;nemli ve bilim insanlar&#305;n&#305;n erken evren ile &#246;teki gezegen atmosferlerinden ne &#246;&#287;renmeyi umdu&#287;u.</p>
+        </div>
+      </div>
     </div>
   </main>
 
