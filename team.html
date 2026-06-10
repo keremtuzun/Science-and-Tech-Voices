@@ -1,48 +1,89 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ekibimiz - Science & Tech Voices</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The founders of Science & Tech Voices.">
+  <title>Team — Science &amp; Tech Voices</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container navbar">
+  <header class="site-nav">
+    <div class="container nav-inner">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="Science & Tech Voices logo" class="site-logo">
-        <span>Science & Tech Voices</span>
+        <img src="logo.png" alt="Science &amp; Tech Voices logo">
+        <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
       </a>
-      <nav class="navlinks">
-        <a href="index.html">Ana Sayfa</a>
-        <a href="posts.html">Yayınlar</a>
-        <a href="courses.html">Kurslar</a>
-        <a href="videos.html">Videolar</a>
-        <a href="team.html" class="active">Ekibimiz</a>
-        <button id="langButton" class="btn">English &#127760;</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="posts.html">Articles</a>
+        <a href="videos.html">Videos</a>
+        <a href="courses.html">Courses</a>
+        <a href="team.html">Team</a>
       </nav>
-      <button class="mobile-toggle btn">&#9776;</button>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
     </div>
   </header>
 
-  <main class="container page">
-    <h1>Ekibimiz</h1>
-    <div class="team">
-      <div class="person">
-        <h3>Kerem T&#252;z&#252;n</h3>
-        <p>Kurucu</p>
-      </div>
-      <div class="person">
-        <h3>Derin Ferah</h3>
-        <p>Kurucu</p>
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">The People</p>
+      <h1>Our Team</h1>
+      <p>Science &amp; Tech Voices is built and run by students who love explaining big ideas.</p>
+    </div>
+  </section>
+
+  <main class="page-body">
+    <div class="container">
+      <div class="team-grid">
+        <div class="member-card reveal">
+          <div class="avatar">KT</div>
+          <h3>Kerem T&uuml;z&uuml;n</h3>
+          <span class="role">Founder &middot; Writer</span>
+          <p class="bio">Writes every article on the site — from quantum computing to climate technology — and leads the project's content and direction.</p>
+        </div>
+        <div class="member-card reveal">
+          <div class="avatar">DF</div>
+          <h3>Derin Ferah</h3>
+          <span class="role">Founder</span>
+          <p class="bio">Co-founded Science &amp; Tech Voices and helps shape the community, outreach, and the project's future.</p>
+        </div>
       </div>
     </div>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container">
-      <div>&#169; 2025 Science &amp; Tech Voices</div>
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="logo.png" alt="Science &amp; Tech Voices logo">
+            <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
+          </a>
+          <p>A student-run science and technology publication exploring the frontiers of research — from quantum computing to gene editing — through articles, videos, and hands-on courses.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="posts.html">Articles</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Project</h4>
+          <ul>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="index.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2026 Science &amp; Tech Voices</span>
+        <span>Written &amp; curated by Kerem T&uuml;z&uuml;n</span>
+      </div>
     </div>
   </footer>
 </body>

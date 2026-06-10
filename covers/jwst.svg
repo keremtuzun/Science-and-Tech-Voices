@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="The James Webb Space Telescope: A Window to the Dawn of Time">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1124"/>
+      <stop offset="1" stop-color="#1f1708"/>
+    </linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#ff8a5c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd166" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffd166" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.035" stroke-width="1">
+    <line x1="80" y1="0" x2="80" y2="450"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="240" y1="0" x2="240" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="560" y1="0" x2="560" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+    <line x1="720" y1="0" x2="720" y2="450"/>
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+  </g>
+  <g>
+    <circle cx="62" cy="58" r="1.4" fill="#ffffff" opacity="0.5"/>
+    <circle cx="148" cy="330" r="1.0" fill="#ffffff" opacity="0.5"/>
+    <circle cx="216" cy="96" r="1.2" fill="#ffffff" opacity="0.5"/>
+    <circle cx="300" cy="388" r="1.0" fill="#ffffff" opacity="0.5"/>
+    <circle cx="372" cy="52" r="1.4" fill="#ffffff" opacity="0.5"/>
+    <circle cx="468" cy="396" r="1.1" fill="#ffffff" opacity="0.5"/>
+    <circle cx="540" cy="70" r="1.0" fill="#ffffff" opacity="0.5"/>
+    <circle cx="624" cy="350" r="1.3" fill="#ffffff" opacity="0.5"/>
+    <circle cx="700" cy="110" r="1.2" fill="#ffffff" opacity="0.5"/>
+    <circle cx="752" cy="296" r="1.0" fill="#ffffff" opacity="0.5"/>
+    <circle cx="96" cy="210" r="1.0" fill="#ffffff" opacity="0.5"/>
+    <circle cx="716" cy="196" r="1.4" fill="#ffffff" opacity="0.5"/>
+  </g>
+  <circle cx="400" cy="218" r="215" fill="url(#glow)"/>
+  <g stroke="url(#ac)" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="303.9,195.5 303.9,228.5 275.3,245.0 246.7,228.5 246.7,195.5 275.3,179.0" stroke-width="2.4"/>
+    <polygon points="335.0,249.5 335.0,282.5 306.5,299.0 277.9,282.5 277.9,249.5 306.5,233.0" stroke-width="2.4"/>
+    <polygon points="366.2,303.5 366.2,336.5 337.6,353.0 309.1,336.5 309.1,303.5 337.6,287.0" stroke-width="2.4"/>
+    <polygon points="335.0,141.5 335.0,174.5 306.5,191.0 277.9,174.5 277.9,141.5 306.5,125.0" stroke-width="2.4"/>
+    <polygon points="366.2,195.5 366.2,228.5 337.6,245.0 309.1,228.5 309.1,195.5 337.6,179.0" stroke-width="2.4"/>
+    <polygon points="397.4,249.5 397.4,282.5 368.8,299.0 340.2,282.5 340.2,249.5 368.8,233.0" stroke-width="2.4"/>
+    <polygon points="428.6,303.5 428.6,336.5 400.0,353.0 371.4,336.5 371.4,303.5 400.0,287.0" stroke-width="2.4"/>
+    <polygon points="366.2,87.5 366.2,120.5 337.6,137.0 309.1,120.5 309.1,87.5 337.6,71.0" stroke-width="2.4"/>
+    <polygon points="397.4,141.5 397.4,174.5 368.8,191.0 340.2,174.5 340.2,141.5 368.8,125.0" stroke-width="2.4"/>
+    <polygon points="459.8,249.5 459.8,282.5 431.2,299.0 402.6,282.5 402.6,249.5 431.2,233.0" stroke-width="2.4"/>
+    <polygon points="490.9,303.5 490.9,336.5 462.4,353.0 433.8,336.5 433.8,303.5 462.4,287.0" stroke-width="2.4"/>
+    <polygon points="428.6,87.5 428.6,120.5 400.0,137.0 371.4,120.5 371.4,87.5 400.0,71.0" stroke-width="2.4"/>
+    <polygon points="459.8,141.5 459.8,174.5 431.2,191.0 402.6,174.5 402.6,141.5 431.2,125.0" stroke-width="2.4"/>
+    <polygon points="490.9,195.5 490.9,228.5 462.4,245.0 433.8,228.5 433.8,195.5 462.4,179.0" stroke-width="2.4"/>
+    <polygon points="522.1,249.5 522.1,282.5 493.5,299.0 465.0,282.5 465.0,249.5 493.5,233.0" stroke-width="2.4"/>
+    <polygon points="490.9,87.5 490.9,120.5 462.4,137.0 433.8,120.5 433.8,87.5 462.4,71.0" stroke-width="2.4"/>
+    <polygon points="522.1,141.5 522.1,174.5 493.5,191.0 465.0,174.5 465.0,141.5 493.5,125.0" stroke-width="2.4"/>
+    <polygon points="553.3,195.5 553.3,228.5 524.7,245.0 496.1,228.5 496.1,195.5 524.7,179.0" stroke-width="2.4"/>
+  </g>
+  <text x="36" y="414" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="4" fill="#9aa7c0">DEEP SPACE</text>
+  <text x="764" y="414" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2" fill="#5d6b85">SCIENCE &amp; TECH VOICES</text>
+</svg>

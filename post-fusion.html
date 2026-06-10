@@ -1,63 +1,110 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>F&#252;zyon Enerjisi - Science &amp; Tech Voices</title>
+  <meta name="description" content="In December 2022, scientists achieved net energy gain from fusion for the first time in history. What does this breakthrough mean?">
+  <title>Fusion Energy: The Promise of Unlimited Clean Power — Science &amp; Tech Voices</title>
+  <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container navbar">
+  <header class="site-nav">
+    <div class="container nav-inner">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="Science &amp; Tech Voices logo" class="site-logo">
-        <span>Science &amp; Tech Voices</span>
+        <img src="logo.png" alt="Science &amp; Tech Voices logo">
+        <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
       </a>
-      <nav class="navlinks">
-        <a href="index.html">Ana Sayfa</a>
-        <a href="posts.html" class="active">Yay&#305;nlar</a>
-        <a href="courses.html">Kurslar</a>
-        <a href="videos.html">Videolar</a>
-        <a href="team.html">Ekibimiz</a>
-        <button id="langButton" class="btn">English &#127760;</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="posts.html">Articles</a>
+        <a href="videos.html">Videos</a>
+        <a href="courses.html">Courses</a>
+        <a href="team.html">Team</a>
       </nav>
-      <button class="mobile-toggle btn">&#9776;</button>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
     </div>
   </header>
 
-  <main class="container page">
-    <h1>F&#252;zyon Enerjisi: S&#305;n&#305;rs&#305;z Temiz G&#252;c&#252;n Vaadi</h1>
-    <p class="meta">Yazan: Kerem T&#252;z&#252;n &#8226; May&#305;s 2026</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/ITER_site_2013.jpg/640px-ITER_site_2013.jpg" alt="ITER F&#252;zyon Tesisi" class="post-cover">
-
+  <main class="article-page container">
+    <div class="article-head">
+      <a class="crumb" href="posts.html">&#8592; All articles</a>
+      <div><span class="tag">Energy</span></div>
+      <h1>Fusion Energy: The Promise of Unlimited Clean Power</h1>
+      <div class="author-row">
+        <div class="avatar">KT</div>
+        <div class="who">
+          <strong>Written by Kerem T&uuml;z&uuml;n</strong>
+          <span>May 2026 &middot; 6 min read</span>
+        </div>
+      </div>
+    </div>
+    <div class="article-cover">
+      <img src="covers/fusion.svg" alt="Fusion Energy: The Promise of Unlimited Clean Power — cover artwork">
+    </div>
     <article class="prose">
-      <p>Y&#305;llarca f&#252;zyon enerjisi hakk&#305;ndaki &#351;aka, onun her zaman elli y&#305;l uzakta oldu&#287;uydu. Fizik anla&#351;&#305;l&#305;yd&#305;, temel reaksiyonlar g&#246;sterilmi&#351;ti ama t&#252;ketti&#287;inden daha fazla enerji &#252;reten bir cihaz hep el&#287;in&#305; ucunda kalm&#305;&#351;t&#305;. Sonra Aral&#305;k 2022&#39;de Ulusal Ate&#351;leme Tesisi&#39;nde bilim insanlar&#305; tarihte ilk kez bir f&#252;zyon reaksiyonundan net enerji kazand&#305;. Elli y&#305;l &#351;akası birden az komik olmaya ba&#351;lad&#305;.</p>
+<p>For decades, the joke about fusion energy was that it was always fifty years away. The physics was understood, the basic reactions demonstrated, but a device that produced more energy than it consumed remained perpetually out of reach. Then, in December 2022, scientists at the National Ignition Facility in California achieved net energy gain from a fusion reaction for the first time in history. The fifty-year joke got a little less funny.</p>
 
-      <h3>F&#252;zyon Nedir?</h3>
-      <p>N&#252;kleer f&#252;zyon, G&#252;ne&#351;&#39;i ve t&#252;m di&#287;er y&#305;ld&#305;zlar&#305; &#231;al&#305;&#351;t&#305;ran s&#252;re&#231;. &#199;ok y&#252;ksek s&#305;cakl&#305;klarda hafif atom &#231;ekirdeklerini, genellikle hidrojenin izotoplar&#305;n&#305;, birle&#351;tirmeyi i&#231;eriyor. Birle&#351;ti&#287;inde b&#252;y&#252;k miktarda enerji sal&#305;n&#305;yor.</p>
-      <p>&#199;ekicili&#287;i a&#231;&#305;k: f&#252;zyon yak&#305;t&#305; pratikte s&#305;n&#305;rs&#305;z. Desteryu deniz suyundan elde edilebilir. Reaksiyon karbon emisi salm&#305;yor ve n&#252;kleer fisyona k&#305;yasla &#231;ok daha az radyoaktif at&#305;k &#252;retiyor.</p>
+      <h3>What Is Fusion?</h3>
+      <p>Nuclear fusion is the process that powers the sun and every other star. It involves combining light atomic nuclei, usually isotopes of hydrogen, at extremely high temperatures. When they fuse, they release large amounts of energy.</p>
+      <p>The appeal is straightforward. Fusion fuel is essentially limitless. Deuterium can be extracted from seawater. The reaction produces no carbon emissions and generates far less radioactive waste than nuclear fission. A fusion power plant cannot melt down in the way a conventional nuclear reactor can.</p>
 
-      <h3>Neden Bu Kadar Zor?</h3>
-      <p>Hidrojen &#231;ekirdeklerini birle&#351;tirmek i&#231;in G&#252;ne&#351;&#39;in merkezindeki ko&#351;ullar&#305; taklit etmeniz gerekiyor: 100 milyon derece Celsius civar&#305;nda s&#305;cakl&#305;klar. Bu s&#305;cakl&#305;klardaki plazman&#305;n ya g&#252;&#231;l&#252; manyetik alanlarla ya da son derece hassas lazerlerle tutulmas&#305; gerekiyor. İkisi de m&#252;hendislik olarak kolay de&#287;il.</p>
+      <h3>Why It Has Been So Hard</h3>
+      <p>To fuse hydrogen nuclei, you need to replicate the conditions at the core of the sun: temperatures around 100 million degrees Celsius. Containing plasma at those temperatures requires either powerful magnetic fields or precisely aimed lasers delivering an extraordinary amount of energy in a tiny fraction of a second.</p>
+      <p>Neither approach is simple to engineer. The physics works. Building a practical machine around it has taken far longer than anyone expected when fusion research began in the 1950s.</p>
 
-      <h3>NIF&#39;in Tarihi Ba&#351;ar&#305;s&#305;</h3>
-      <p>Ulusal Ate&#351;leme Tesisi, k&#252;&#231;&#252;k bir hidrojen yak&#305;t topu&#287;unu s&#305;k&#305;&#351;t&#305;rmak ve &#305;s&#305;tmak i&#231;in 192 lazer kulland&#305;. F&#252;zyon reaksiyonu, lazerlerin hedefe teslim etti&#287;inden daha fazla enerji sald&#305;. Laboratuvar ortam&#305;nda ate&#351;lemenin ilk ger&#231;ek g&#246;stergesiydi bu.</p>
-      <p>Net bir&#231;ok enerji t&#252;keten lazer sistemleri g&#246;z &#246;n&#252;nde bulunduruldu&#287;unda, genel deney hala &#252;retti&#287;inden &#231;ok daha fazla enerji t&#252;ketti. Ama hedef d&#252;zeyinde ate&#351;leme elde etmek, ara&#351;t&#305;rmac&#305;lar&#305;n on y&#305;llard&#305;r pe&#351;inde oldu&#287;u bilimsel d&#246;n&#252;m noktas&#305;yd&#305;.</p>
+      <h3>The NIF Breakthrough</h3>
+      <p>The experiment at the National Ignition Facility used 192 high-powered lasers to compress and heat a small pellet of hydrogen fuel. The fusion reaction released more energy than the lasers delivered to the target. This was the first genuine demonstration of ignition in a laboratory setting.</p>
+      <p>To be clear: the overall experiment still consumed far more energy than it produced, because powering the lasers requires enormous amounts of electricity. But achieving ignition at the target level was the scientific milestone researchers had been chasing for decades.</p>
 
-      <h3>ITER: Uluslararas&#305; Bahis</h3>
-      <p>ITER, &#351;u anda in&#351;a halindeki en b&#252;y&#252;k bilim projesi. 35 &#252;lkeyi kaps&#305;yor ve G&#252;ney Fransa&#39;da in&#351;a ediliyor. Plazma&#305; tokamak denilen halka &#351;eklinde bir odada g&#252;&#231;l&#252;  manyetik alanlarla tutarak f&#252;zyonun daha fazla enerji &#252;retip &#252;retemeyece&#287;ini g&#246;stermeyi ama&#231;l&#305;yor.</p>
-      <p>ITER bir santral de&#287;il, bir ispat konsepti. Ba&#351;ar&#305;l&#305; olursa, 2050&#39;lerde DEMO adl&#305; bir g&#246;steri santraline zemin haz&#305;rlayacak.</p>
+      <h3>ITER: The International Project</h3>
+      <p>ITER, the International Thermonuclear Experimental Reactor, is the largest science project currently under construction. It involves 35 countries and is being built in southern France. ITER uses a different approach from the NIF, confining plasma with powerful magnetic fields in a doughnut-shaped chamber called a tokamak.</p>
+      <p>ITER is not a power plant. It is designed to demonstrate that more energy can come out of a fusion reaction than goes in to sustain the plasma. If it succeeds, it will pave the way for a demonstration power plant in the 2050s.</p>
 
-      <h3>Neden &#214;nemli?</h3>
-      <p>F&#252;zyon enerjisi ticari olarak uygulanabilir hale gelirse, insan medeniyetini d&#246;n&#252;&#351;t&#252;r&#252;r. G&#252;ne&#351; ve r&#252;zgar&#305;n aral&#305;kl&#305;l&#305;k sorunlar&#305; olmaks&#305;z&#305;n, esas&#305;nda s&#305;n&#305;rs&#305;z temiz enerji sa&#287;lar. Soru art&#305;k f&#252;zyonun fiziksel bir s&#252;re&#231; olarak &#231;al&#305;&#351;&#305;p &#231;al&#305;&#351;mad&#305;&#287;&#305; de&#287;il; ilk santralin &#351;ebekeye ne zaman ba&#287;lanaca&#287;&#305;d&#305;r.</p>
+      <h3>Private Companies Moving Faster</h3>
+      <p>While ITER works on a long government timeline, a wave of private companies is moving more quickly. Commonwealth Fusion Systems, Helion Energy, TAE Technologies, and others are pursuing different technical approaches with the goal of building commercial fusion plants within this decade. The level of private investment in fusion is unlike anything the field has seen before.</p>
+
+      <h3>Why This Matters</h3>
+      <p>Fusion energy, if it can be made commercially viable, would transform human civilization. It would provide essentially unlimited clean energy without the intermittency problems of solar and wind. The question is no longer whether fusion works as a physical process. It is when the first plant will connect to the grid.</p>
     </article>
-
-    <a href="posts.html" class="btn secondary" style="margin-top:2rem;">&#8592; T&#252;m Yaz&#305;lara D&#246;n</a>
+    <div class="article-foot">
+      <span class="sig">Written by Kerem T&uuml;z&uuml;n &middot; Science &amp; Tech Voices</span>
+      <a class="btn btn-ghost" href="posts.html">&#8592; Back to all articles</a>
+    </div>
   </main>
 
-  <footer class="footer">
-    <div class="container"><div>&#169; 2025 Science &amp; Tech Voices</div></div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="logo.png" alt="Science &amp; Tech Voices logo">
+            <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
+          </a>
+          <p>A student-run science and technology publication exploring the frontiers of research — from quantum computing to gene editing — through articles, videos, and hands-on courses.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="posts.html">Articles</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Project</h4>
+          <ul>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="index.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2026 Science &amp; Tech Voices</span>
+        <span>Written &amp; curated by Kerem T&uuml;z&uuml;n</span>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

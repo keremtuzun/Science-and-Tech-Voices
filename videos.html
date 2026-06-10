@@ -1,130 +1,96 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Videolar - Science &amp; Tech Voices</title>
+  <meta name="description" content="Original videos from the Science & Tech Voices project.">
+  <title>Videos — Science &amp; Tech Voices</title>
+  <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container navbar">
+  <header class="site-nav">
+    <div class="container nav-inner">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="Science &amp; Tech Voices logo" class="site-logo">
-        <span>Science &amp; Tech Voices</span>
+        <img src="logo.png" alt="Science &amp; Tech Voices logo">
+        <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
       </a>
-      <nav class="navlinks">
-        <a href="index.html">Ana Sayfa</a>
-        <a href="posts.html">Yay&#305;nlar</a>
-        <a href="courses.html">Kurslar</a>
-        <a href="videos.html" class="active">Videolar</a>
-        <a href="team.html">Ekibimiz</a>
-        <button id="langButton" class="btn">English &#127760;</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="posts.html">Articles</a>
+        <a href="videos.html">Videos</a>
+        <a href="courses.html">Courses</a>
+        <a href="team.html">Team</a>
       </nav>
-      <button class="mobile-toggle btn">&#9776;</button>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
     </div>
   </header>
 
-  <main class="container page">
-    <h1>Bilim ve Teknoloji Videolar&#305;</h1>
-    <p style="color:var(--gray);margin-bottom:2rem;">Yaz&#305;lar&#305;m&#305;zdaki konular&#305; daha derinlemesine ele alan se&#231;me videolar. Her video en az 3 dakika ve g&#252;venilir e&#287;itim kanallar&#305;ndan derlendi.</p>
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Watch</p>
+      <h1>Our Videos</h1>
+      <p>Videos produced for the Science &amp; Tech Voices project — visual companions to our written articles.</p>
+    </div>
+  </section>
 
-    <div class="video-grid">
-
-      <div class="video-card">
-        <iframe
-          src="https://www.youtube.com/embed/mZsaaturR6E"
-          title="F&#252;zyon G&#252;c&#252; A&#231;&#305;kland&#305;"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
-        <div class="video-card-body">
-          <h3>F&#252;zyon G&#252;c&#252; A&#231;&#305;kland&#305;: Gelecek mi, Ba&#351;ar&#305;s&#305;zl&#305;k m&#305;?</h3>
-          <p>N&#252;kleer f&#252;zyonun nas&#305;l &#231;al&#305;&#351;t&#305;&#287;&#305;n&#305;, neden bu kadar zor oldu&#287;unu ve f&#252;zyon enerjisiyle &#231;al&#305;&#351;an bir gelece&#287;in nas&#305;l g&#246;r&#252;nebilece&#287;ini a&#231;&#305;k ve ilgi &#231;ekici bir &#351;ekilde ele al&#305;yor. Plazma tutulmas&#305;n&#305;n fizi&#287;ini ve h&#252;k&#252;met projeleri ile &#246;zel giri&#351;imler aras&#305;ndaki yar&#305;&#351;&#305; kaps&#305;yor.</p>
+  <main class="page-body">
+    <div class="container">
+      <div class="video-grid">
+        <div class="video-card reveal">
+          <iframe src="https://www.youtube.com/embed/mZsaaturR6E" title="Fusion Power Explained: Future or Failure?"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"></iframe>
+          <div class="card-body">
+            <span class="tag">Science &amp; Tech Voices</span>
+            <h3>Fusion Power Explained: Future or Failure?</h3>
+            <p class="excerpt">How nuclear fusion works, why it has been so difficult to achieve, and what a future powered by fusion energy could look like — from plasma confinement to the race between government projects and private startups.</p>
+          </div>
+        </div>
+        <div class="video-card reveal">
+          <iframe src="https://www.youtube.com/embed/G-WO-z-QuWI" title="Can We Terraform Mars?"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"></iframe>
+          <div class="card-body">
+            <span class="tag">Science &amp; Tech Voices</span>
+            <h3>Can We Terraform Mars?</h3>
+            <p class="excerpt">What it would actually take to transform Mars into a planet capable of supporting human life: the timeline, the methods proposed by scientists, and the enormous scale of the engineering challenge.</p>
+          </div>
         </div>
       </div>
-
-      <div class="video-card">
-        <iframe
-          src="https://www.youtube.com/embed/G-WO-z-QuWI"
-          title="Mars&#39;&#305; Terraformlayabilir miyiz?"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
-        <div class="video-card-body">
-          <h3>Mars&#39;&#305; Terraformlayabilir miyiz?</h3>
-          <p>Mars&#39;&#305; insan ya&#351;am&#305;n&#305; destekleyebilecek bir gezegene d&#246;n&#252;&#351;t&#252;rmenin ger&#231;ekte ne gerektirdi&#287;ine dair derinlemesine bir bak&#305;&#351;. Zaman &#231;izelgesini, bilim insanlar&#305;n&#305;n &#246;nerdi&#287;i y&#246;ntemleri ve m&#252;hendislik zorlu&#287;unun devasa boyutunu ele al&#305;yor.</p>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <iframe
-          src="https://www.youtube.com/embed/JhHMJCUmq28"
-          title="Kuantum Bilgisayarlar A&#231;&#305;kland&#305;"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
-        <div class="video-card-body">
-          <h3>Kuantum Bilgisayarlar A&#231;&#305;kland&#305;</h3>
-          <p>Kuantum bilgisayarlar&#305;n ne oldu&#287;una, qubit&#39;lerin klasik bitlerden nas&#305;l farkl&#305; oldu&#287;una ve s&#252;perpozisyon ile dolan&#305;kl&#305;&#287;&#305;n pratikte ne anlam ifade etti&#287;ine dair g&#246;rsel ve anla&#351;&#305;l&#305;r bir k&#305;lavuz.</p>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <iframe
-          src="https://www.youtube.com/embed/jAhjPd4uNFY"
-          title="Genetik M&#252;hendislik Her &#350;eyi De&#287;i&#351;tirecek"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
-        <div class="video-card-body">
-          <h3>Genetik M&#252;hendislik Her &#350;eyi Sonsuza Dek De&#287;i&#351;tirecek</h3>
-          <p>CRISPR ve di&#287;er gen d&#252;zenleme teknolojilerinin t&#305;p, tar&#305;m ve ya&#351;am anlay&#305;&#351;&#305;m&#305;z&#305; d&#246;n&#252;&#351;t&#252;rmeye nas&#305;l haz&#305;rland&#305;&#287;&#305;n&#305; ele al&#305;yor. Genetik hastal&#305;klar&#305; iyile&#351;tirme ve yeni organizmalar olu&#351;turma potansiyelini ve bunlar&#305;n do&#287;urdu&#287;u ciddi etik soruları inciliyor.</p>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <iframe
-          src="https://www.youtube.com/embed/R9OHn5ZF4Uo"
-          title="Yapay Zeka ve Gelecek"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
-        <div class="video-card-body">
-          <h3>Makinelerin Y&#252;kseli&#351;i: Yapay Zeka</h3>
-          <p>Yapay zekan&#305;n nihai akademik bir konudan t&#252;m sekt&#246;rleri &#351;ekillendiren bir teknolojiye nas&#305;l d&#246;n&#252;&#351;t&#252;&#287;&#252;n&#252; anlat&#305;yor. Makine &#246;&#287;renmesinin tarihini, mevcut yapay zeka sistemlerinin neler yapabildi&#287;ini ve yapamad&#305;&#287;&#305;n&#305; kaps&#305;yor.</p>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <iframe
-          src="https://www.youtube.com/embed/4XctAgxS7E0"
-          title="James Webb Uzay Teleskobu"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
-        <div class="video-card-body">
-          <h3>James Webb Uzay Teleskobu: Ne G&#246;rece&#287;iz?</h3>
-          <p>James Webb Uzay Teleskobu&#39;nun nas&#305;l &#231;al&#305;&#351;t&#305;&#287;&#305;na, k&#305;z&#305;l&#246;tesi g&#246;zlemin erken evren &#231;al&#305;&#351;malar&#305; i&#231;in neden &#246;nem ta&#351;&#305;d&#305;&#287;&#305;na ve bilim insanlar&#305;n&#305;n en uzak galaksilerden ve d&#305;&#351;gezegen atmosferlerinden &#246;&#287;renmeyi umduklar&#305;na genel bir bak&#305;&#351;.</p>
-        </div>
-      </div>
-
     </div>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container">
-      <div>&#169; 2025 Science &amp; Tech Voices</div>
-      <div class="links">
-        <a href="posts.html">Yay&#305;nlar</a>
-        <a href="team.html">Ekibimiz</a>
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="logo.png" alt="Science &amp; Tech Voices logo">
+            <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
+          </a>
+          <p>A student-run science and technology publication exploring the frontiers of research — from quantum computing to gene editing — through articles, videos, and hands-on courses.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="posts.html">Articles</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Project</h4>
+          <ul>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="index.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2026 Science &amp; Tech Voices</span>
+        <span>Written &amp; curated by Kerem T&uuml;z&uuml;n</span>
       </div>
     </div>
   </footer>

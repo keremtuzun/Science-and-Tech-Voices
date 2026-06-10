@@ -1,58 +1,41 @@
-// Language switching button
+// Science & Tech Voices — site interactions
+
 document.addEventListener("DOMContentLoaded", () => {
-  const langButton = document.getElementById("langButton");
-
-  if (langButton) {
-    langButton.addEventListener("click", () => {
-      let path = window.location.pathname;
-
-      // Handle root and directory paths
-      if (path === "/" || path === "") path = "/index.html";
-      if (path.endsWith("/")) path = path + "index.html";
-
-      const parts = path.split("/");
-      const filename = parts[parts.length - 1];
-      const dir = parts.slice(0, -1).join("/") + "/";
-
-      let target;
-      if (filename.includes("-en.")) {
-        target = filename.replace("-en.", ".");
-      } else {
-        target = filename.replace(".", "-en.");
-      }
-
-      window.location.href = dir + target;
+  // Mobile navigation toggle
+  const toggle = document.querySelector(".nav-toggle");
+  const links = document.querySelector(".nav-links");
+  if (toggle && links) {
+    toggle.addEventListener("click", () => {
+      const open = links.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    links.addEventListener("click", (e) => {
+      if (e.target.tagName === "A") links.classList.remove("open");
     });
   }
 
-  // Lab card modal system
-  const modals = document.querySelectorAll(".modal");
-  const labCards = document.querySelectorAll(".lab-card");
-
-  labCards.forEach((card, i) => {
-    card.addEventListener("click", () => {
-      const modal = document.getElementById(`lab-modal-${i + 1}`);
-      if (modal) modal.classList.add("active");
-    });
+  // Highlight the current page in the navigation
+  const current = (window.location.pathname.split("/").pop() || "index.html");
+  document.querySelectorAll(".nav-links a").forEach((a) => {
+    if (a.getAttribute("href") === current) a.classList.add("active");
   });
 
-  modals.forEach(m => {
-    m.addEventListener("click", e => {
-      if (
-        e.target.classList.contains("modal") ||
-        e.target.classList.contains("modal-close")
-      ) {
-        m.classList.remove("active");
-      }
-    });
-  });
-});
-
-// Mobile navbar toggle
-document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.querySelector(".mobile-toggle");
-  const nav = document.querySelector(".navlinks");
-  if (toggle) {
-    toggle.addEventListener("click", () => nav.classList.toggle("open"));
+  // Scroll-reveal animation for cards and sections
+  const revealed = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window && revealed.length) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+    revealed.forEach((el) => io.observe(el));
+  } else {
+    revealed.forEach((el) => el.classList.add("in"));
   }
 });

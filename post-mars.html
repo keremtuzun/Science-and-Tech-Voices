@@ -1,65 +1,108 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mars Kolonizasyonu - Science &amp; Tech Voices</title>
+  <meta name="description" content="Engineers and scientists are seriously planning to put humans on Mars. What does it actually take to get there and survive?">
+  <title>Mars Colonization: Humanity's Next Giant Leap — Science &amp; Tech Voices</title>
+  <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container navbar">
+  <header class="site-nav">
+    <div class="container nav-inner">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="Science &amp; Tech Voices logo" class="site-logo">
-        <span>Science &amp; Tech Voices</span>
+        <img src="logo.png" alt="Science &amp; Tech Voices logo">
+        <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
       </a>
-      <nav class="navlinks">
-        <a href="index.html">Ana Sayfa</a>
-        <a href="posts.html" class="active">Yay&#305;nlar</a>
-        <a href="courses.html">Kurslar</a>
-        <a href="videos.html">Videolar</a>
-        <a href="team.html">Ekibimiz</a>
-        <button id="langButton" class="btn">English &#127760;</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="posts.html">Articles</a>
+        <a href="videos.html">Videos</a>
+        <a href="courses.html">Courses</a>
+        <a href="team.html">Team</a>
       </nav>
-      <button class="mobile-toggle btn">&#9776;</button>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
     </div>
   </header>
 
-  <main class="container page">
-    <h1>Mars Kolonizasyonu: &#304;nsanl&#305;&#287;&#305;n B&#252;y&#252;k Ad&#305;m&#305;</h1>
-    <p class="meta">Yazan: Kerem T&#252;z&#252;n &#8226; May&#305;s 2026</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/640px-OSIRIS_Mars_true_color.jpg" alt="Mars" class="post-cover">
-
+  <main class="article-page container">
+    <div class="article-head">
+      <a class="crumb" href="posts.html">&#8592; All articles</a>
+      <div><span class="tag">Space</span></div>
+      <h1>Mars Colonization: Humanity's Next Giant Leap</h1>
+      <div class="author-row">
+        <div class="avatar">KT</div>
+        <div class="who">
+          <strong>Written by Kerem T&uuml;z&uuml;n</strong>
+          <span>May 2026 &middot; 5 min read</span>
+        </div>
+      </div>
+    </div>
+    <div class="article-cover">
+      <img src="covers/mars.svg" alt="Mars Colonization: Humanity's Next Giant Leap — cover artwork">
+    </div>
     <article class="prose">
-      <p>Mars&#39;a yerle&#351;me fikri art&#305;k sadece bilim kurgunun de&#287;il, m&#252;hendislerin ve bilim insanlar&#305;n&#305;n her g&#252;n ciddiye ald&#305;&#287;&#305; bir hedefin par&#231;as&#305;. Birden fazla uzay ajans&#305; ve &#246;zel &#351;irket, insanl&#305;&#287;&#305;n Mars&#39;a ilk ay&#305;n&#305;n ata&#351;&#305; i&#231;in somut takvimler ortaya koyuyor. Peki bu b&#252;y&#252;k ad&#305;m i&#231;in ger&#231;ekten ne gerekiyor?</p>
+<p>The idea of living on Mars has moved from science fiction to something engineers and scientists genuinely work on every day. Several space agencies and private companies have laid out serious timelines for the first human landing, and the technology is advancing faster than most expected even a decade ago. But what does it actually take to get to Mars and build a life there?</p>
 
-      <h3>Neden Mars?</h3>
-      <p>G&#252;ne&#351; sistemimizde insanl&#305;&#287;&#305;n yerle&#351;ebilece&#287;i en mant&#305;kl&#305; yer Mars. Yakla&#351;&#305;k 24 saatlik bir g&#252;n d&#246;ng&#252;s&#252; var, kutup buz kapaklarnn alt&#305;nda su buzu bulunuyor ve y&#252;zey yer&#231;ekimi D&#252;nya&#39;n&#305;nkinin y&#252;zde 38&#39;i kadar. Hi&#231; atmosferi olmayan Ay&#39;la k&#305;yasland&#305;&#287;&#305;nda, Mars en az&#305;ndan m&#252;hendislere &#231;al&#305;&#351;abilecekleri bir zemin sunuyor.</p>
-      <p>Uzun vadeli bir arg&#252;man da var: Ba&#351;ka bir gezegende kendi kendine yetebilen bir insan varl&#305;&#287;&#305; olu&#351;turmak, medeniyetin tek bir felaket kar&#351;&#305;s&#305;nda yok olma riskini azalt&#305;r.</p>
+      <h3>Why Mars?</h3>
+      <p>Of all the destinations in our solar system, Mars makes the most practical sense for human colonization. It has a day that lasts about 24 hours, polar ice caps that contain water ice, and surface gravity about 38 percent of Earth's. Compared to the Moon, which has no atmosphere at all, Mars gives engineers something to work with.</p>
+      <p>There is also the long-term argument. Putting a self-sustaining human presence on another planet means our species would not be entirely at risk from a single catastrophic event. A Mars colony would be something like insurance for civilization.</p>
 
-      <h3>Oraya Ula&#351;mak</h3>
-      <p>Mars yolculu&#287;u, yay&#305;nsal hizalamaya ba&#287;l&#305; olarak alt&#305; ila dokuz ay s&#252;r&#252;yor. Bu s&#252;re boyunca astronotlar mikro yerçekiminde, Uluslararas&#305; Uzay &#304;stasyonu&#39;ndakinden &#231;ok daha y&#252;ksek radyasyon d&#252;zeylerine maruz kal&#305;yor. Bir acil durum olursa yard&#305;m aylarca uzakta.</p>
-      <p>SpaceX&#39;in Starship arac&#305;, gezegenleraras&#305; ta&#351;&#305;mac&#305;l&#305;k i&#231;in en iddial&#305; giri&#351;im. B&#252;y&#252;k ekipler ve y&#252;kler ta&#351;&#305;yacak, tamamen yeniden kullan&#305;labilir olacak &#351;ekilde tasarland&#305;. Bu vizyonun finansal ve teknik olarak ger&#231;ekle&#351;ip ger&#231;ekle&#351;emeyece&#287;i hala a&#231;&#305;k bir soru ama 2020&#39;den bu yana m&#252;hendislik ilerleme etkileyici.</p>
+      <h3>Getting There</h3>
+      <p>The journey to Mars takes between six and nine months depending on orbital alignment. Astronauts would spend those months in microgravity, exposed to radiation levels far higher than anything on the International Space Station, with no possibility of emergency evacuation if something goes wrong.</p>
+      <p>SpaceX's Starship is the most ambitious current attempt at an interplanetary transport vehicle. It is designed to carry large crews and cargo and be fully reusable. Whether that vision holds up financially and technically is still open, but the engineering progress since 2020 has been striking.</p>
 
-      <h3>Mars&#39;ta Ya&#351;amak</h3>
-      <p>Mars, insan ya&#351;am&#305; i&#231;in gerçekten zorlu bir yer. Ortalama y&#252;zey s&#305;cakl&#305;&#287;&#305; eksi 60 derece Celsius civar&#305;nda. &#304;nce atmosfer neredeyse tamamen karbondioksit ve radyasyon korumas&#305; sa&#287;lam&#305;yor. Toz f&#305;rt&#305;nalar&#305; t&#252;m gezegeni aylarca sarabiliyor.</p>
-      <p>&#304;lk kolonistler, yo&#287;un z&#305;rhl&#305; bas&#305;n&#231;l&#305; habitatlarda ya&#351;amak zorunda kalacak. Besin kapal&#305; seralar&#305;nda yeti&#351;tirilecek, su yeralt&#305; buzundan elde edilecek. Her kritik sistem yedeklere sahip olmal&#305;, &#231;&#252;nk&#252; en yak&#305;n yard&#305;m aylarca uzakta.</p>
+      <h3>Surviving on Mars</h3>
+      <p>Mars is genuinely hostile. The average surface temperature is around minus 60 degrees Celsius. The thin atmosphere is mostly carbon dioxide and provides almost no radiation shielding. Dust storms can circle the entire planet for months at a time.</p>
+      <p>Early colonists would live underground or in heavily shielded pressurized habitats. Food would be grown in sealed greenhouses. Water would be extracted from subsurface ice. Every critical system would need multiple backups, because the nearest help would be months away.</p>
 
-      <h3>Bilim A&#231;&#305;s&#305;ndan &#214;nemi</h3>
-      <p>Kal&#305;c&#305; bir koloni kurulmadan &#246;nce bile Mars&#39;ta insan varl&#305;&#287;&#305; gezegensel bilimi d&#246;n&#252;&#351;t&#252;recek. Jeologlar eski nehir vadilerini ger&#231;ek zamanl&#305; ke&#351;fedebilecek. Astrobiologlar topra&#287;&#305; derinlemesine inceleyerek eski ya da mevcut mikrop ya&#351;am&#305;n&#305;n izlerini arayabilecek.</p>
-      <p>Mars&#39;ta ya&#351;am&#305;n hi&#231; var olup olmad&#305;&#287;&#305; sorusu, modern bilimin en &#246;nemli sorular&#305;ndan biri. Cevap, evrenin ya&#351;amla dolu olup olmad&#305;&#287;&#305; hakk&#305;nda bize &#231;ok &#351;ey s&#246;yleyecek.</p>
+      <h3>What the Science Could Tell Us</h3>
+      <p>Even before a permanent colony is established, a human presence on Mars would transform planetary science. Geologists could explore ancient river valleys and volcanic regions in real time. Astrobiologists could drill into the soil looking for signs of past or present microbial life.</p>
+      <p>The question of whether life ever existed on Mars is one of the most important in modern science. Finding even fossil evidence of ancient microbes would tell us that life emerges wherever conditions allow, making the universe far more likely to be full of it.</p>
 
-      <h3>Yol Haritas&#305;</h3>
-      <p>Kimse Mars&#39;&#305;n k&#305;sa s&#252;rede rahat bir yer haline gelece&#287;ini beklemiyor. Zorluklar ger&#231;ek ve maliyetler devasa. Ama y&#246;n a&#231;&#305;k: D&#252;nyan&#305;n d&#246;rt bir yan&#305;ndaki uzay ajanslar&#305;, &#246;zel &#351;irketler ve &#252;niversiteler, bir g&#252;n insan&#305; Mars&#39;a ta&#351;&#305;yacak teknolojilere yat&#305;r&#305;m yap&#305;yor.</p>
-      <p>&#304;nsanlar do&#287;as&#305; gere&#287;i merakl&#305; ve kararl&#305;. Her zaman bir sonraki ufka do&#287;ru ilerlemi&#351;tik. Mars, &#351;imdiye kadar kar&#351;&#305;m&#305;za &#231;&#305;kan en ola&#287;an&#252;st&#252; ufuktur.</p>
+      <h3>The Road Ahead</h3>
+      <p>No one expects Mars to become comfortable anytime soon. The challenges are enormous and the costs are staggering. But the direction is clear. National space agencies, private companies, and universities around the world are building the technologies that will eventually make a human Mars landing possible.</p>
+      <p>Humans have always pushed toward the next horizon. Mars is simply the most extraordinary one we have ever faced.</p>
     </article>
-
-    <a href="posts.html" class="btn secondary" style="margin-top:2rem;">&#8592; T&#252;m Yaz&#305;lara D&#246;n</a>
+    <div class="article-foot">
+      <span class="sig">Written by Kerem T&uuml;z&uuml;n &middot; Science &amp; Tech Voices</span>
+      <a class="btn btn-ghost" href="posts.html">&#8592; Back to all articles</a>
+    </div>
   </main>
 
-  <footer class="footer">
-    <div class="container"><div>&#169; 2025 Science &amp; Tech Voices</div></div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="logo.png" alt="Science &amp; Tech Voices logo">
+            <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
+          </a>
+          <p>A student-run science and technology publication exploring the frontiers of research — from quantum computing to gene editing — through articles, videos, and hands-on courses.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="posts.html">Articles</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Project</h4>
+          <ul>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="index.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2026 Science &amp; Tech Voices</span>
+        <span>Written &amp; curated by Kerem T&uuml;z&uuml;n</span>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

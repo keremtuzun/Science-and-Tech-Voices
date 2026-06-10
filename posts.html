@@ -1,112 +1,282 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yayınlar - Science & Tech Voices</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="All science and technology articles, written by Kerem Tüzün.">
+  <title>Articles — Science &amp; Tech Voices</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container navbar">
+  <header class="site-nav">
+    <div class="container nav-inner">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="Science & Tech Voices logo" class="site-logo">
-        <span>Science & Tech Voices</span>
+        <img src="logo.png" alt="Science &amp; Tech Voices logo">
+        <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
       </a>
-      <nav class="navlinks">
-        <a href="index.html">Ana Sayfa</a>
-        <a href="posts.html" class="active">Yayınlar</a>
-        <a href="courses.html">Kurslar</a>
-        <a href="videos.html">Videolar</a>
-        <a href="team.html">Ekibimiz</a>
-        <button id="langButton" class="btn">English &#127760;</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="posts.html">Articles</a>
+        <a href="videos.html">Videos</a>
+        <a href="courses.html">Courses</a>
+        <a href="team.html">Team</a>
       </nav>
-      <button class="mobile-toggle btn">&#9776;</button>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
     </div>
   </header>
 
-  <main class="container page">
-    <h1>Yayınlar</h1>
-    <p style="color:var(--gray);margin-bottom:2rem;">Yazan: Kerem T&#252;z&#252;n</p>
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">The Archive</p>
+      <h1>All Articles</h1>
+      <p>Twelve deep dives into the science and technology shaping our future. Every article written by <strong>Kerem T&uuml;z&uuml;n</strong>.</p>
+    </div>
+  </section>
 
-    <div class="posts-list">
-      <article class="post-card">
-        <img src="Google-Large-Quantum-Computer.webp" alt="Kuantum Bilgisayarlar">
-        <div class="post-card-body">
-          <h3><a href="post-quantum.html">Kuantum Bilgisayarlar: Geleceğe Açılan Kapı</a></h3>
-          <p>Kuantum süperpozisyonu, dolanıklık ve klasik bilgisayarların sınırlarının ötesine geçmenin ne anlama geldiğine dair kapsamlı bir inceleme.</p>
-          <span class="post-meta">Mayıs 2026</span>
-        </div>
-      </article>
-
-      <article class="post-card">
-        <img src="News_Image_-_2024-01-22T102627.569.png" alt="Yapay Zeka Etiği">
-        <div class="post-card-body">
-          <h3><a href="post-ai.html">Yapay Zeka Etiği: Kodun Vicdanı Olur mu?</a></h3>
-          <p>Milyarlarca insanı etkileyen kararlar veren sistemlerin etik çerçevesi nasıl olmalı? Algoritmaların sorumluluğu üzerine.</p>
-          <span class="post-meta">Mayıs 2026</span>
-        </div>
-      </article>
-
-      <article class="post-card">
-        <img src="gilbert-in-lab.jpg" alt="Biyomühendislik">
-        <div class="post-card-body">
-          <h3><a href="post-bio.html">Biyomühendisliğin Yükselişi: Hücreden Çipe</a></h3>
-          <p>CRISPR'dan biyosensörlere, canlı sistemler ve teknolojinin birleştiği bu yeni çağda neler oluyor?</p>
-          <span class="post-meta">Mayıs 2026</span>
-        </div>
-      </article>
-
-      <article class="post-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/640px-OSIRIS_Mars_true_color.jpg" alt="Mars Kolonizasyonu">
-        <div class="post-card-body">
-          <h3><a href="post-mars.html">Mars Kolonizasyonu: İnsanlığın Büyük Adımı</a></h3>
-          <p>Mühendisler ve bilim insanları Mars'a yerleşmeyi ciddi ciddi planlıyor. Peki bu büyük adım için gerçekten hazır mıyız?</p>
-          <span class="post-meta">Mayıs 2026</span>
-        </div>
-      </article>
-
-      <article class="post-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Eeg_hirnstrommessung_mit_16_elektroden.jpg/640px-Eeg_hirnstrommessung_mit_16_elektroden.jpg" alt="Beyin-Bilgisayar Arayz&#252;">
-        <div class="post-card-body">
-          <h3><a href="post-bci.html">Beyin-Bilgisayar Arayüzleri: İnsan ve Makine Birlikte Düşündüğünde</a></h3>
-          <p>Neuralink ve benzeri teknolojiler, insan beynini doğrudan dijital sistemlere bağlamayı hedefliyor. Bu ne anlama geliyor?</p>
-          <span class="post-meta">Mayıs 2026</span>
-        </div>
-      </article>
-
-      <article class="post-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/DesertSunlight_Solar_Farm.jpg/640px-DesertSunlight_Solar_Farm.jpg" alt="İklim Teknolojisi">
-        <div class="post-card-body">
-          <h3><a href="post-climate.html">İklim Teknolojisi: Bilim Isınan Gezegene Karşı Nasıl Savaşıyor?</a></h3>
-          <p>Güneş panellerinin maliyeti çöktü, rüzgar enerjisi rekor kırıyor, karbon tutma teknolojisi olgunlaşıyor. Umut var mı?</p>
-          <span class="post-meta">Mayıs 2026</span>
-        </div>
-      </article>
-
-      <article class="post-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Webb%27s_First_Deep_Field.jpg/640px-Webb%27s_First_Deep_Field.jpg" alt="James Webb Teleskobu">
-        <div class="post-card-body">
-          <h3><a href="post-jwst.html">James Webb Uzay Teleskobu: Zamanın Şafağına Pencere</a></h3>
-          <p>İnsanlık tarihinin en güçlü teleskobu, evrenin ilk yıldızlarını ve galaksilerini görüntülüyor. İlk fotoğraflar bilim dünyasını sarstı.</p>
-          <span class="post-meta">Mayıs 2026</span>
-        </div>
-      </article>
-
-      <article class="post-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/ITER_site_2013.jpg/640px-ITER_site_2013.jpg" alt="F&#252;zyon Enerjisi">
-        <div class="post-card-body">
-          <h3><a href="post-fusion.html">Füzyon Enerjisi: Sınırsız Temiz Gücün Vaadi</a></h3>
-          <p>Aralık 2022'de tarihte ilk kez füzyon reaksiyonundan net enerji kazanıldı. Bu dönüm noktası ne anlama geliyor?</p>
-          <span class="post-meta">Mayıs 2026</span>
-        </div>
-      </article>
+  <main class="page-body">
+    <div class="container">
+      <div class="card-grid">
+        <article class="article-card reveal">
+          <a class="card-link" href="post-llm.html">
+            <img src="covers/llm.svg" alt="Large Language Models: How Machines Learned Our Language — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">AI &amp; Society</span>
+              <h3>Large Language Models: How Machines Learned Our Language</h3>
+              <p class="excerpt">The systems behind modern chatbots are changing how we search, write, and learn. Here is how they actually work — and where their limits are.</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>June 2026</span>
+                <span class="dot"></span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-crispr.html">
+            <img src="covers/crispr.svg" alt="CRISPR: Rewriting the Code of Life — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Biotech</span>
+              <h3>CRISPR: Rewriting the Code of Life</h3>
+              <p class="excerpt">A bacterial immune system became the most powerful gene-editing tool ever discovered. Medicine may never be the same.</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>June 2026</span>
+                <span class="dot"></span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-exoplanets.html">
+            <img src="covers/exoplanets.svg" alt="Exoplanets: The Search for Other Earths — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Space</span>
+              <h3>Exoplanets: The Search for Other Earths</h3>
+              <p class="excerpt">We now know of thousands of planets orbiting other stars. The next question is the biggest one science has ever asked: is anyone home?</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>June 2026</span>
+                <span class="dot"></span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-batteries.html">
+            <img src="covers/batteries.svg" alt="Solid-State Batteries: The Quiet Revolution in Energy Storage — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Energy</span>
+              <h3>Solid-State Batteries: The Quiet Revolution in Energy Storage</h3>
+              <p class="excerpt">The battery in your phone has barely changed in 30 years. The next leap — replacing liquid with solid — could change everything that runs on electricity.</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>June 2026</span>
+                <span class="dot"></span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-quantum.html">
+            <img src="covers/quantum.svg" alt="Quantum Computers: The Gateway to the Future — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Computing</span>
+              <h3>Quantum Computers: The Gateway to the Future</h3>
+              <p class="excerpt">Qubits, superposition, and how quantum computing could solve problems classical machines never will.</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>May 2026</span>
+                <span class="dot"></span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-ai.html">
+            <img src="covers/ai.svg" alt="AI Ethics: Can Code Have a Conscience? — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">AI &amp; Society</span>
+              <h3>AI Ethics: Can Code Have a Conscience?</h3>
+              <p class="excerpt">Algorithms now make decisions that affect billions of people. How do we make sure those decisions are fair, transparent, and accountable?</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>May 2026</span>
+                <span class="dot"></span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-bio.html">
+            <img src="covers/bio.svg" alt="The Rise of Bioengineering: From Cell to Chip — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Biotech</span>
+              <h3>The Rise of Bioengineering: From Cell to Chip</h3>
+              <p class="excerpt">From CRISPR to biosensor chips, a new era begins where living systems and engineering converge in remarkable ways.</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>May 2026</span>
+                <span class="dot"></span>
+                <span>3 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-mars.html">
+            <img src="covers/mars.svg" alt="Mars Colonization: Humanity's Next Giant Leap — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Space</span>
+              <h3>Mars Colonization: Humanity's Next Giant Leap</h3>
+              <p class="excerpt">Engineers and scientists are seriously planning to put humans on Mars. What does it actually take to get there and survive?</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>May 2026</span>
+                <span class="dot"></span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-bci.html">
+            <img src="covers/bci.svg" alt="Brain-Computer Interfaces: When Humans and Machines Think Together — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Neurotech</span>
+              <h3>Brain-Computer Interfaces: When Humans and Machines Think Together</h3>
+              <p class="excerpt">Neuralink and similar technologies aim to connect the human brain directly to digital systems. What does that mean for medicine and society?</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>May 2026</span>
+                <span class="dot"></span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-climate.html">
+            <img src="covers/climate.svg" alt="Climate Technology: How Science Is Fighting Back Against a Warming Planet — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Energy &amp; Climate</span>
+              <h3>Climate Technology: How Science Is Fighting Back Against a Warming Planet</h3>
+              <p class="excerpt">Solar costs have collapsed, wind energy is breaking records, and carbon capture is maturing. Is there real reason for hope?</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>May 2026</span>
+                <span class="dot"></span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-jwst.html">
+            <img src="covers/jwst.svg" alt="The James Webb Space Telescope: A Window to the Dawn of Time — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Space</span>
+              <h3>The James Webb Space Telescope: A Window to the Dawn of Time</h3>
+              <p class="excerpt">The most powerful telescope ever built is showing us the universe's earliest galaxies. The first images left scientists in tears.</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>May 2026</span>
+                <span class="dot"></span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-fusion.html">
+            <img src="covers/fusion.svg" alt="Fusion Energy: The Promise of Unlimited Clean Power — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Energy</span>
+              <h3>Fusion Energy: The Promise of Unlimited Clean Power</h3>
+              <p class="excerpt">In December 2022, scientists achieved net energy gain from fusion for the first time in history. What does this breakthrough mean?</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>May 2026</span>
+                <span class="dot"></span>
+                <span>6 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">&#169; 2025 Science &amp; Tech Voices</div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="logo.png" alt="Science &amp; Tech Voices logo">
+            <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
+          </a>
+          <p>A student-run science and technology publication exploring the frontiers of research — from quantum computing to gene editing — through articles, videos, and hands-on courses.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="posts.html">Articles</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Project</h4>
+          <ul>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="index.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2026 Science &amp; Tech Voices</span>
+        <span>Written &amp; curated by Kerem T&uuml;z&uuml;n</span>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
