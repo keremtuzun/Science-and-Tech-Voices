@@ -1,100 +1,242 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Science & Tech Voices</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student-run science and technology publication. Articles, videos, and courses by Kerem Tüzün.">
+  <title>Science &amp; Tech Voices — Exploring the Frontiers of Science</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container navbar">
+  <header class="site-nav">
+    <div class="container nav-inner">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="Science & Tech Voices logo" class="site-logo">
-        <span>Science & Tech Voices</span>
+        <img src="logo.png" alt="Science &amp; Tech Voices logo">
+        <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
       </a>
-      <nav class="navlinks">
-        <a href="index.html" class="active">Ana Sayfa</a>
-        <a href="posts.html">Yayınlar</a>
-        <a href="courses.html">Kurslar</a>
-        <a href="videos.html">Videolar</a>
-        <a href="team.html">Ekibimiz</a>
-        <button id="langButton" class="btn">English &#127760;</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="posts.html">Articles</a>
+        <a href="videos.html">Videos</a>
+        <a href="courses.html">Courses</a>
+        <a href="team.html">Team</a>
       </nav>
-      <button class="mobile-toggle btn">&#9776;</button>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <h1>Bilim ve Teknolojiyi Birlikte Konuşuyoruz</h1>
-      <p>Science &amp; Tech Voices, meraklı zihinleri bir araya getiren bir topluluk. Haftalık yazılar, videolar ve tartışmalarla bilimdeki en yeni gelişmeleri birlikte keşfediyoruz.</p>
+      <span class="hero-eyebrow">A Student Science Publication</span>
+      <h1>Exploring the frontiers of <span class="grad">science &amp; technology</span></h1>
+      <p>From quantum computers to gene editing, Science &amp; Tech Voices breaks down the discoveries shaping our future — in plain language, for curious minds everywhere.</p>
+      <div class="hero-actions">
+        <a class="btn" href="posts.html">Read the Articles</a>
+        <a class="btn btn-ghost" href="videos.html">Watch the Videos</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>12</strong><span>Articles</span></div>
+        <div class="stat"><strong>2</strong><span>Original Videos</span></div>
+        <div class="stat"><strong>2</strong><span>Courses</span></div>
+        <div class="stat"><strong>8</strong><span>Fields Covered</span></div>
+      </div>
     </div>
   </section>
 
-  <section class="container" style="margin-top:50px;">
-    <h2 class="section-title">Son Yazılar</h2>
-    <p class="section-sub">Kerem Tüzün tarafından derlenen bilim ve teknoloji yazıları.</p>
-    <div class="featured-grid">
-      <article class="featured-card">
-        <img src="Google-Large-Quantum-Computer.webp" alt="Kuantum Bilgisayarlar">
-        <div class="featured-card-body">
-          <h3><a href="post-quantum.html">Kuantum Bilgisayarlar: Geleceğe Açılan Kapı</a></h3>
-          <p>Qubit'ler, süperpozisyon ve bilişimin geleceği üzerine bir bakış.</p>
-        </div>
-      </article>
-      <article class="featured-card">
-        <img src="News_Image_-_2024-01-22T102627.569.png" alt="Yapay Zeka Etiği">
-        <div class="featured-card-body">
-          <h3><a href="post-ai.html">Yapay Zeka Etiği: Kodun Vicdanı Olur mu?</a></h3>
-          <p>Algoritmaların karar süreçlerinde etik değerlerin yeri ve önemi.</p>
-        </div>
-      </article>
-      <article class="featured-card">
-        <img src="gilbert-in-lab.jpg" alt="Biyomühendislik">
-        <div class="featured-card-body">
-          <h3><a href="post-bio.html">Biyomühendisliğin Yükselişi: Hücreden Çipe</a></h3>
-          <p>Canlı sistemlerin mühendislikle buluştuğu noktada neler oluyor?</p>
-        </div>
-      </article>
-      <article class="featured-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/640px-OSIRIS_Mars_true_color.jpg" alt="Mars">
-        <div class="featured-card-body">
-          <h3><a href="post-mars.html">Mars Kolonizasyonu: İnsanlığın Büyük Adımı</a></h3>
-          <p>Kızıl gezegene yerleşmek artık hayal değil. Peki gerçekten hazır mıyız?</p>
-        </div>
-      </article>
-      <article class="featured-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Webb%27s_First_Deep_Field.jpg/640px-Webb%27s_First_Deep_Field.jpg" alt="James Webb Teleskobu">
-        <div class="featured-card-body">
-          <h3><a href="post-jwst.html">James Webb Teleskobu: Zamanın Şafağına Pencere</a></h3>
-          <p>İnsanlık tarihinin en güçlü teleskobu evrenin ilk anlarını görüntülüyor.</p>
-        </div>
-      </article>
-      <article class="featured-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/ITER_site_2013.jpg/640px-ITER_site_2013.jpg" alt="Füzyon Enerjisi">
-        <div class="featured-card-body">
-          <h3><a href="post-fusion.html">Füzyon Enerjisi: Sınırsız Temiz Gücün Vaadi</a></h3>
-          <p>Güneşin gücünü Dünya'da üretmek mümkün mü? Bilim buna yaklaşıyor.</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="container" style="margin-bottom:60px;">
-    <h2 class="section-title">Öne Çıkan Videolar</h2>
-    <p class="section-sub">Bilim ve teknoloji dünyasından seçme videolar.</p>
-    <a href="videos.html" class="btn">Tüm Videoları Gör</a>
-  </section>
-
-  <footer class="footer">
+  <section class="section">
     <div class="container">
-      <div>&#169; 2025 Science &amp; Tech Voices</div>
-      <div class="links">
-        <a href="posts.html">Yayınlar</a>
-        <a href="videos.html">Videolar</a>
-        <a href="team.html">Ekibimiz</a>
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Latest Writing</p>
+          <h2>Featured Articles</h2>
+          <p>Every article researched and written by Kerem T&uuml;z&uuml;n.</p>
+        </div>
+        <a class="head-link" href="posts.html">View all 12 articles &#8594;</a>
+      </div>
+      <div class="card-grid">
+        <article class="article-card reveal">
+          <a class="card-link" href="post-llm.html">
+            <img src="covers/llm.svg" alt="Large Language Models: How Machines Learned Our Language — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">AI &amp; Society</span>
+              <h3>Large Language Models: How Machines Learned Our Language</h3>
+              <p class="excerpt">The systems behind modern chatbots are changing how we search, write, and learn. Here is how they actually work — and where their limits are.</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>June 2026</span>
+                <span class="dot"></span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-crispr.html">
+            <img src="covers/crispr.svg" alt="CRISPR: Rewriting the Code of Life — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Biotech</span>
+              <h3>CRISPR: Rewriting the Code of Life</h3>
+              <p class="excerpt">A bacterial immune system became the most powerful gene-editing tool ever discovered. Medicine may never be the same.</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>June 2026</span>
+                <span class="dot"></span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-exoplanets.html">
+            <img src="covers/exoplanets.svg" alt="Exoplanets: The Search for Other Earths — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Space</span>
+              <h3>Exoplanets: The Search for Other Earths</h3>
+              <p class="excerpt">We now know of thousands of planets orbiting other stars. The next question is the biggest one science has ever asked: is anyone home?</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>June 2026</span>
+                <span class="dot"></span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-batteries.html">
+            <img src="covers/batteries.svg" alt="Solid-State Batteries: The Quiet Revolution in Energy Storage — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Energy</span>
+              <h3>Solid-State Batteries: The Quiet Revolution in Energy Storage</h3>
+              <p class="excerpt">The battery in your phone has barely changed in 30 years. The next leap — replacing liquid with solid — could change everything that runs on electricity.</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>June 2026</span>
+                <span class="dot"></span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-quantum.html">
+            <img src="covers/quantum.svg" alt="Quantum Computers: The Gateway to the Future — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Computing</span>
+              <h3>Quantum Computers: The Gateway to the Future</h3>
+              <p class="excerpt">Qubits, superposition, and how quantum computing could solve problems classical machines never will.</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>May 2026</span>
+                <span class="dot"></span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="post-ai.html">
+            <img src="covers/ai.svg" alt="AI Ethics: Can Code Have a Conscience? — cover artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">AI &amp; Society</span>
+              <h3>AI Ethics: Can Code Have a Conscience?</h3>
+              <p class="excerpt">Algorithms now make decisions that affect billions of people. How do we make sure those decisions are fair, transparent, and accountable?</p>
+              <div class="card-meta">
+                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
+                <span class="dot"></span>
+                <span>May 2026</span>
+                <span class="dot"></span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Watch</p>
+          <h2>From Our Video Library</h2>
+          <p>Videos from the Science &amp; Tech Voices project.</p>
+        </div>
+        <a class="head-link" href="videos.html">All videos &#8594;</a>
+      </div>
+      <div class="video-grid">
+        <div class="video-card reveal">
+          <iframe src="https://www.youtube.com/embed/mZsaaturR6E" title="Fusion Power Explained: Future or Failure?"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"></iframe>
+          <div class="card-body">
+            <span class="tag">Science &amp; Tech Voices</span>
+            <h3>Fusion Power Explained: Future or Failure?</h3>
+            <p class="excerpt">How nuclear fusion works, why it has been so difficult to achieve, and what a future powered by fusion energy could look like — from plasma confinement to the race between government projects and private startups.</p>
+          </div>
+        </div>
+        <div class="video-card reveal">
+          <iframe src="https://www.youtube.com/embed/G-WO-z-QuWI" title="Can We Terraform Mars?"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"></iframe>
+          <div class="card-body">
+            <span class="tag">Science &amp; Tech Voices</span>
+            <h3>Can We Terraform Mars?</h3>
+            <p class="excerpt">What it would actually take to transform Mars into a planet capable of supporting human life: the timeline, the methods proposed by scientists, and the enormous scale of the engineering challenge.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="about-strip reveal">
+      <div>
+        <p class="eyebrow">About the Project</p>
+        <h2>Science is a conversation. Join it.</h2>
+        <p>Science &amp; Tech Voices was founded by students who believe the biggest ideas in science deserve clear, honest explanations. New articles are published regularly — written by Kerem T&uuml;z&uuml;n.</p>
+      </div>
+      <a class="btn" href="team.html">Meet the Team</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="logo.png" alt="Science &amp; Tech Voices logo">
+            <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
+          </a>
+          <p>A student-run science and technology publication exploring the frontiers of research — from quantum computing to gene editing — through articles, videos, and hands-on courses.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="posts.html">Articles</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Project</h4>
+          <ul>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="index.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2026 Science &amp; Tech Voices</span>
+        <span>Written &amp; curated by Kerem T&uuml;z&uuml;n</span>
       </div>
     </div>
   </footer>

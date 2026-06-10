@@ -1,71 +1,100 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kurslar - Science & Tech Voices</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hands-on mini courses from Science & Tech Voices: Arduino and Algebra.">
+  <title>Courses — Science &amp; Tech Voices</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container navbar">
+  <header class="site-nav">
+    <div class="container nav-inner">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="Science & Tech Voices logo" class="site-logo">
-        <span>Science & Tech Voices</span>
+        <img src="logo.png" alt="Science &amp; Tech Voices logo">
+        <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
       </a>
-
-      
-      <nav class="navlinks">
-        <a href="index.html">Ana Sayfa</a>
-       <!-- <a href="conferences.html">Konferanslar</a>-->
-        <a href="posts.html">Yayınlar</a>
-        <a href="courses.html">Kurslar</a>
-        <a href="team.html">Ekibimiz</a>
-                <button id="langButton" class="btn">English 🌐</button>
-
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="posts.html">Articles</a>
+        <a href="videos.html">Videos</a>
+        <a href="courses.html">Courses</a>
+        <a href="team.html">Team</a>
       </nav>
-      <button class="mobile-toggle btn">☰</button>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
     </div>
   </header>
 
-<main class="container page">
-  <h1>Kurslar</h1>
-
-
-    <!--<article class="card"><img class="thumb" src="assets/img/thumb1.png"><div class="content"><div class="badge"><span class="dot"></span><span>Veri</span></div><h3><a href="post.html">Python ile Veri</a></h3></div></article>
-    <article class="card"><img class="thumb" src="assets/img/thumb2.png"><div class="content"><div class="badge"><span class="dot"></span><span>Robotik</span></div><h3><a href="post.html">ROS 2</a></h3></div></article>
-    <article class="card"><img class="thumb" src="assets/img/thumb4.png"><div class="content"><div class="badge"><span class="dot"></span><span>Enerji</span></div><h3><a href="post.html">Güneş 101</a></h3></div></article>-->
-
-    <div class="video-card">
-      <a href="https://youtu.be/5VQ5uOHih7k" target="_blank">
-        <img 
-        src="https://img.youtube.com/vi/5VQ5uOHih7k/maxresdefault.jpg" 
-          alt="Arduino Mesafe Sensörü Projesi - Video" 
-          class="video-thumb">
-        <h3>Arduino Mesafe Sensörü Projesi</h3>
-      </a>
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Learn by Doing</p>
+      <h1>Courses</h1>
+      <p>Short, practical lessons that take you from theory to a working project.</p>
     </div>
-    <div class="video-card">
-      <a href="https://youtu.be/5VQ5uOHih7k" target="_blank">
-        <img 
-        src="mqdefault.jpg" 
-          alt="1. dereceden denklemler - Video" 
-          class="video-thumb">
-        <h3>1. dereceden denklemler</h3>
-      </a>
+  </section>
+
+  <main class="page-body">
+    <div class="container">
+      <div class="course-grid">
+        <article class="article-card reveal">
+          <a class="card-link" href="https://youtu.be/5VQ5uOHih7k" target="_blank" rel="noopener">
+            <img src="covers/arduino.svg" alt="Arduino Distance Measurement course artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Electronics</span>
+              <h3>Arduino Distance Measurement</h3>
+              <p class="excerpt">Build a working distance sensor with an Arduino and an ultrasonic module. A hands-on introduction to microcontrollers, wiring, and reading sensor data.</p>
+              <div class="card-meta"><span class="byline">Video lesson</span><span class="dot"></span><span>Beginner friendly</span></div>
+            </div>
+          </a>
+        </article>
+        <article class="article-card reveal">
+          <a class="card-link" href="https://youtu.be/5VQ5uOHih7k" target="_blank" rel="noopener">
+            <img src="covers/algebra.svg" alt="Algebra course artwork" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Mathematics</span>
+              <h3>Algebra Fundamentals</h3>
+              <p class="excerpt">The core ideas of algebra explained from the ground up — variables, equations, and functions — the language every branch of science is written in.</p>
+              <div class="card-meta"><span class="byline">Video lesson</span><span class="dot"></span><span>Beginner friendly</span></div>
+            </div>
+          </a>
+        </article>
+      </div>
     </div>
+  </main>
 
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div>© 2025 Science & Tech Voices • Inspired by modern blog layouts.</div>
-    <div class="links">
-      <a href="#">Topluluk Kuralları</a>
-      <a href="team.html">Takımımızın bir parçası olun!</a>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="logo.png" alt="Science &amp; Tech Voices logo">
+            <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
+          </a>
+          <p>A student-run science and technology publication exploring the frontiers of research — from quantum computing to gene editing — through articles, videos, and hands-on courses.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="posts.html">Articles</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Project</h4>
+          <ul>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="index.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2026 Science &amp; Tech Voices</span>
+        <span>Written &amp; curated by Kerem T&uuml;z&uuml;n</span>
+      </div>
     </div>
-  </div>
-</footer>
-
-</body></html>
+  </footer>
+</body>
+</html>

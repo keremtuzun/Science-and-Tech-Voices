@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Mars Colonization: Humanity's Next Giant Leap">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1124"/>
+      <stop offset="1" stop-color="#241010"/>
+    </linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff8a5c"/>
+      <stop offset="1" stop-color="#ff4d6d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff8a5c" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ff8a5c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.035" stroke-width="1">
+    <line x1="80" y1="0" x2="80" y2="450"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="240" y1="0" x2="240" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="560" y1="0" x2="560" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+    <line x1="720" y1="0" x2="720" y2="450"/>
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+  </g>
+  <g>
+    <circle cx="62" cy="58" r="1.4" fill="#ffffff" opacity="0.5"/>
+    <circle cx="148" cy="330" r="1.0" fill="#ffffff" opacity="0.5"/>
+    <circle cx="216" cy="96" r="1.2" fill="#ffffff" opacity="0.5"/>
+    <circle cx="300" cy="388" r="1.0" fill="#ffffff" opacity="0.5"/>
+    <circle cx="372" cy="52" r="1.4" fill="#ffffff" opacity="0.5"/>
+    <circle cx="468" cy="396" r="1.1" fill="#ffffff" opacity="0.5"/>
+    <circle cx="540" cy="70" r="1.0" fill="#ffffff" opacity="0.5"/>
+    <circle cx="624" cy="350" r="1.3" fill="#ffffff" opacity="0.5"/>
+    <circle cx="700" cy="110" r="1.2" fill="#ffffff" opacity="0.5"/>
+    <circle cx="752" cy="296" r="1.0" fill="#ffffff" opacity="0.5"/>
+    <circle cx="96" cy="210" r="1.0" fill="#ffffff" opacity="0.5"/>
+    <circle cx="716" cy="196" r="1.4" fill="#ffffff" opacity="0.5"/>
+  </g>
+  <circle cx="400" cy="218" r="215" fill="url(#glow)"/>
+  <g stroke="url(#ac)" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="400" cy="228" r="118"/>
+    <path d="M292,200 a142,46 0 0 1 216,0" stroke-width="2" opacity="0.7"/>
+    <path d="M286,262 a150,48 0 0 0 228,0" stroke-width="2" opacity="0.7"/>
+    <circle cx="360" cy="190" r="14" stroke-width="2.2" opacity="0.8"/>
+    <circle cx="448" cy="262" r="20" stroke-width="2.2" opacity="0.8"/>
+    <circle cx="412" cy="155" r="8" stroke-width="2" opacity="0.8"/>
+    <ellipse cx="400" cy="228" rx="190" ry="150" stroke-width="1.6" stroke-dasharray="3 9" opacity="0.7"/>
+    <circle cx="552" cy="130" r="8" fill="url(#ac)" stroke="none"/>
+  </g>
+  <text x="36" y="414" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="4" fill="#9aa7c0">MARS</text>
+  <text x="764" y="414" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2" fill="#5d6b85">SCIENCE &amp; TECH VOICES</text>
+</svg>
