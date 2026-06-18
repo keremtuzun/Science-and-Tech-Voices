@@ -1,0 +1,24 @@
+{
+  "name": "scitechvoices-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Branded promotional reels and posts for Science & Tech Voices, built with Remotion.",
+  "scripts": {
+    "dev": "remotion studio",
+    "studio": "remotion studio",
+    "render": "remotion render",
+    "render:all": "node render-all.mjs",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/google-fonts": "4.0.420",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.420"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.420",
+    "@types/react": "19.2.0",
+    "typescript": "5.9.3"
+  }
+}
