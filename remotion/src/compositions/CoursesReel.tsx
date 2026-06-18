@@ -31,7 +31,7 @@ export type CoursesReelProps = z.infer<typeof coursesReelSchema>;
 
 export const coursesReelDefaults: CoursesReelProps = {
   heading: "Learn by doing",
-  subheading: "Short, hands-on courses — from theory to a working project.",
+  subheading: "Short, hands-on courses that take you from theory to a working project.",
   courses: [...defaultCourses],
 };
 

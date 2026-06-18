@@ -3,7 +3,7 @@
 import { execSync } from "node:child_process";
 
 const reels = ["BrandPromo", "ArticleReel", "CoursesReel"];
-const posts = ["ArticlePost", "CoursePost"];
+const posts = ["AboutPost", "ArticlePost", "CoursePost", "RecruitPost"];
 
 // Optional overrides for sandboxed / restricted-network machines:
 //   REMOTION_BROWSER_EXECUTABLE=/path/to/headless_shell  (reuse a local Chromium)

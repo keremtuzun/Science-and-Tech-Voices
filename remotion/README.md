@@ -18,22 +18,24 @@ In the Studio you can tweak any text live in the right-hand props panel
 
 ## Compositions
 
-| ID            | Format        | Use                                              |
-| ------------- | ------------- | ------------------------------------------------ |
-| `BrandPromo`  | Reel 1080×1920 | Org intro + motto "Science is a conversation."   |
-| `ArticleReel` | Reel 1080×1920 | News carousel of the latest articles             |
-| `CoursesReel` | Reel 1080×1920 | Promotes the hands-on courses                     |
-| `ArticlePost` | Post 1080×1080 | Single-article announcement (square)             |
-| `CoursePost`  | Post 1080×1080 | Single-course announcement (square)              |
+| ID            | Format         | Use                                            |
+| ------------- | -------------- | ---------------------------------------------- |
+| `BrandPromo`  | Reel 1080×1920 | Org intro + motto "Science is a conversation." |
+| `ArticleReel` | Reel 1080×1920 | News carousel of the latest articles           |
+| `CoursesReel` | Reel 1080×1920 | Promotes the hands-on courses                  |
+| `AboutPost`   | Post 1080×1080 | What the project is (about the site)           |
+| `ArticlePost` | Post 1080×1080 | Single-article announcement                    |
+| `CoursePost`  | Post 1080×1080 | Single-course announcement                     |
+| `RecruitPost` | Post 1080×1080 | Recruiting / join-the-team call                |
 
 ## Rendering
 
 ```bash
-# one asset
+# one reel
 npx remotion render BrandPromo out/BrandPromo.mp4
 
 # a square post as an image
-npx remotion still ArticlePost out/ArticlePost.png --frame=70
+npx remotion still RecruitPost out/RecruitPost.png --frame=70
 
 # everything at once → ./out
 npm run render:all

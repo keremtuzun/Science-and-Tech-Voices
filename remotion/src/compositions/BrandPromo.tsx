@@ -79,7 +79,7 @@ export const BrandPromo: React.FC<BrandPromoProps> = ({
 
   return (
     <Background>
-      {/* Scene 1 — wordmark + tagline */}
+      {/* Scene 1: wordmark + tagline */}
       <Scene from={0} durationInFrames={95}>
         <div style={{ textAlign: "center" }}>
           <div style={{ display: "flex", justifyContent: "center" }}>
@@ -116,7 +116,7 @@ export const BrandPromo: React.FC<BrandPromoProps> = ({
         </div>
       </Scene>
 
-      {/* Scene 2 — the motto */}
+      {/* Scene 2: the motto */}
       <Scene from={95} durationInFrames={95}>
         <div style={{ textAlign: "center" }}>
           <Rise delay={6}>
@@ -156,7 +156,7 @@ export const BrandPromo: React.FC<BrandPromoProps> = ({
         </div>
       </Scene>
 
-      {/* Scene 3 — stats */}
+      {/* Scene 3: stats */}
       <Scene from={190} durationInFrames={90}>
         <div style={{ textAlign: "center", width: "100%" }}>
           <Rise delay={6}>
@@ -217,7 +217,7 @@ export const BrandPromo: React.FC<BrandPromoProps> = ({
         </div>
       </Scene>
 
-      {/* Scene 4 — CTA */}
+      {/* Scene 4: CTA */}
       <Scene from={280} durationInFrames={100}>
         <div style={{ textAlign: "center" }}>
           <Rise delay={6} style={{ marginBottom: 56 }}>

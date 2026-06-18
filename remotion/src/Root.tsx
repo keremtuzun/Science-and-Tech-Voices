@@ -23,6 +23,11 @@ import {
   highlightPostSchema,
   highlightPostDefaults,
 } from "./compositions/HighlightPost";
+import {
+  RecruitPost,
+  recruitPostSchema,
+  recruitPostDefaults,
+} from "./compositions/RecruitPost";
 import { articles, courses } from "./data/content";
 
 const FPS = 30;
@@ -65,6 +70,22 @@ export const RemotionRoot: React.FC = () => {
 
       {/* ---- Posts (1:1) ---- */}
       <Composition
+        id="AboutPost"
+        component={HighlightPost}
+        durationInFrames={150}
+        fps={FPS}
+        {...POST}
+        schema={highlightPostSchema}
+        defaultProps={{
+          eyebrow: "About the project",
+          tag: "Science & Tech Voices",
+          title: "Big ideas in science, explained clearly",
+          body: "A student-run publication breaking down the discoveries shaping our future, from quantum computing to gene editing, in plain language for curious minds.",
+          footnote: "Articles, videos, and courses at scitechvoices.com",
+        }}
+      />
+
+      <Composition
         id="ArticlePost"
         component={HighlightPost}
         durationInFrames={150}
@@ -88,6 +109,16 @@ export const RemotionRoot: React.FC = () => {
           body: courses[0].excerpt,
           footnote: "Free video lesson at scitechvoices.com",
         }}
+      />
+
+      <Composition
+        id="RecruitPost"
+        component={RecruitPost}
+        durationInFrames={180}
+        fps={FPS}
+        {...POST}
+        schema={recruitPostSchema}
+        defaultProps={recruitPostDefaults}
       />
     </>
   );

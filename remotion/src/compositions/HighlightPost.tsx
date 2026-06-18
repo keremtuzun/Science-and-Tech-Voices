@@ -8,7 +8,7 @@ import { Eyebrow, Rise, Tag } from "../components/Primitives";
 
 /**
  * A square (1080x1080) social post template. Generic enough to announce an
- * article, a course, or a project update — drive it via props.
+ * article, a course, or a project update. Drive it via props.
  */
 export const highlightPostSchema = z.object({
   eyebrow: z.string(),
@@ -24,7 +24,7 @@ export const highlightPostDefaults: HighlightPostProps = {
   eyebrow: "New article",
   tag: "AI & Society",
   title: "Large Language Models: How Machines Learned Our Language",
-  body: "The systems behind modern chatbots are changing how we search, write, and learn — here's how they actually work.",
+  body: "The systems behind modern chatbots are changing how we search, write, and learn. Here is how they actually work.",
   footnote: "Read it now at scitechvoices.com",
 };
 

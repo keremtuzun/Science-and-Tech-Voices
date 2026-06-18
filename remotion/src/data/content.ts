@@ -24,7 +24,7 @@ export const articles: Article[] = [
     category: "AI & Society",
     title: "Large Language Models: How Machines Learned Our Language",
     excerpt:
-      "The systems behind modern chatbots are changing how we search, write, and learn — here's how they actually work.",
+      "The systems behind modern chatbots are changing how we search, write, and learn. Here is how they actually work.",
     date: "June 9, 2026",
     readTime: "5 min read",
   },
@@ -68,14 +68,14 @@ export const courses: Course[] = [
     category: "Electronics",
     title: "Arduino Distance Measurement",
     excerpt:
-      "Build a working distance sensor with an Arduino and an ultrasonic module — wiring, code, and live data.",
+      "Build a working distance sensor with an Arduino and an ultrasonic module: wiring, code, and live data.",
     level: "Beginner friendly",
   },
   {
     category: "Mathematics",
     title: "Algebra Fundamentals",
     excerpt:
-      "Variables, equations, and functions — the language every branch of science is written in.",
+      "Variables, equations, and functions: the language every branch of science is written in.",
     level: "Beginner friendly",
   },
 ];
