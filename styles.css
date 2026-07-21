@@ -407,7 +407,8 @@ img { max-width: 100%; display: block; }
   transition: border-color 0.18s ease, box-shadow 0.18s ease;
 }
 .video-card:hover { border-color: var(--line-strong); box-shadow: var(--shadow); }
-.video-card iframe {
+.video-card iframe,
+.video-card video {
   width: 100%;
   aspect-ratio: 16 / 9;
   border: none;
