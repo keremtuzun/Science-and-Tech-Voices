@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# working copies and archived originals, not for indexing
+Disallow: /_source_backup/
+Disallow: /_originals/
+Disallow: /_pre_english_default_backup/
+Disallow: /thank-you.html
+Disallow: /thank-you-tr.html
+
+Sitemap: https://scitechvoices.com/sitemap.xml

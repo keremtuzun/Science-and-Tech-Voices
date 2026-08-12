@@ -2,109 +2,212 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Algorithms now make decisions that affect billions of people. How do we make sure those decisions are fair, transparent, and accountable?">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI Ethics: Can Code Have a Conscience? | Science &amp; Tech Voices</title>
-  <link rel="icon" type="image/png" href="logo.png">
+  <meta name="description" content="Algorithms already decide who gets hired and who gets flagged. On bias in training data, who answers when AI gets it wrong, and whether code can hold a conscience.">
+  <link rel="canonical" href="https://scitechvoices.com/post-ai.html">
+  <link rel="alternate" hreflang="en" href="https://scitechvoices.com/post-ai.html">
+  <link rel="alternate" hreflang="tr" href="https://scitechvoices.com/post-ai-tr.html">
+  <link rel="alternate" hreflang="x-default" href="https://scitechvoices.com/post-ai.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Science &amp; Tech Voices">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title" content="AI Ethics: Can Code Have a Conscience? | Science &amp; Tech Voices">
+  <meta property="og:description" content="Algorithms already decide who gets hired and who gets flagged. On bias in training data, who answers when AI gets it wrong, and whether code can hold a conscience.">
+  <meta property="og:url" content="https://scitechvoices.com/post-ai.html">
+  <meta property="og:image" content="https://scitechvoices.com/cover-ai.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Science &amp; Tech Voices, weekly articles, courses and roundtables">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Ethics: Can Code Have a Conscience? | Science &amp; Tech Voices">
+  <meta name="twitter:description" content="Algorithms already decide who gets hired and who gets flagged. On bias in training data, who answers when AI gets it wrong, and whether code can hold a conscience.">
+  <meta name="twitter:image" content="https://scitechvoices.com/cover-ai.webp">
+
+  <meta name="theme-color" content="#307dc5">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script>
+    // Vercel Web Analytics, cookieless. Skipped entirely if the visitor declined.
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    (function () {
+      var declined = false;
+      try { declined = localStorage.getItem('stv-consent') === 'denied'; } catch (e) {}
+      if (declined) return;
+      var s = document.createElement('script');
+      s.defer = true;
+      s.src = '/_vercel/insights/script.js';
+      document.head.appendChild(s);
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AI Ethics: Can Code Have a Conscience?",
+    "description": "Algorithms already decide who gets hired and who gets flagged. On bias in training data, who answers when AI gets it wrong, and whether code can hold a conscience.",
+    "image": "https://scitechvoices.com/cover-ai.webp",
+    "datePublished": "2025-10-20",
+    "dateModified": "2026-08-12",
+    "inLanguage": "en",
+    "mainEntityOfPage": "https://scitechvoices.com/post-ai.html",
+    "author": {
+      "@type": "Organization",
+      "name": "Science & Tech Voices"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Science & Tech Voices",
+      "url": "https://scitechvoices.com/",
+      "logo": "https://scitechvoices.com/icon-512.png",
+      "email": "scitechvoices@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Istanbul",
+        "addressCountry": "TR"
+      }
+    }
+  }
+  </script>
 </head>
 <body>
-  <header class="site-nav">
-    <div class="container nav-inner">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container navbar">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="Science &amp; Tech Voices logo">
-        <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
+        <img src="logo-mark.webp" width="256" height="256" class="site-logo"
+             alt="" aria-hidden="true">
+        <span>Science &amp; Tech Voices</span>
       </a>
-      <nav class="nav-links">
+
+      <nav class="navlinks" id="primary-nav" aria-label="Menu">
         <a href="index.html">Home</a>
-        <a href="posts.html">Articles</a>
-        <a href="videos.html">Videos</a>
+        <a href="conferences.html">Conferences</a>
+        <a href="posts.html">Posts</a>
         <a href="courses.html">Courses</a>
         <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+        <button id="langButton" class="btn" type="button">Türkçe 🌐</button>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+
+      <button class="mobile-toggle" id="navToggle" type="button"
+              aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+        <span aria-hidden="true">&#9776;</span>
+      </button>
     </div>
   </header>
 
-  <main class="article-page container">
-    <div class="article-head">
-      <a class="crumb" href="posts.html">&#8592; All articles</a>
-      <div><span class="tag">AI &amp; Society</span></div>
-      <h1>AI Ethics: Can Code Have a Conscience?</h1>
-      <div class="author-row">
-        <div class="avatar">KT</div>
-        <div class="who">
-          <strong>Written by Kerem T&uuml;z&uuml;n</strong>
-          <span>March 1, 2026 &middot; 4 min read</span>
-        </div>
-      </div>
-    </div>
-    <div class="article-cover">
-      <img src="covers/ai.svg" alt="AI Ethics: Can Code Have a Conscience?, cover artwork">
-    </div>
+<main id="main" class="container page">
+    <h1>AI Ethics: Can Code Have a Conscience?</h1>
+    <p class="meta">By Science & Tech Voices Team • October 20, 2025</p>
+    <img src="cover-ai.webp" width="1200" height="630" alt="A human hand and a robotic hand reaching towards each other" class="post-cover" loading="eager" fetchpriority="high">
+
     <article class="prose">
-<p>Artificial intelligence is no longer confined to science fiction. It is woven into everyday life. From our phones and search engines to hospitals and court systems, we constantly encounter AI-driven decisions. But how fair are those decisions? And more importantly: can a machine have a conscience?</p>
 
-      <h3>Decisions Written in Code</h3>
-      <p>At its core, an AI system is a collection of algorithms. Its decision-making process depends on code written by humans and the data it is trained on. But data is far from perfect. Since it is created by us, our biases, misperceptions, and mistakes inevitably find their way in.</p>
-      <p>The result? A hiring algorithm that sidelines female candidates, a facial recognition system that is less accurate for darker skin tones, or a news recommendation engine that amplifies only certain viewpoints. These are not hypothetical examples. They have already happened.</p>
+      <p>Artificial intelligence (AI) is no longer confined to science fiction; it is woven into everyday life. From our phones and search engines to hospitals and even court systems, we constantly encounter AI-driven decisions. But how “right” are those decisions? And more importantly: can a machine have a conscience?</p>
 
-      <h3>Can a Machine Have a Conscience?</h3>
-      <p>The word conscience implies moral awareness and empathy, qualities that are deeply human. AI systems today do not feel emotions. They act purely based on probabilities and data patterns.</p>
-      <p>Still, researchers are working on ethical algorithms and value alignment. If a self-driving car faces an unavoidable accident, whom should it prioritize? This has become a real-world ethical dilemma that engineers and philosophers are working through together.</p>
+      <h3>1. Decisions Written in Code</h3>
+      <p>At its core, an AI system is just a collection of algorithms. Its decision-making process depends on the code written by humans and the data it’s trained on. But data is far from perfect. Since it’s created by us, our biases, misperceptions, and mistakes inevitably leak into it.</p>
 
-      <h3>Power, Responsibility, and Transparency</h3>
+      <p>The result? A hiring algorithm that sidelines female candidates, a facial recognition system that’s less accurate for darker skin tones, or a news recommendation engine that amplifies only certain viewpoints.</p>
+
+      <p>These examples raise unavoidable ethical questions: if an AI makes a harmful decision, who is responsible? The programmer? The company? Or the algorithm itself?</p>
+
+      <h3>2. Can a Machine Have a Conscience?</h3>
+      <p>The word “conscience” implies moral awareness and empathy, qualities that are deeply human. AI systems today don’t feel emotions; they act purely based on probabilities and data patterns.</p>
+
+      <p>Still, researchers are working on so-called “ethical algorithms.” For instance, if a self-driving car faces an unavoidable accident, whom should it prioritize? This has become a real-world version of the <em>trolley problem</em>.</p>
+
+      <p>Some projects focus on aligning AI decisions with human values, but which values are truly universal remains up for debate.</p>
+
+      <h3>3. Power, Responsibility, and Transparency</h3>
       <p>AI systems now make decisions that affect billions of people. With such powerful tools, ethical oversight is as critical as technical safety.</p>
+
       <ul>
         <li><strong>Transparency:</strong> We need to understand how algorithms make decisions in order to question them.</li>
-        <li><strong>Accountability:</strong> Who is responsible when an AI makes a harmful mistake?</li>
-        <li><strong>Fairness:</strong> How can we reduce the biases embedded in training data?</li>
+        <li><strong>Accountability:</strong> Who pays the price when an AI makes a mistake?</li>
+        <li><strong>Fairness:</strong> How can we reduce the biases embedded in data?</li>
       </ul>
 
-      <h3>A Human-Centered Future</h3>
-      <p>Perhaps the real issue is not giving AI a conscience, but ensuring that those who design it use theirs. We cannot write empathy into code directly, but the ethical principles of the people building these systems will ultimately shape what they become.</p>
+      <p>Without clear answers to these questions, trusting the pace of technology becomes risky.</p>
 
-      <h3>Final Thoughts</h3>
-      <p>Code may not have a conscience, but the coder does. The AI of the future should not just be smarter. It should be fairer. True progress is measured not only by intelligence but by responsibility.</p>
+      <h3>4. A Human-Centered Future</h3>
+      <p>Perhaps the real issue isn’t giving AI a conscience, but ensuring that those who design it use theirs. We can’t write “empathy” into code, but the ethical principles of the people behind the code will ultimately shape these technologies.</p>
+
+      <p>AI reflects humanity itself: the more ethically we act, the more ethical our creations become.</p>
+
+      <h3>5. Final Thoughts</h3>
+      <p>Code may not have a conscience, but the coder does. That’s why the AI of the future shouldn’t just be smarter; it should be fairer. True progress isn’t measured only by intelligence, but by responsibility.</p>
+
     </article>
-    <div class="article-foot">
-      <span class="sig">Written by Kerem T&uuml;z&uuml;n &middot; Science &amp; Tech Voices</span>
-      <a class="btn btn-ghost" href="posts.html">&#8592; Back to all articles</a>
-    </div>
+
+    <a href="posts.html" class="btn secondary" style="margin-top: 2rem;">← Back to All Posts</a>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a class="brand" href="index.html">
-            <img src="logo.png" alt="Science &amp; Tech Voices logo">
-            <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
-          </a>
-          <p>A student-run science and technology publication exploring the frontiers of research, from quantum computing to gene editing, through articles, videos, and hands-on courses.</p>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="posts.html">Articles</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="courses.html">Courses</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Project</h4>
-          <ul>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="index.html">About</a></li>
-          </ul>
-        </div>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="logo-mark.webp" width="256" height="256" alt="" aria-hidden="true">
+        <p class="footer-name">Science &amp; Tech Voices</p>
+        <p>A student led community exploring science and technology together.</p>
       </div>
-      <div class="footer-bottom">
-        <span>&#169; 2026 Science &amp; Tech Voices</span>
-        <span>Written &amp; curated by Kerem T&uuml;z&uuml;n</span>
+
+      <nav class="footer-nav" aria-label="Explore">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="conferences.html">Conferences</a></li>
+          <li><a href="posts.html">Posts</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h2>Contact</h2>
+        <address>
+          <a href="mailto:scitechvoices@gmail.com">scitechvoices@gmail.com</a><br>
+          Istanbul, Türkiye
+        </address>
       </div>
     </div>
+
+    <div class="container footer-legal">
+      <p>&copy; 2026 Science &amp; Tech Voices. All rights reserved.</p>
+      <p class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </p>
+    </div>
   </footer>
+
+  <div class="sticky-cta">
+    <a class="btn" href="contact.html"
+       aria-label="Join the Science &amp; Tech Voices team">Join the team</a>
+  </div>
+
+  <div class="cookie-banner" id="cookieBanner" role="region"
+       aria-labelledby="cookieTitle" hidden>
+    <div class="container cookie-inner">
+      <div class="cookie-text">
+        <p class="cookie-title" id="cookieTitle">A quick note on analytics</p>
+        <p>We count page views with cookieless analytics so we know which articles are worth writing more of. No advertising cookies, no profiles, nothing sold. The <a href="privacy.html">privacy policy</a> has the detail.</p>
+      </div>
+      <div class="cookie-actions">
+        <button class="btn" type="button" data-consent="granted">That's fine</button>
+        <button class="btn ghost" type="button" data-consent="denied">Do not count my visits</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

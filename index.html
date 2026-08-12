@@ -2,254 +2,203 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A student-run science and technology publication. Articles, videos, and courses by Kerem Tüzün.">
-  <title>Science &amp; Tech Voices | Exploring the Frontiers of Science</title>
-  <link rel="icon" type="image/png" href="logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Science &amp; Tech Voices | Weekly science and technology explainers</title>
+  <meta name="description" content="A student led community exploring science and technology together. Weekly articles, free video courses and roundtable sessions, in English and Turkish.">
+  <link rel="canonical" href="https://scitechvoices.com/index.html">
+  <link rel="alternate" hreflang="en" href="https://scitechvoices.com/index.html">
+  <link rel="alternate" hreflang="tr" href="https://scitechvoices.com/index-tr.html">
+  <link rel="alternate" hreflang="x-default" href="https://scitechvoices.com/index.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Science &amp; Tech Voices">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title" content="Science &amp; Tech Voices | Weekly science and technology explainers">
+  <meta property="og:description" content="A student led community exploring science and technology together. Weekly articles, free video courses and roundtable sessions, in English and Turkish.">
+  <meta property="og:url" content="https://scitechvoices.com/index.html">
+  <meta property="og:image" content="https://scitechvoices.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Science &amp; Tech Voices, weekly articles, courses and roundtables">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Science &amp; Tech Voices | Weekly science and technology explainers">
+  <meta name="twitter:description" content="A student led community exploring science and technology together. Weekly articles, free video courses and roundtable sessions, in English and Turkish.">
+  <meta name="twitter:image" content="https://scitechvoices.com/og-image.jpg">
+
+  <meta name="theme-color" content="#307dc5">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script>
+    // Vercel Web Analytics, cookieless. Skipped entirely if the visitor declined.
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    (function () {
+      var declined = false;
+      try { declined = localStorage.getItem('stv-consent') === 'denied'; } catch (e) {}
+      if (declined) return;
+      var s = document.createElement('script');
+      s.defer = true;
+      s.src = '/_vercel/insights/script.js';
+      document.head.appendChild(s);
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Science & Tech Voices",
+        "url": "https://scitechvoices.com/",
+        "logo": "https://scitechvoices.com/icon-512.png",
+        "email": "scitechvoices@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Istanbul",
+          "addressCountry": "TR"
+        },
+        "@id": "https://scitechvoices.com/#org",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "scitechvoices@gmail.com",
+          "contactType": "editorial",
+          "availableLanguage": [
+            "en",
+            "tr"
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://scitechvoices.com/#site",
+        "url": "https://scitechvoices.com/",
+        "name": "Science & Tech Voices",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://scitechvoices.com/#org"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header class="site-nav">
-    <div class="container nav-inner">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container navbar">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="Science &amp; Tech Voices logo">
-        <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
+        <img src="logo-mark.webp" width="256" height="256" class="site-logo"
+             alt="" aria-hidden="true">
+        <span>Science &amp; Tech Voices</span>
       </a>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="posts.html">Articles</a>
-        <a href="videos.html">Videos</a>
+
+      <nav class="navlinks" id="primary-nav" aria-label="Menu">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="conferences.html">Conferences</a>
+        <a href="posts.html">Posts</a>
         <a href="courses.html">Courses</a>
         <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+        <button id="langButton" class="btn" type="button">Türkçe 🌐</button>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+
+      <button class="mobile-toggle" id="navToggle" type="button"
+              aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+        <span aria-hidden="true">&#9776;</span>
+      </button>
     </div>
   </header>
 
-  <section class="hero">
+  <main id="main">
+<section class="hero">
     <div class="container">
-      <span class="hero-eyebrow">A Student Science Publication</span>
-      <h1>Exploring the frontiers of <span class="grad">science &amp; technology</span></h1>
-      <p>From quantum computers to gene editing, Science &amp; Tech Voices breaks down the discoveries shaping our future, in plain language, for curious minds everywhere.</p>
+      <h1>Exploring Science and Technology Together</h1>
+      <p>Science & Tech Voices is a community that brings together curious minds. Through weekly articles, discussions, and roundtable sessions, we discover science, together.</p>
       <div class="hero-actions">
-        <a class="btn" href="posts.html">Read the Articles</a>
-        <a class="btn btn-ghost" href="videos.html">Watch the Videos</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><strong>12</strong><span>Articles</span></div>
-        <div class="stat"><strong>3</strong><span>Original Videos</span></div>
-        <div class="stat"><strong>2</strong><span>Courses</span></div>
-        <div class="stat"><strong>8</strong><span>Fields Covered</span></div>
+        <a class="btn" href="courses.html">Watch the newest course</a>
+        <a class="btn ghost" href="contact.html">Join the team</a>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Latest Writing</p>
-          <h2>Featured Articles</h2>
-          <p>Every article researched and written by Kerem T&uuml;z&uuml;n.</p>
-        </div>
-        <a class="head-link" href="posts.html">View all 12 articles &#8594;</a>
-      </div>
-      <div class="card-grid">
-        <article class="article-card reveal">
-          <a class="card-link" href="post-llm.html">
-            <img src="covers/llm.svg" alt="Large Language Models: How Machines Learned Our Language, cover artwork" loading="lazy">
-            <div class="card-body">
-              <span class="tag">AI &amp; Society</span>
-              <h3>Large Language Models: How Machines Learned Our Language</h3>
-              <p class="excerpt">The systems behind modern chatbots are changing how we search, write, and learn. Here is how they actually work, and where their limits are.</p>
-              <div class="card-meta">
-                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
-                <span class="dot"></span>
-                <span>June 9, 2026</span>
-                <span class="dot"></span>
-                <span>5 min read</span>
-              </div>
-            </div>
-          </a>
-        </article>
-        <article class="article-card reveal">
-          <a class="card-link" href="post-crispr.html">
-            <img src="covers/crispr.svg" alt="CRISPR: Rewriting the Code of Life, cover artwork" loading="lazy">
-            <div class="card-body">
-              <span class="tag">Biotech</span>
-              <h3>CRISPR: Rewriting the Code of Life</h3>
-              <p class="excerpt">A bacterial immune system became the most powerful gene-editing tool ever discovered. Medicine may never be the same.</p>
-              <div class="card-meta">
-                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
-                <span class="dot"></span>
-                <span>May 21, 2026</span>
-                <span class="dot"></span>
-                <span>5 min read</span>
-              </div>
-            </div>
-          </a>
-        </article>
-        <article class="article-card reveal">
-          <a class="card-link" href="post-exoplanets.html">
-            <img src="covers/exoplanets.svg" alt="Exoplanets: The Search for Other Earths, cover artwork" loading="lazy">
-            <div class="card-body">
-              <span class="tag">Space</span>
-              <h3>Exoplanets: The Search for Other Earths</h3>
-              <p class="excerpt">We now know of thousands of planets orbiting other stars. The next question is the biggest one science has ever asked: is anyone home?</p>
-              <div class="card-meta">
-                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
-                <span class="dot"></span>
-                <span>May 6, 2026</span>
-                <span class="dot"></span>
-                <span>5 min read</span>
-              </div>
-            </div>
-          </a>
-        </article>
-        <article class="article-card reveal">
-          <a class="card-link" href="post-batteries.html">
-            <img src="covers/batteries.svg" alt="Solid-State Batteries: The Quiet Revolution in Energy Storage, cover artwork" loading="lazy">
-            <div class="card-body">
-              <span class="tag">Energy</span>
-              <h3>Solid-State Batteries: The Quiet Revolution in Energy Storage</h3>
-              <p class="excerpt">The battery in your phone has barely changed in 30 years. The next leap, replacing liquid with solid, could change everything that runs on electricity.</p>
-              <div class="card-meta">
-                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
-                <span class="dot"></span>
-                <span>April 20, 2026</span>
-                <span class="dot"></span>
-                <span>4 min read</span>
-              </div>
-            </div>
-          </a>
-        </article>
-        <article class="article-card reveal">
-          <a class="card-link" href="post-quantum.html">
-            <img src="covers/quantum.svg" alt="Quantum Computers: The Gateway to the Future, cover artwork" loading="lazy">
-            <div class="card-body">
-              <span class="tag">Computing</span>
-              <h3>Quantum Computers: The Gateway to the Future</h3>
-              <p class="excerpt">Qubits, superposition, and how quantum computing could solve problems classical machines never will.</p>
-              <div class="card-meta">
-                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
-                <span class="dot"></span>
-                <span>March 14, 2026</span>
-                <span class="dot"></span>
-                <span>4 min read</span>
-              </div>
-            </div>
-          </a>
-        </article>
-        <article class="article-card reveal">
-          <a class="card-link" href="post-ai.html">
-            <img src="covers/ai.svg" alt="AI Ethics: Can Code Have a Conscience?, cover artwork" loading="lazy">
-            <div class="card-body">
-              <span class="tag">AI &amp; Society</span>
-              <h3>AI Ethics: Can Code Have a Conscience?</h3>
-              <p class="excerpt">Algorithms now make decisions that affect billions of people. How do we make sure those decisions are fair, transparent, and accountable?</p>
-              <div class="card-meta">
-                <span class="byline">Written by Kerem T&uuml;z&uuml;n</span>
-                <span class="dot"></span>
-                <span>March 1, 2026</span>
-                <span class="dot"></span>
-                <span>4 min read</span>
-              </div>
-            </div>
-          </a>
-        </article>
-      </div>
+  <section class="container" style="margin-top: 40px;">
+    <h2>This Week’s Articles</h2>
+    <div class="grid">
+      <article class="card">
+        <h3><a href="post-quantum.html">Quantum Computers: The Gateway to the Future</a></h3>
+      </article>
+      <article class="card">
+        <h3><a href="post-ai.html">AI Ethics: Can Code Have a Conscience?</a></h3>
+      </article>
+      <article class="card">
+        <h3><a href="post-bio.html">The Rise of Bioengineering: From Cell to Chip</a></h3>
+      </article>
     </div>
   </section>
+  </main>
 
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Watch</p>
-          <h2>From Our Video Library</h2>
-          <p>Videos from the Science &amp; Tech Voices project.</p>
-        </div>
-        <a class="head-link" href="videos.html">All videos &#8594;</a>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="logo-mark.webp" width="256" height="256" alt="" aria-hidden="true">
+        <p class="footer-name">Science &amp; Tech Voices</p>
+        <p>A student led community exploring science and technology together.</p>
       </div>
-      <div class="video-grid">
-        <div class="video-card reveal">
-          <video controls preload="metadata" playsinline>
-            <source src="media/machine-learning.mp4" type="video/mp4">
-            Your browser does not support embedded video. <a href="media/machine-learning.mp4">Download the Machine Learning video</a>.
-          </video>
-          <div class="card-body">
-            <span class="tag">Science &amp; Tech Voices</span>
-            <h3>Machine Learning</h3>
-            <p class="excerpt">An introduction to machine learning: how computers learn from data, where the technology is used, and the ideas behind modern intelligent systems.</p>
-          </div>
-        </div>
-        <div class="video-card reveal">
-          <iframe src="https://www.youtube.com/embed/S2N4ZP_1Zjg" title="Algebra Fundamentals"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen loading="lazy"></iframe>
-          <div class="card-body">
-            <span class="tag">Science &amp; Tech Voices</span>
-            <h3>Algebra Fundamentals</h3>
-            <p class="excerpt">The core ideas of algebra explained step by step: variables, equations, and functions, the language every branch of science is written in.</p>
-          </div>
-        </div>
-        <div class="video-card reveal">
-          <iframe src="https://www.youtube.com/embed/5VQ5uOHih7k" title="Arduino Distance Measurement"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen loading="lazy"></iframe>
-          <div class="card-body">
-            <span class="tag">Science &amp; Tech Voices</span>
-            <h3>Arduino Distance Measurement</h3>
-            <p class="excerpt">Build a working distance sensor with an Arduino and an ultrasonic module: a hands-on walkthrough of the wiring, the code, and reading live sensor data.</p>
-          </div>
-        </div>
+
+      <nav class="footer-nav" aria-label="Explore">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="conferences.html">Conferences</a></li>
+          <li><a href="posts.html">Posts</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h2>Contact</h2>
+        <address>
+          <a href="mailto:scitechvoices@gmail.com">scitechvoices@gmail.com</a><br>
+          Istanbul, Türkiye
+        </address>
       </div>
     </div>
-  </section>
 
-  <section class="container">
-    <div class="about-strip reveal">
-      <div>
-        <p class="eyebrow">About the Project</p>
-        <h2>Science is a conversation. Join it.</h2>
-        <p>Science &amp; Tech Voices was founded by students who believe the biggest ideas in science deserve clear, honest explanations. New articles are published regularly, written by Kerem T&uuml;z&uuml;n.</p>
-      </div>
-      <a class="btn" href="team.html">Meet the Team</a>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a class="brand" href="index.html">
-            <img src="logo.png" alt="Science &amp; Tech Voices logo">
-            <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
-          </a>
-          <p>A student-run science and technology publication exploring the frontiers of research, from quantum computing to gene editing, through articles, videos, and hands-on courses.</p>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="posts.html">Articles</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="courses.html">Courses</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Project</h4>
-          <ul>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="index.html">About</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>&#169; 2026 Science &amp; Tech Voices</span>
-        <span>Written &amp; curated by Kerem T&uuml;z&uuml;n</span>
-      </div>
+    <div class="container footer-legal">
+      <p>&copy; 2026 Science &amp; Tech Voices. All rights reserved.</p>
+      <p class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </p>
     </div>
   </footer>
+
+  <div class="sticky-cta">
+    <a class="btn" href="contact.html"
+       aria-label="Join the Science &amp; Tech Voices team">Join the team</a>
+  </div>
+
+  <div class="cookie-banner" id="cookieBanner" role="region"
+       aria-labelledby="cookieTitle" hidden>
+    <div class="container cookie-inner">
+      <div class="cookie-text">
+        <p class="cookie-title" id="cookieTitle">A quick note on analytics</p>
+        <p>We count page views with cookieless analytics so we know which articles are worth writing more of. No advertising cookies, no profiles, nothing sold. The <a href="privacy.html">privacy policy</a> has the detail.</p>
+      </div>
+      <div class="cookie-actions">
+        <button class="btn" type="button" data-consent="granted">That's fine</button>
+        <button class="btn ghost" type="button" data-consent="denied">Do not count my visits</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

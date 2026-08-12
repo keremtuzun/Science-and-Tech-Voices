@@ -2,99 +2,245 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hands-on mini courses from Science & Tech Voices: Arduino and Algebra.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Courses | Science &amp; Tech Voices</title>
-  <link rel="icon" type="image/png" href="logo.png">
+  <meta name="description" content="Free video courses on quantum computing, machine learning, first degree equations and Arduino. Chapter markers throughout, no prior background needed.">
+  <link rel="canonical" href="https://scitechvoices.com/courses.html">
+  <link rel="alternate" hreflang="en" href="https://scitechvoices.com/courses.html">
+  <link rel="alternate" hreflang="tr" href="https://scitechvoices.com/courses-tr.html">
+  <link rel="alternate" hreflang="x-default" href="https://scitechvoices.com/courses.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Science &amp; Tech Voices">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title" content="Courses | Science &amp; Tech Voices">
+  <meta property="og:description" content="Free video courses on quantum computing, machine learning, first degree equations and Arduino. Chapter markers throughout, no prior background needed.">
+  <meta property="og:url" content="https://scitechvoices.com/courses.html">
+  <meta property="og:image" content="https://scitechvoices.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Science &amp; Tech Voices, weekly articles, courses and roundtables">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Courses | Science &amp; Tech Voices">
+  <meta name="twitter:description" content="Free video courses on quantum computing, machine learning, first degree equations and Arduino. Chapter markers throughout, no prior background needed.">
+  <meta name="twitter:image" content="https://scitechvoices.com/og-image.jpg">
+
+  <meta name="theme-color" content="#307dc5">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script>
+    // Vercel Web Analytics, cookieless. Skipped entirely if the visitor declined.
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    (function () {
+      var declined = false;
+      try { declined = localStorage.getItem('stv-consent') === 'denied'; } catch (e) {}
+      if (declined) return;
+      var s = document.createElement('script');
+      s.defer = true;
+      s.src = '/_vercel/insights/script.js';
+      document.head.appendChild(s);
+    })();
+  </script>
 </head>
 <body>
-  <header class="site-nav">
-    <div class="container nav-inner">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container navbar">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="Science &amp; Tech Voices logo">
-        <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
+        <img src="logo-mark.webp" width="256" height="256" class="site-logo"
+             alt="" aria-hidden="true">
+        <span>Science &amp; Tech Voices</span>
       </a>
-      <nav class="nav-links">
+
+      <nav class="navlinks" id="primary-nav" aria-label="Menu">
         <a href="index.html">Home</a>
-        <a href="posts.html">Articles</a>
-        <a href="videos.html">Videos</a>
-        <a href="courses.html">Courses</a>
+        <a href="conferences.html">Conferences</a>
+        <a href="posts.html">Posts</a>
+        <a href="courses.html" class="active" aria-current="page">Courses</a>
         <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+        <button id="langButton" class="btn" type="button">Türkçe 🌐</button>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+
+      <button class="mobile-toggle" id="navToggle" type="button"
+              aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+        <span aria-hidden="true">&#9776;</span>
+      </button>
     </div>
   </header>
 
-  <section class="page-head">
-    <div class="container">
-      <p class="eyebrow">Learn by Doing</p>
-      <h1>Courses</h1>
-      <p>Short, practical lessons that take you from theory to a working project.</p>
-    </div>
-  </section>
+<main id="main" class="container page">
+  <h1>Courses</h1>
 
-  <main class="page-body">
-    <div class="container">
-      <div class="course-grid">
-        <article class="article-card reveal">
-          <a class="card-link" href="https://youtu.be/5VQ5uOHih7k" target="_blank" rel="noopener">
-            <img src="covers/arduino.svg" alt="Arduino Distance Measurement course artwork" loading="lazy">
-            <div class="card-body">
-              <span class="tag">Electronics</span>
-              <h3>Arduino Distance Measurement</h3>
-              <p class="excerpt">Build a working distance sensor with an Arduino and an ultrasonic module. A hands-on introduction to microcontrollers, wiring, and reading sensor data.</p>
-              <div class="card-meta"><span class="byline">Video lesson</span><span class="dot"></span><span>Beginner friendly</span></div>
-            </div>
-          </a>
-        </article>
-        <article class="article-card reveal">
-          <a class="card-link" href="https://youtu.be/S2N4ZP_1Zjg" target="_blank" rel="noopener">
-            <img src="covers/algebra.svg" alt="Algebra course artwork" loading="lazy">
-            <div class="card-body">
-              <span class="tag">Mathematics</span>
-              <h3>Algebra Fundamentals</h3>
-              <p class="excerpt">The core ideas of algebra explained from the ground up: variables, equations, and functions, the language every branch of science is written in.</p>
-              <div class="card-meta"><span class="byline">Video lesson</span><span class="dot"></span><span>Beginner friendly</span></div>
-            </div>
-          </a>
-        </article>
+<section class="featured-video">
+      <div class="badge">NEW EPISODE</div>
+      <video controls preload="metadata"
+             poster="media/quantum-computing-poster.png"
+             src="media/quantum-computing-from-zero.mp4">
+        Your browser does not support embedded video.
+        <a href="media/quantum-computing-from-zero.mp4">Download the episode</a>.
+      </video>
+      <h2>Quantum Computing, From Zero</h2>
+      <p class="meta">14:55 &middot; English narration &middot; No prior physics required</p>
+      <p class="summary">
+        A full introduction built up from nothing, and an honest one. We start by killing the
+        myth that a quantum computer "tries every answer at once", then build up qubits,
+        superposition, measurement, entanglement and interference to show what actually gives
+        these machines their power. We finish with what they are genuinely good at, what they
+        are not, and how far the hardware really has to go.
+      </p>
+      <ul class="chapters">
+        <li><span>0:00</span>Cold open: the myth</li>
+        <li><span>0:59</span>Why classical computers hit a wall</li>
+        <li><span>2:44</span>The qubit and superposition</li>
+        <li><span>4:30</span>Measurement, and the catch</li>
+        <li><span>6:13</span>Entanglement</li>
+        <li><span>8:01</span>Interference: the actual engine</li>
+        <li><span>9:47</span>Gates and circuits</li>
+        <li><span>11:01</span>What they are actually good at</li>
+        <li><span>12:37</span>Noise, and where we really are</li>
+      </ul>
+    </section>
+
+    <section class="featured-video">
+      <video controls preload="metadata"
+             poster="media/machine-learning-poster.png"
+             src="media/machine-learning.mp4">
+        Your browser does not support embedded video.
+        <a href="media/machine-learning.mp4">Download the episode</a>.
+      </video>
+      <h2>Machine Learning</h2>
+      <p class="meta">20:00 &middot; 16 chapters &middot; No prior maths required</p>
+      <p class="summary">
+        A visual explainer that builds machine learning from the ground up: what it means for
+        a computer to learn from examples instead of rules, and how a training loop turns data
+        into a model that generalises. It works through regression, classification, gradient
+        descent, the train and test split, overfitting, and why accuracy alone can hide
+        failure, then covers decision trees and neural networks, follows one project from
+        definition to deployment, and closes on bias, privacy, drift and human oversight.
+      </p>
+      <ul class="chapters">
+        <li><span>0:00</span>Introduction</li>
+        <li><span>0:30</span>What does learning mean?</li>
+        <li><span>1:50</span>The learning loop</li>
+        <li><span>3:15</span>Features and labels</li>
+        <li><span>4:30</span>Three ways to learn</li>
+        <li><span>5:55</span>Regression: predicting a number</li>
+        <li><span>7:25</span>Classification: choosing a category</li>
+        <li><span>8:50</span>Loss and gradient descent</li>
+        <li><span>10:20</span>Train, validate, test</li>
+        <li><span>11:35</span>Underfitting and overfitting</li>
+        <li><span>13:00</span>Measuring performance</li>
+        <li><span>14:30</span>Trees and forests</li>
+        <li><span>15:55</span>Neural networks</li>
+        <li><span>17:25</span>A project from start to finish</li>
+        <li><span>18:40</span>Limits and responsibility</li>
+        <li><span>19:35</span>The complete picture</li>
+      </ul>
+    </section>
+
+    <section class="featured-video">
+      <video controls preload="metadata"
+             poster="media/first-degree-equations-poster.png"
+             src="media/first-degree-equations.mp4">
+        Your browser does not support embedded video.
+        <a href="media/first-degree-equations.mp4">Download the lesson</a>.
+      </video>
+      <h2>First-Degree Equations</h2>
+      <p class="meta">12:16 &middot; Turkish narration &middot; No prior algebra required</p>
+      <p class="summary">
+        A worked lesson on first-degree equations, taught the way the topic is actually
+        examined. It starts from what a variable is, then builds three skills in order:
+        evaluating an expression once you know the value of the letter, translating a
+        sentence into algebra, and finally turning a word problem into an equation and
+        solving it. Every question is worked out on screen rather than just answered.
+      </p>
+      <ul class="chapters">
+        <li><span>0:00</span>Variables and first-degree equations</li>
+        <li><span>0:40</span>Evaluating an expression at a given value</li>
+        <li><span>1:50</span>Practice set, questions 1 to 8</li>
+        <li><span>4:48</span>Turning a sentence into algebra</li>
+        <li><span>8:04</span>Word problems: age, money and exam scores</li>
+      </ul>
+    </section>
+
+    <section class="featured-video">
+      <a href="https://youtu.be/5VQ5uOHih7k" target="_blank" rel="noopener">
+        <img src="cover-arduino.webp" width="900" height="506" alt="Title card of the Arduino video course on YouTube" class="video-thumb" loading="eager" fetchpriority="high">
+      </a>
+      <h2>Getting Started with Arduino</h2>
+      <p class="meta">Turkish narration &middot; Watch on YouTube</p>
+      <p class="summary">
+        An introduction to Arduino for people who have never used a microcontroller, framed
+        as a first step into building things rather than only reading about them. Published
+        on YouTube as <em>Arduino ile Baslangic: Bilim ve Teknolojinin Kalbine Yolculuk</em>.
+      </p>
+    </section>
+</main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="logo-mark.webp" width="256" height="256" alt="" aria-hidden="true">
+        <p class="footer-name">Science &amp; Tech Voices</p>
+        <p>A student led community exploring science and technology together.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Explore">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="conferences.html">Conferences</a></li>
+          <li><a href="posts.html">Posts</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h2>Contact</h2>
+        <address>
+          <a href="mailto:scitechvoices@gmail.com">scitechvoices@gmail.com</a><br>
+          Istanbul, Türkiye
+        </address>
       </div>
     </div>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a class="brand" href="index.html">
-            <img src="logo.png" alt="Science &amp; Tech Voices logo">
-            <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
-          </a>
-          <p>A student-run science and technology publication exploring the frontiers of research, from quantum computing to gene editing, through articles, videos, and hands-on courses.</p>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="posts.html">Articles</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="courses.html">Courses</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Project</h4>
-          <ul>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="index.html">About</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>&#169; 2026 Science &amp; Tech Voices</span>
-        <span>Written &amp; curated by Kerem T&uuml;z&uuml;n</span>
-      </div>
+    <div class="container footer-legal">
+      <p>&copy; 2026 Science &amp; Tech Voices. All rights reserved.</p>
+      <p class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </p>
     </div>
   </footer>
+
+  <div class="sticky-cta">
+    <a class="btn" href="contact.html"
+       aria-label="Join the Science &amp; Tech Voices team">Join the team</a>
+  </div>
+
+  <div class="cookie-banner" id="cookieBanner" role="region"
+       aria-labelledby="cookieTitle" hidden>
+    <div class="container cookie-inner">
+      <div class="cookie-text">
+        <p class="cookie-title" id="cookieTitle">A quick note on analytics</p>
+        <p>We count page views with cookieless analytics so we know which articles are worth writing more of. No advertising cookies, no profiles, nothing sold. The <a href="privacy.html">privacy policy</a> has the detail.</p>
+      </div>
+      <div class="cookie-actions">
+        <button class="btn" type="button" data-consent="granted">That's fine</button>
+        <button class="btn ghost" type="button" data-consent="denied">Do not count my visits</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
