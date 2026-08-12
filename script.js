@@ -97,6 +97,12 @@
     var langButton = document.getElementById("langButton");
     if (langButton) {
       langButton.addEventListener("click", function () {
+        // pages with no translated twin declare where the toggle should land
+        var override = langButton.getAttribute("data-lang-href");
+        if (override) {
+          window.location.href = override;
+          return;
+        }
         var file = window.location.pathname.split("/").pop() || "index.html";
         if (file.indexOf(".html") === -1) file = "index.html";
         window.location.href = file.indexOf("-tr.html") !== -1

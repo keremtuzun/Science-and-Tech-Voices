@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Fusion Energy: The Promise of Unlimited Clean Power">
-  <rect width="800" height="450" fill="#f6f4ee"/>
-  <rect x="16" y="16" width="768" height="418" fill="none" stroke="#c8c2b1" stroke-width="1.5"/>
+  <rect width="800" height="450" fill="#f4f9fd"/>
+  <rect x="16" y="16" width="768" height="418" fill="none" stroke="#cfdce8" stroke-width="1.5"/>
   <text x="40" y="56" font-family="Inter, Segoe UI, sans-serif" font-size="14"
-        letter-spacing="2.5" font-weight="600" fill="#2f5d4f">ENERGY</text>
-  <line x1="40" y1="70" x2="104" y2="70" stroke="#2f5d4f" stroke-width="2"/>
-  <text x="40" y="412" font-family="Spectral, Georgia, serif" font-size="19"
-        fill="#22221d">Science &amp; Tech Voices</text>
-  <circle cx="400" cy="232" r="118" fill="#e9ede7"/>
+        letter-spacing="2.5" font-weight="600" fill="#307dc5">ENERGY</text>
+  <line x1="40" y1="70" x2="104" y2="70" stroke="#307dc5" stroke-width="2"/>
+  <text x="40" y="412" font-family="Inter, Segoe UI, sans-serif" font-size="19"
+        fill="#1e1e1e">Science &amp; Tech Voices</text>
+  <circle cx="400" cy="232" r="118" fill="#e2eef9"/>
 
   <g stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <ellipse cx="400" cy="232" rx="112" ry="58" stroke="#22221d" stroke-width="3"/>
-    <ellipse cx="400" cy="232" rx="54" ry="26" stroke="#22221d" stroke-width="3"/>
-    <circle cx="400" cy="232" r="22" fill="#2f5d4f"/>
-    <g stroke="#2f5d4f" stroke-width="2.5">
+    <ellipse cx="400" cy="232" rx="112" ry="58" stroke="#1e1e1e" stroke-width="3"/>
+    <ellipse cx="400" cy="232" rx="54" ry="26" stroke="#1e1e1e" stroke-width="3"/>
+    <circle cx="400" cy="232" r="22" fill="#307dc5"/>
+    <g stroke="#307dc5" stroke-width="2.5">
       <path d="M400 174 q 70 -34 96 26"/>
       <path d="M400 290 q -70 34 -96 -26"/>
     </g>

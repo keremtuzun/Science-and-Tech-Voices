@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Math Course">
-  <rect width="800" height="450" fill="#f6f4ee"/>
-  <rect x="16" y="16" width="768" height="418" fill="none" stroke="#c8c2b1" stroke-width="1.5"/>
+  <rect width="800" height="450" fill="#f4f9fd"/>
+  <rect x="16" y="16" width="768" height="418" fill="none" stroke="#cfdce8" stroke-width="1.5"/>
   <text x="40" y="56" font-family="Inter, Segoe UI, sans-serif" font-size="14"
-        letter-spacing="2.5" font-weight="600" fill="#2f5d4f">MATHEMATICS</text>
-  <line x1="40" y1="70" x2="104" y2="70" stroke="#2f5d4f" stroke-width="2"/>
-  <text x="40" y="412" font-family="Spectral, Georgia, serif" font-size="19"
-        fill="#22221d">Science &amp; Tech Voices</text>
-  <circle cx="400" cy="232" r="118" fill="#e9ede7"/>
+        letter-spacing="2.5" font-weight="600" fill="#307dc5">MATHEMATICS</text>
+  <line x1="40" y1="70" x2="104" y2="70" stroke="#307dc5" stroke-width="2"/>
+  <text x="40" y="412" font-family="Inter, Segoe UI, sans-serif" font-size="19"
+        fill="#1e1e1e">Science &amp; Tech Voices</text>
+  <circle cx="400" cy="232" r="118" fill="#e2eef9"/>
 
   <g stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <line x1="312" y1="300" x2="496" y2="300" stroke="#22221d" stroke-width="3"/>
-    <line x1="334" y1="158" x2="334" y2="318" stroke="#22221d" stroke-width="3"/>
-    <path stroke="#2f5d4f" stroke-width="3.5" d="M348 300 C 380 176, 446 176, 480 300"/>
-    <circle cx="414" cy="208" r="6" fill="#2f5d4f"/>
-    <g stroke="#22221d" stroke-width="3">
+    <line x1="312" y1="300" x2="496" y2="300" stroke="#1e1e1e" stroke-width="3"/>
+    <line x1="334" y1="158" x2="334" y2="318" stroke="#1e1e1e" stroke-width="3"/>
+    <path stroke="#307dc5" stroke-width="3.5" d="M348 300 C 380 176, 446 176, 480 300"/>
+    <circle cx="414" cy="208" r="6" fill="#307dc5"/>
+    <g stroke="#1e1e1e" stroke-width="3">
       <line x1="436" y1="252" x2="460" y2="276"/><line x1="460" y1="252" x2="436" y2="276"/>
     </g>
   </g>

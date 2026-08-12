@@ -2,32 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The most powerful telescope ever built is showing us the universe's earliest galaxies. The first images left scientists in tears.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The James Webb Space Telescope: A Window to the Dawn of Time | Science &amp; Tech Voices</title>
-  <link rel="icon" type="image/png" href="logo.png">
+  <meta name="description" content="The most powerful telescope ever built is showing us the universe's earliest galaxies. The first images left scientists in tears.">
+  <link rel="canonical" href="https://scitechvoices.com/post-jwst.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Science &amp; Tech Voices">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="The James Webb Space Telescope: A Window to the Dawn of Time | Science &amp; Tech Voices">
+  <meta property="og:description" content="The most powerful telescope ever built is showing us the universe's earliest galaxies. The first images left scientists in tears.">
+  <meta property="og:url" content="https://scitechvoices.com/post-jwst.html">
+  <meta property="og:image" content="https://scitechvoices.com/og/post-jwst.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Science &amp; Tech Voices, weekly articles, courses and roundtables">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The James Webb Space Telescope: A Window to the Dawn of Time | Science &amp; Tech Voices">
+  <meta name="twitter:description" content="The most powerful telescope ever built is showing us the universe's earliest galaxies. The first images left scientists in tears.">
+  <meta name="twitter:image" content="https://scitechvoices.com/og/post-jwst.jpg">
+
+  <meta name="theme-color" content="#307dc5">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script>
+    // Vercel Web Analytics, cookieless. Skipped entirely if the visitor declined.
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    (function () {
+      var declined = false;
+      try { declined = localStorage.getItem('stv-consent') === 'denied'; } catch (e) {}
+      if (declined) return;
+      var s = document.createElement('script');
+      s.defer = true;
+      s.src = '/_vercel/insights/script.js';
+      document.head.appendChild(s);
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The James Webb Space Telescope: A Window to the Dawn of Time",
+    "description": "The most powerful telescope ever built is showing us the universe's earliest galaxies. The first images left scientists in tears.",
+    "image": "https://scitechvoices.com/og/post-jwst.jpg",
+    "datePublished": "2025-12-15",
+    "dateModified": "2026-08-12",
+    "inLanguage": "en",
+    "mainEntityOfPage": "https://scitechvoices.com/post-jwst.html",
+    "author": {
+      "@type": "Organization",
+      "name": "Science & Tech Voices"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Science & Tech Voices",
+      "url": "https://scitechvoices.com/",
+      "logo": "https://scitechvoices.com/icon-512.png",
+      "email": "scitechvoices@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Istanbul",
+        "addressCountry": "TR"
+      }
+    }
+  }
+  </script>
 </head>
 <body>
-  <header class="site-nav">
-    <div class="container nav-inner">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container navbar">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="Science &amp; Tech Voices logo">
-        <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
+        <img src="logo-mark.webp" width="256" height="256" class="site-logo"
+             alt="" aria-hidden="true">
+        <span>Science &amp; Tech Voices</span>
       </a>
-      <nav class="nav-links">
+
+      <nav class="navlinks" id="primary-nav" aria-label="Menu">
         <a href="index.html">Home</a>
-        <a href="posts.html">Articles</a>
-        <a href="videos.html">Videos</a>
+        <a href="conferences.html">Conferences</a>
+        <a href="posts.html">Posts</a>
         <a href="courses.html">Courses</a>
         <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+        <button id="langButton" class="btn" type="button" data-lang-href="posts-tr.html">Türkçe 🌐</button>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+
+      <button class="mobile-toggle" id="navToggle" type="button"
+              aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+        <span aria-hidden="true">&#9776;</span>
+      </button>
     </div>
   </header>
 
-  <main class="article-page container">
+<main id="main" class="article-page container">
     <div class="article-head">
       <a class="crumb" href="posts.html">&#8592; All articles</a>
       <div><span class="tag">Space</span></div>
@@ -41,7 +116,7 @@
       </div>
     </div>
     <div class="article-cover">
-      <img src="covers/jwst.svg" alt="The James Webb Space Telescope: A Window to the Dawn of Time, cover artwork">
+      <img src="covers/jwst.svg" width="800" height="450" alt="The James Webb Space Telescope: A Window to the Dawn of Time, cover artwork" loading="eager" fetchpriority="high">
     </div>
     <article class="prose">
 <p>In July 2022, NASA released the first full-color images from the James Webb Space Telescope. Scientists who had dedicated careers to the instrument shared photos of themselves in tears. Astronomers who had waited two decades finally got to see what it could do. The images showed thousands of galaxies in a patch of sky so small that a grain of sand held at arm's length would cover it.</p>
@@ -67,41 +142,65 @@
     </article>
     <div class="article-foot">
       <span class="sig">Written by Kerem T&uuml;z&uuml;n &middot; Science &amp; Tech Voices</span>
-      <a class="btn btn-ghost" href="posts.html">&#8592; Back to all articles</a>
+      <a class="btn ghost" href="posts.html">&#8592; Back to all articles</a>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a class="brand" href="index.html">
-            <img src="logo.png" alt="Science &amp; Tech Voices logo">
-            <span>Science &amp; Tech <span class="brand-accent">Voices</span></span>
-          </a>
-          <p>A student-run science and technology publication exploring the frontiers of research, from quantum computing to gene editing, through articles, videos, and hands-on courses.</p>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="posts.html">Articles</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="courses.html">Courses</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Project</h4>
-          <ul>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="index.html">About</a></li>
-          </ul>
-        </div>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="logo-mark.webp" width="256" height="256" alt="" aria-hidden="true">
+        <p class="footer-name">Science &amp; Tech Voices</p>
+        <p>A student led community exploring science and technology together.</p>
       </div>
-      <div class="footer-bottom">
-        <span>&#169; 2026 Science &amp; Tech Voices</span>
-        <span>Written &amp; curated by Kerem T&uuml;z&uuml;n</span>
+
+      <nav class="footer-nav" aria-label="Explore">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="conferences.html">Conferences</a></li>
+          <li><a href="posts.html">Posts</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h2>Contact</h2>
+        <address>
+          <a href="mailto:scitechvoices@gmail.com">scitechvoices@gmail.com</a><br>
+          Istanbul, Türkiye
+        </address>
       </div>
     </div>
+
+    <div class="container footer-legal">
+      <p>&copy; 2026 Science &amp; Tech Voices. All rights reserved.</p>
+      <p class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </p>
+    </div>
   </footer>
+
+  <div class="sticky-cta">
+    <a class="btn" href="contact.html"
+       aria-label="Join the Science &amp; Tech Voices team">Join the team</a>
+  </div>
+
+  <div class="cookie-banner" id="cookieBanner" role="region"
+       aria-labelledby="cookieTitle" hidden>
+    <div class="container cookie-inner">
+      <div class="cookie-text">
+        <p class="cookie-title" id="cookieTitle">A quick note on analytics</p>
+        <p>We count page views with cookieless analytics so we know which articles are worth writing more of. No advertising cookies, no profiles, nothing sold. The <a href="privacy.html">privacy policy</a> has the detail.</p>
+      </div>
+      <div class="cookie-actions">
+        <button class="btn" type="button" data-consent="granted">That's fine</button>
+        <button class="btn ghost" type="button" data-consent="denied">Do not count my visits</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

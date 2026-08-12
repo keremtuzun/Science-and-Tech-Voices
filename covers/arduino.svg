@@ -1,24 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Hands-On Course">
-  <rect width="800" height="450" fill="#f6f4ee"/>
-  <rect x="16" y="16" width="768" height="418" fill="none" stroke="#c8c2b1" stroke-width="1.5"/>
+  <rect width="800" height="450" fill="#f4f9fd"/>
+  <rect x="16" y="16" width="768" height="418" fill="none" stroke="#cfdce8" stroke-width="1.5"/>
   <text x="40" y="56" font-family="Inter, Segoe UI, sans-serif" font-size="14"
-        letter-spacing="2.5" font-weight="600" fill="#2f5d4f">ELECTRONICS</text>
-  <line x1="40" y1="70" x2="104" y2="70" stroke="#2f5d4f" stroke-width="2"/>
-  <text x="40" y="412" font-family="Spectral, Georgia, serif" font-size="19"
-        fill="#22221d">Science &amp; Tech Voices</text>
-  <circle cx="400" cy="232" r="118" fill="#e9ede7"/>
+        letter-spacing="2.5" font-weight="600" fill="#307dc5">ELECTRONICS</text>
+  <line x1="40" y1="70" x2="104" y2="70" stroke="#307dc5" stroke-width="2"/>
+  <text x="40" y="412" font-family="Inter, Segoe UI, sans-serif" font-size="19"
+        fill="#1e1e1e">Science &amp; Tech Voices</text>
+  <circle cx="400" cy="232" r="118" fill="#e2eef9"/>
 
   <g stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <rect x="318" y="172" width="164" height="120" rx="10" stroke="#22221d" stroke-width="3" fill="#2f5d4f" fill-opacity="0.08"/>
-    <rect x="372" y="210" width="44" height="44" rx="5" stroke="#2f5d4f" stroke-width="3"/>
-    <g stroke="#22221d" stroke-width="3">
+    <rect x="318" y="172" width="164" height="120" rx="10" stroke="#1e1e1e" stroke-width="3" fill="#307dc5" fill-opacity="0.08"/>
+    <rect x="372" y="210" width="44" height="44" rx="5" stroke="#307dc5" stroke-width="3"/>
+    <g stroke="#1e1e1e" stroke-width="3">
       <line x1="336" y1="172" x2="336" y2="158"/><line x1="356" y1="172" x2="356" y2="158"/>
       <line x1="376" y1="172" x2="376" y2="158"/><line x1="396" y1="172" x2="396" y2="158"/>
     </g>
-    <g stroke="#2f5d4f" stroke-width="3">
+    <g stroke="#307dc5" stroke-width="3">
       <line x1="446" y1="292" x2="446" y2="306"/><line x1="426" y1="292" x2="426" y2="306"/>
       <line x1="406" y1="292" x2="406" y2="306"/>
     </g>
-    <circle cx="458" cy="196" r="6" fill="#22221d"/>
+    <circle cx="458" cy="196" r="6" fill="#1e1e1e"/>
   </g>
 </svg>

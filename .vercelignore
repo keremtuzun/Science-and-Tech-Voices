@@ -5,3 +5,9 @@ _pre_english_default_backup
 .DS_Store
 DS_Store
 *.zip
+
+# kept in the repo but superseded by courses.html, so not published
+videos.html
+mqdefault.jpg
+e89ddd01-756f-47f5-8ad2-90ffacdd9b81.JPG
+e89ddd01-756f-47f5-8ad2-90ffacdd9b81.jpg

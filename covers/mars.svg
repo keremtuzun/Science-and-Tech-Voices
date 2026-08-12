@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Mars Colonization: Humanity's Next Giant Leap">
-  <rect width="800" height="450" fill="#f6f4ee"/>
-  <rect x="16" y="16" width="768" height="418" fill="none" stroke="#c8c2b1" stroke-width="1.5"/>
+  <rect width="800" height="450" fill="#f4f9fd"/>
+  <rect x="16" y="16" width="768" height="418" fill="none" stroke="#cfdce8" stroke-width="1.5"/>
   <text x="40" y="56" font-family="Inter, Segoe UI, sans-serif" font-size="14"
-        letter-spacing="2.5" font-weight="600" fill="#2f5d4f">SPACE EXPLORATION</text>
-  <line x1="40" y1="70" x2="104" y2="70" stroke="#2f5d4f" stroke-width="2"/>
-  <text x="40" y="412" font-family="Spectral, Georgia, serif" font-size="19"
-        fill="#22221d">Science &amp; Tech Voices</text>
-  <circle cx="400" cy="232" r="118" fill="#e9ede7"/>
+        letter-spacing="2.5" font-weight="600" fill="#307dc5">SPACE EXPLORATION</text>
+  <line x1="40" y1="70" x2="104" y2="70" stroke="#307dc5" stroke-width="2"/>
+  <text x="40" y="412" font-family="Inter, Segoe UI, sans-serif" font-size="19"
+        fill="#1e1e1e">Science &amp; Tech Voices</text>
+  <circle cx="400" cy="232" r="118" fill="#e2eef9"/>
 
   <g stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <circle cx="400" cy="232" r="58" stroke="#22221d" stroke-width="3" fill="#2f5d4f" fill-opacity="0.12"/>
-    <g stroke="#2f5d4f" stroke-width="2.5">
+    <circle cx="400" cy="232" r="58" stroke="#1e1e1e" stroke-width="3" fill="#307dc5" fill-opacity="0.12"/>
+    <g stroke="#307dc5" stroke-width="2.5">
       <circle cx="378" cy="214" r="9"/>
       <circle cx="420" cy="246" r="13"/>
       <circle cx="400" cy="200" r="5"/>
     </g>
-    <path stroke="#22221d" stroke-width="2.5" stroke-dasharray="2 9" d="M300 318 C 360 252, 470 232, 524 150"/>
-    <path stroke="#22221d" stroke-width="3" d="M524 150 l-18 8 8 -18 z" fill="#22221d"/>
+    <path stroke="#1e1e1e" stroke-width="2.5" stroke-dasharray="2 9" d="M300 318 C 360 252, 470 232, 524 150"/>
+    <path stroke="#1e1e1e" stroke-width="3" d="M524 150 l-18 8 8 -18 z" fill="#1e1e1e"/>
   </g>
 </svg>
